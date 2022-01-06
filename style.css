@@ -125,7 +125,8 @@
 .navItems {
     display: flex;
     justify-content: flex-end;
-    }
+  }
+
 .space {
     display: flex;
     justify-content: flex-start;
