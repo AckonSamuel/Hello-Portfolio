@@ -1,47 +1,44 @@
 @media all and (max-width: 360px) {
-  .container{
+  .container {
     display: flex;
     flex-direction: column;
-    flex-grow:1;
-    justify-content: space-around;
-    
+    flex-grow: 1;
+    justify-content: space-around; 
   } 
   .images {
     display: flex;
     justify-content: space-between;
     flex: 1;
-   
   }
   .image01 {
     position: relative;
-width: 74px;
-height: 74px;
-left: 0px;
-bottom: 0px;
-
-   }
+    width: 74px;
+    height: 74px;
+    left: 0px;
+    bottom: 0px;
+  }
 
    .image02 {
     position: relative;
-width: 74px;
-height: 74px;
-right: 37px;
-bottom: 0px;
-margin-bottom:4.75%;
-z-index: 0;
+    width: 74px;
+    height: 74px;
+    right: 37px;
+    bottom: 0px;
+    margin-bottom: 4.75%;
+    z-index: 0;
   }
 
   .shape00 {
-    width:100%;
-    height:100%;
-    object-fit:cover;
-   }
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
    .shape01 {
-    width:100%;
-    height:100%;
-    object-fit:cover;
-   }
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
    .boxic{
     width: 20px;
@@ -49,9 +46,9 @@ z-index: 0;
   }
 
   .ic_menu {
-    width:100%;
-    height:100%;
-    object-fit:cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .box {
@@ -60,41 +57,33 @@ z-index: 0;
   }
 
   .name {
-    padding:30px;
-     width: 220px;
-     height: 100px;
-    
-     margin-top: 30px;
- 
-     font-family: Playfair Display;
-     font-style: normal;
-     font-weight: normal;
-     font-size: 50px;
-     line-height: 100%;
-     /* or 50px */
-     
-     
-     color: #1A2236;
-   }
+    padding: 30px;
+    width: 220px;
+    height: 100px;
+    margin-top: 30px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 100%;
+    color: #1A2236;
+  }
 
    .intro {
-    padding:5px;
+    padding: 5px;
     margin-bottom: 9.5%;
     width: 288px;
     height: 126px;
     align-self: center;
-    
-
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     letter-spacing: -0.01em;
-
-color: #1A2236;
+    color: #1A2236;
   }
-  .rectangle{
+  .rectangle {
     text-align: center;
     color: white;
     display: flex;
@@ -110,40 +99,35 @@ color: #1A2236;
   .designs {
     justify-self: flex-end;
   }
-  
-  .image3{
+
+  .image3 {
     width: auto;
-    height:auto;
-   }
+    height: auto;
+  }
 
-  .shape002{
-   width:100%;
-   height:100%;
-   object-fit:cover;
+  .shape002 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
    
-}
+  }
 
 
-.amen{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex:1;
-  min-height: 100vh;
-}
+.amen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    min-height: 100vh;
+  }
 
-
-.navItems{
-display: flex;
-justify-content: flex-end;
-
-}
-
-
+.navItems {
+   display: flex;
+   justify-content: flex-end;
+    }
 .space {
-display: flex;
-justify-content: flex-start;
-flex:1;
-}
-
+   display: flex;
+   justify-content: flex-start;
+   flex: 1;
+  }
 }
