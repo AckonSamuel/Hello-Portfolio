@@ -1,10 +1,11 @@
 @media all and (max-width: 360px) {
+
   .container {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    justify-content: space-around; 
-  } 
+    justify-content: space-around;
+  }
 
   .images {
     display: flex;
@@ -20,7 +21,7 @@
     bottom: 0px;
   }
 
-   .image02 {
+  .image02 {
     position: relative;
     width: 74px;
     height: 74px;
@@ -36,13 +37,13 @@
     object-fit: cover;
   }
 
-   .shape01 {
+  .shape01 {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-   .boxic {
+  .boxic {
     width: 20px;
     height: 14px;
   }
@@ -71,7 +72,7 @@
     color: #1A2236;
   }
 
-   .intro {
+  .intro {
     padding: 5px;
     margin-bottom: 9.5%;
     width: 288px;
@@ -114,7 +115,7 @@
     object-fit: cover;
   }
 
-.amen {
+  .amen {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -122,12 +123,12 @@
     min-height: 100vh;
   }
 
-.navItems {
+  .navItems {
     display: flex;
     justify-content: flex-end;
   }
 
-.space {
+  .space {
     display: flex;
     justify-content: flex-start;
     flex: 1;
