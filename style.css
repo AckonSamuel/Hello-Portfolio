@@ -47,5 +47,64 @@ z-index: 0;
     width: 20px;
     height: 14px;
   }
-  
+
+  .ic_menu {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+
+  .box {
+    flex-wrap: wrap;
+    word-wrap: break-word;
+  }
+
+  .name {
+    padding:30px;
+     width: 220px;
+     height: 100px;
+    
+     margin-top: 30px;
+ 
+     font-family: Playfair Display;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 50px;
+     line-height: 100%;
+     /* or 50px */
+     
+     
+     color: #1A2236;
+   }
+
+   .intro {
+    padding:5px;
+    margin-bottom: 9.5%;
+    width: 288px;
+    height: 126px;
+    align-self: center;
+    
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+
+color: #1A2236;
+  }
+  .rectangle{
+    text-align: center;
+    color: white;
+    display: flex;
+    align-self: center;
+    width: 288px;
+    height: 50px;
+    background: #1A2236;
+    margin-bottom: 32px;
+    justify-content: center;
+    flex-direction: column;
+  }
+
 }
