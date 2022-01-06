@@ -6,4 +6,10 @@
     justify-content: space-around;
     
   } 
+  .images {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+   
+  }
 }
