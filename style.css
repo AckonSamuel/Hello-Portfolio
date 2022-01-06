@@ -5,11 +5,13 @@
     flex-grow: 1;
     justify-content: space-around; 
   } 
+
   .images {
     display: flex;
     justify-content: space-between;
     flex: 1;
   }
+
   .image01 {
     position: relative;
     width: 74px;
@@ -83,6 +85,7 @@
     letter-spacing: -0.01em;
     color: #1A2236;
   }
+
   .rectangle {
     text-align: center;
     color: white;
@@ -109,9 +112,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-   
   }
-
 
 .amen {
     display: flex;
@@ -122,12 +123,12 @@
   }
 
 .navItems {
-   display: flex;
-   justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
     }
 .space {
-   display: flex;
-   justify-content: flex-start;
-   flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
   }
 }
