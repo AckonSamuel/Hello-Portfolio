@@ -12,4 +12,12 @@
     flex: 1;
    
   }
+  .image01 {
+    position: relative;
+width: 74px;
+height: 74px;
+left: 0px;
+bottom: 0px;
+
+   }
 }
