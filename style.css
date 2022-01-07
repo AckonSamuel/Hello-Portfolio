@@ -257,7 +257,7 @@
   .project-view {
     display: flex;
     flex-direction: row;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #fff;
     width:max-content;
     margin-bottom: 20px;
   }
@@ -281,7 +281,7 @@
     font-size: 100%;
     line-height:auto;
     text-align: center;
-    color: #FFFFFF;
+    color: #fff;
     margin:10px;
   }
   
@@ -308,15 +308,15 @@
     background: #1C528A; 
     padding-left: 15px;
     margin-right: 20px;
-    color: #FFFFFF;
+    color: #fff;
   }
 
   .Frameworks {
     grid-area: frameworks;
-    background-color: #E2505C;
+    background-color: #e2505c;
     padding-left: 15px;
     margin-right: 20px;
-    color: #FFFFFF;
+    color: #fff;
   }
 
   .skills {
@@ -324,7 +324,7 @@
     background: #FEBF52;
     padding-right: 20px;
     margin-right: 20px;
-    color: #FFFFFF;
+    color: #fffF;
   }  
 
   .cvBox {
