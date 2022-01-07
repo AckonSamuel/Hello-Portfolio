@@ -78,6 +78,8 @@
     line-height: 21px;
     letter-spacing: -0.01em;
     color: #1a2236;
+
+    
   }
 
   .rectangle {
@@ -137,7 +139,23 @@
 
   .Works {
     display: grid;
-    grid-template-areas: 'one' 'two' 'three' 'four' 'five' 'six';
+    grid-template-areas: 'Project-name' 'one' 'two' 'three' 'four' 'five' 'six';
+  }
+
+  .Project-name {
+    grid-area: Project-name;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 100%;
+    color: #1A2236;
+    word-wrap: break-word;
+    width: auto;
+    height: auto;
+    word-wrap: break-word;
+    word-break: break-all;
+    max-width: 100%;
   }
 
   .one {
@@ -212,6 +230,13 @@
     width: auto;
     height: auto;
     flex-grow: 1;;
+    color: #FFFFFF;
+    font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 80%;
+    
   }
 
   .technology {
@@ -227,6 +252,8 @@
   .tech1 {
     background: #98dede;
     margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .project-view {
@@ -234,6 +261,7 @@
     flex-direction: row;
     border: 1px solid #FFFFFF;
     width:fit-content;
+    margin-bottom: 20px;
   }
   
   .union {
@@ -258,6 +286,7 @@
     color: #FFFFFF;
     margin:10px;
   }
+  
 
   /*About section*/
 
@@ -273,20 +302,67 @@
     'lang'
     'frameworks'
     'skills';
+    gap: 10px;
   }
 
   .lang {
     grid-area: lang;
-    
+    background: #1C528A; 
+    padding-left: 15px;
+    margin-right: 20px;
+    color: #FFFFFF;
   }
 
   .Frameworks {
     grid-area: frameworks;
+    background-color: #E2505C;
+    padding-left: 15px;
+    margin-right: 20px;
+    color: #FFFFFF;
   }
 
   .skills {
     grid-area: skills;
+    background: #FEBF52;
+    padding-right: 20px;
+    margin-right: 20px;
+    color: #FFFFFF;
   }  
+
+  .cvBox {
+    text-align: center;
+    color: white;
+    display: flex;
+    align-self: center;
+    width: auto;
+    height: 50px;
+    background: #1a2236;
+    margin-bottom: 32px;
+    margin-right: 20px;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .aboutText {
+    color: #1A2236;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: #1A2236;
+  }
+
+  .aboutWord {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: #1A2236;
+  }
 
   
 }
