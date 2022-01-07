@@ -153,35 +153,35 @@
     grid-area: two;
     width: 100%;
     height: 424px;
-    background-color: blue;;
+    background-color: #1a2236;
   }
 
   .three {
     grid-area: three;
     width: 100%;
     height: 424px;
-    background-color: yellow;
+    background-color: #1a2236;
   }
 
   .four {
     grid-area: four;
     width: 100%;
     height: 424px;
-    background-color: green;
+    background-color: #1a2236;
   }
 
   .five {
     grid-area: five;
     width: 100%;
     height: 424px;
-    background-color: violet;
+    background-color: #1a2236;
   }
 
   .six {
     grid-area: six;
     width: 100%;
     height: 424px;
-    background-color: pink;
+    background-color: #1a2236;
   }
 
   .photo {
@@ -215,15 +215,17 @@
     margin-top: 16px;
     flex: 0 1 auto;
     justify-content: flex-start;
-    justify-content: space-between;
+    
   }
   
   .tech1 {
-    padding-top: 6px;
+    /*padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 10px;
     padding-right: 10px;
+    */
     background: #98dede;
+    margin-left: 10px;
   }
 
 
