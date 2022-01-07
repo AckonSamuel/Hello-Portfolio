@@ -112,8 +112,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    flex-wrap: wrap;
     flex: 1;
-    min-height: 100vh;
+    height: fit-content;
   }
 
   .navItems {
@@ -129,27 +130,20 @@
 
   /* works section */
   .Hallelujah {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex: 1;
+   display: grid;
+   grid-template-areas: 'Works' 'About';
+
   }
 
   .Works {
     display: grid;
     grid-template-areas: 'one' 'two' 'three' 'four' 'five' 'six';
-          
-    
-    
-    
-   
-   
   }
 
   .one {
     grid-area: one;
     width: 100%;
-    height: 424px;
+    height: fit-content;
     background-color: #1a2236;
     display: flex;
     flex-direction: column;
@@ -160,35 +154,35 @@
   .two {
     grid-area: two;
     width: 100%;
-    height: 424px;
+    height: fit-content;
     background-color: #1a2236;
   }
 
   .three {
     grid-area: three;
     width: 100%;
-    height: 424px;
+    height: fit-content;
     background-color: #1a2236;
   }
 
   .four {
     grid-area: four;
     width: 100%;
-    height: 424px;
+    height: fit-content;
     background-color: #1a2236;
   }
 
   .five {
     grid-area: five;
     width: 100%;
-    height: 424px;
+    height: fit-content;
     background-color: #1a2236;
   }
 
   .six {
     grid-area: six;
     width: 100%;
-    height: 424px;
+    height: fit-content;
     background-color: #1a2236;
   }
 
@@ -209,7 +203,7 @@
     background: #1a2236;
     display: flex;
     flex-direction: column;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
     justify-content: flex-start;
   }
 
@@ -223,7 +217,6 @@
   .technology {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 16px;
     flex: 0 1 auto;
     justify-content: flex-start;
     gap: 10px;
@@ -232,11 +225,6 @@
   }
   
   .tech1 {
-    /*padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 10px;
-    padding-right: 10px;
-    */
     background: #98dede;
     margin-left: 10px;
   }
@@ -272,6 +260,13 @@
   }
 
   /*About section*/
+
+  .About {
+    grid-area: About;
+    width: 100%;
+    height: fit-content
+  }
+
   .gridContainer {
     display: grid;
     grid-template-areas:
@@ -282,6 +277,7 @@
 
   .lang {
     grid-area: lang;
+    
   }
 
   .Frameworks {
@@ -292,10 +288,5 @@
     grid-area: skills;
   }  
 
-  .About {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: 1;
-    flex: 1;
-  }
+  
 }
