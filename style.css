@@ -225,7 +225,7 @@
     word-wrap: break-word;
     width: auto;
     height: auto;
-    flex-grow: 1;;
+    flex-grow: 1;
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     font-style: normal;
@@ -243,7 +243,7 @@
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  
+
   .tech1 {
     background: #98dede;
     margin-left: 10px;
@@ -258,7 +258,7 @@
     width: max-content;
     margin-bottom: 20px;
   }
-  
+
   .union {
     width: auto;
     height: auto;
@@ -270,7 +270,7 @@
     height: 100%;
     object-fit: cover;
   }
-  
+
   .word > p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: normal;
@@ -321,8 +321,8 @@
     padding-right: 20px;
     margin-right: 20px;
     color: #ffff;
-  }  
-
+  }
+  
   .cvBox {
     text-align: center;
     color: white;
