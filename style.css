@@ -126,4 +126,59 @@
     justify-content: flex-start;
     flex: 1;
   }
+
+  .Works {
+    display: grid;
+    grid-template-areas:
+    'one'
+    'two'
+    'three'
+    'four'
+    'five'
+    'six';
+  }
+
+  .one {
+    grid-area: one;
+    width: 100%;
+    height: 424px;
+    background-color: red;
+  }
+
+  .two {
+    grid-area: two;
+    width: 100%;
+    height: 424px;
+    background-color: blue;;
+  }
+
+  .three {
+    grid-area: three;
+    width: 100%;
+    height: 424px;
+    background-color: yellow;
+  }
+
+  .four {
+    grid-area: four;
+    width: 100%;
+    height: 424px;
+    background-color: green;
+  }
+
+  .five {
+    grid-area: five;
+    width: 100%;
+    height: 424px;
+    background-color: violet;
+  }
+
+  .six {
+    grid-area: six;
+    width: 100%;
+    height: 424px;
+    background-color: pink;
+  }
+
+  
 }
