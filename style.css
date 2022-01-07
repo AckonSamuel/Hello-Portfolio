@@ -79,7 +79,7 @@
     letter-spacing: -0.01em;
     color: #1a2236;
 
-    
+
   }
 
   .rectangle {
@@ -116,7 +116,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     flex: 1;
-    height: fit-content;
+    height:max-content;
   }
 
   .navItems {
