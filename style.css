@@ -281,8 +281,6 @@
     color: #fff;
     margin: 10px;
   }
-  
-  /* About section */
 
   .About {
     grid-area: About;
@@ -301,7 +299,7 @@
 
   .lang {
     grid-area: lang;
-    background: #1c528a; 
+    background: #1c528a;
     padding-left: 15px;
     margin-right: 20px;
     color: #fff;
@@ -356,5 +354,4 @@
     letter-spacing: -0.01em;
     color: #1a2236;
   }
-  
 }
