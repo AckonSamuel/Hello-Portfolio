@@ -288,9 +288,12 @@
 
   .skills {
     grid-area: skills;
+  }  
+
+  .About {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: 1;
+    flex: 1;
   }
-
-
-
-  
 }
