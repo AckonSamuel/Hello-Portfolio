@@ -143,6 +143,8 @@
     width: 100%;
     height: 424px;
     background-color: #1a2236;
+    display: flex;
+    flex-direction: column;
   }
 
   .two {
