@@ -321,10 +321,10 @@
 
   .skills {
     grid-area: skills;
-    background: #FEBF52;
+    background: #febf52;
     padding-right: 20px;
     margin-right: 20px;
-    color: #fffF;
+    color: #ffff;
   }  
 
   .cvBox {
@@ -348,8 +348,7 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 100%;
-    letter-spacing: -0.01em;
-    
+    letter-spacing: -0.01em;  
   }
 
   .aboutWord {
@@ -362,5 +361,4 @@
     color: #1a2236;
   }
 
-  
 }
