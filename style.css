@@ -228,12 +228,12 @@
     width: auto;
     height: auto;
     flex-grow: 1;;
-    color: #FFFFFF;
+    color: #fff;
     font-family: Poppins;
-font-style: normal;
-font-weight: 500;
-font-size: 30px;
-line-height: 80%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 80%;
     
   }
 
