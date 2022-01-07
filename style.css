@@ -126,7 +126,13 @@
     justify-content: flex-start;
     flex: 1;
   }
-
+/* works section*/
+  .Hallelujah {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex:1;
+    }
   .Works {
     display: grid;
     grid-template-areas:
