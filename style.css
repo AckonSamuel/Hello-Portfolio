@@ -159,7 +159,7 @@
   .one {
     grid-area: one;
     width: 100%;
-    height: fit-content;
+    height: max-content;
     background-color: #1a2236;
     display: flex;
     flex-direction: column;
@@ -170,35 +170,35 @@
   .two {
     grid-area: two;
     width: 100%;
-    height: fit-content;
+    height: max-content;
     background-color: #1a2236;
   }
 
   .three {
     grid-area: three;
     width: 100%;
-    height: fit-content;
+    height: max-content;
     background-color: #1a2236;
   }
 
   .four {
     grid-area: four;
     width: 100%;
-    height: fit-content;
+    height: max-content;
     background-color: #1a2236;
   }
 
   .five {
     grid-area: five;
     width: 100%;
-    height: fit-content;
+    height: max-content;
     background-color: #1a2236;
   }
 
   .six {
     grid-area: six;
     width: 100%;
-    height: fit-content;
+    height: max-content;
     background-color: #1a2236;
   }
 
@@ -258,7 +258,7 @@ line-height: 80%;
     display: flex;
     flex-direction: row;
     border: 1px solid #FFFFFF;
-    width:fit-content;
+    width:max-content;
     margin-bottom: 20px;
   }
   
@@ -291,7 +291,7 @@ line-height: 80%;
   .About {
     grid-area: About;
     width: 100%;
-    height: fit-content
+    height: max-content
   }
 
   .gridContainer {
