@@ -132,9 +132,8 @@
 
   /* works section */
   .Hallelujah {
-   display: grid;
-   grid-template-areas: 'Works' 'About';
-
+    display: grid;
+    grid-template-areas: 'Works' 'About';
   }
 
   .Works {
@@ -144,16 +143,15 @@
 
   .Project-name {
     grid-area: Project-name;
-    font-family: Playfair Display;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
     line-height: 100%;
-    color: #1A2236;
+    color: #1a2236;
     word-wrap: break-word;
     width: auto;
     height: auto;
-    word-wrap: break-word;
     word-break: break-all;
     max-width: 100%;
   }
