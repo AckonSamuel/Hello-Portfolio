@@ -126,22 +126,24 @@
     justify-content: flex-start;
     flex: 1;
   }
-/* works section*/
+
+  /* works section */
   .Hallelujah {
-    display:flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex:1;
-    }
+    flex: 1;
+  }
+
   .Works {
     display: grid;
-    grid-template-areas:
-    'one'
-    'two'
-    'three'
-    'four'
-    'five'
-    'six';
+    grid-template-areas: 'one' 'two' 'three' 'four' 'five' 'six';
+          
+    
+    
+    
+   
+   
   }
 
   .one {
