@@ -145,6 +145,8 @@
     background-color: #1a2236;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
   }
 
   .two {
@@ -182,5 +184,21 @@
     background-color: pink;
   }
 
+  .photo {
+    width: auto;
+    height: auto;
+  }
+
+  .work_one {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .summary {
+    padding: 5px;
+    background: #1a2236;
+    
+  }
   
 }
