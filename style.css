@@ -1,0 +1,129 @@
+@media all and (max-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-around;
+  }
+
+  .images {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  .image01 {
+    position: relative;
+    width: 74px;
+    height: 74px;
+  }
+
+  .image02 {
+    position: relative;
+    width: 74px;
+    height: 74px;
+    right: 37px;
+    margin-bottom: 4.75%;
+  }
+
+  .shape00 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .shape01 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .boxic {
+    width: 20px;
+    height: 14px;
+  }
+
+  .ic_menu {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .box {
+    flex-wrap: wrap;
+    word-wrap: break-word;
+  }
+
+  .name {
+    width: 100%;
+    height: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 100%;
+    color: #1a2236;
+  }
+
+  .intro {
+    padding: 5px;
+    width: auto;
+    height: auto;
+    margin-bottom: 30px;
+    justify-self: center;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #1a2236;
+  }
+
+  .rectangle {
+    text-align: center;
+    color: white;
+    display: flex;
+    align-self: center;
+    width: 100%;
+    height: 50px;
+    background: #1a2236;
+    margin-bottom: 32px;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .designs {
+    justify-self: flex-end;
+  }
+
+  .image3 {
+    width: auto;
+    height: auto;
+  }
+
+  .shape002 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .amen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    min-height: 100vh;
+  }
+
+  .navItems {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .space {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+  }
+}
