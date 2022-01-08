@@ -109,7 +109,6 @@
     object-fit: cover;
   }
 
-
   .amen {
     display: flex;
     flex-direction: column;
@@ -267,9 +266,8 @@
     font-size: 100%;
     line-height: 100%;
     text-align: center;
-    padding-left:10px;
-    padding-right:15px;
-
+    padding-left: 10px;
+    padding-right: 15px;
   }
 
   .union {
