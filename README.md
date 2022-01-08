@@ -1,6 +1,6 @@
-Hello-Microverse
+# Hello-Microverse
 
-This project was created to help master tools and best practices with linters and CSS flexbox, in creating mobile view  personal portfolio website.
+This project was created to help master tools and best practices with linters, CSS grid, adding images and background images and CSS flexbox, in creating mobile view  personal portfolio website.
 Built With
 
     HTML
