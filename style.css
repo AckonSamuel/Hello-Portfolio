@@ -336,7 +336,6 @@
 
   .dsa {
     list-style-type: none;
-    padding: 15px;
     display: grid;
     grid-template-areas:
       'lang'
