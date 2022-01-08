@@ -298,15 +298,6 @@
     height: max-content;
   }
 
-  .gridContainer {
-    display: grid;
-    grid-template-areas:
-      'lang'
-      'frameworks'
-      'skills';
-    gap: 10px;
-  }
-
   .lang {
     grid-area: lang;
     background: #1c528a;
@@ -334,6 +325,13 @@
   .dsa {
     list-style-type: none;
     padding: 15px;
+    display: grid;
+    grid-template-areas:
+      'lang'
+      'frameworks'
+      'skills';
+    gap: 10px;
+    padding: 30px;
   }
 
   .hello {
