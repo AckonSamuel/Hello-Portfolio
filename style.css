@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .images {
@@ -94,19 +94,21 @@
   }
 
   .designs {
+    display: flex;
+    flex-wrap: wrap;
     justify-self: flex-end;
   }
 
   .image3 {
-    width: auto;
-    height: auto;
-  }
-
-  .shape002 {
+    border: 2px solid #e2505c;
+    background-image: url("./assets/image_geometry_2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 250px;
     width: 100%;
-    height: 100%;
+    height: 250px;
     object-fit: cover;
   }
+
 
   .amen {
     display: flex;
