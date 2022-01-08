@@ -329,9 +329,14 @@
   .skills {
     grid-area: skills;
     background: #febf52;
-    padding-right: 20px;
+    padding-left: 15px;
     margin-right: 20px;
     color: #ffff;
+  }
+
+  .dsa {
+    list-style-type: none;
+    padding: 15px;
   }
 
   .cvBox {
