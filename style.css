@@ -247,7 +247,6 @@
 
   .tech1 {
     background: #98dede;
-    margin-left: 10px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -337,6 +336,18 @@
     padding: 15px;
   }
 
+  .hello {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 15px;
+    margin-right: 40px;
+    flex-wrap: wrap;
+  }
+
+  .maybe {
+    list-style-type: none;
+  }
   .cvBox {
     text-align: center;
     color: white;
