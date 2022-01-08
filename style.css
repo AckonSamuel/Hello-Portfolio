@@ -307,6 +307,7 @@
     background-image: url('./assets/hash_tag.png');
     background-repeat: no-repeat;
     background-position: right bottom;
+    font-size: 30px;
   }
 
   .Frameworks {
@@ -318,6 +319,7 @@
     background-image: url('./assets/Rectanglepp.png');
     background-repeat: no-repeat;
     background-position: right bottom;
+    font-size: 30px;
   }
 
   .skills {
@@ -329,6 +331,7 @@
     background-image: url('./assets/Vector.png');
     background-repeat: no-repeat;
     background-position: right bottom;
+    font-size: 30px;
   }
 
   .dsa {
