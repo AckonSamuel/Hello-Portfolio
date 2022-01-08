@@ -301,25 +301,34 @@
   .lang {
     grid-area: lang;
     background: #1c528a;
-    padding-left: 15px;
+    padding: 60px;
     margin-right: 20px;
     color: #fff;
+    background-image: url('./assets/hash_tag.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
   }
 
   .Frameworks {
     grid-area: frameworks;
     background-color: #e2505c;
-    padding-left: 15px;
+    padding: 60px;
     margin-right: 20px;
     color: #fff;
+    background-image: url('./assets/Rectanglepp.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
   }
 
   .skills {
     grid-area: skills;
     background: #febf52;
-    padding-left: 15px;
+    padding: 60px;
     margin-right: 20px;
     color: #ffff;
+    background-image: url('./assets/Vector.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
   }
 
   .dsa {
@@ -360,6 +369,10 @@
     justify-content: center;
     flex-direction: row;
     gap: 8px;
+  }
+
+  a {
+    color: #fff;
   }
 
   .aboutText {
