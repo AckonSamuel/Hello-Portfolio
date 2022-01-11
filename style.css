@@ -420,21 +420,106 @@
     flex-direction: column;
     flex-wrap: wrap;
     flex: 1;
-    background: #e5e5e5;
+    background: #f9f9fa;
   }
 
   fieldset {
-    border: 0 0 0;
-    margin: 20px;
+    margin-bottom: 20px;
     background-color: white;
+    border: 1px solid #dfdfe0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #7D7C84;
   }
 
   input {
-    border: 0 0 0;
+    width: 100%;
+    border: 0;
   }
 
   legend {
     background-color: white;
   }
+  .field {
+    background: white;
+  }
+  
+  textarea {
+    width: 100%;
+    font-size: 14px;
+    line-height: 21px;
+    color: #7D7C84;
+    border: 0;
+    min-height: 112px;
+  }
 
+  .footer-items {
+    display: flex;
+    flex-direction: column;
+    background: #1a2236;
+  }
+
+  .resume {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 15px;
+  }
+
+  .resume > div {
+    align-self: center;
+  }
+
+  .social-media {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-left: 0px;
+    padding-bottom: 20px;
+  }
+
+  .resume > p {
+    margin-left: 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 24px;
+    color: #92DCDC;
+  }
+
+  input, textarea:focus {
+    outline: none;
+  }
+
+  .fooc:focus-visible {
+    outline:#1a2236;
+  }
+
+  button {
+    text-align: center;
+    color: white;
+    display: flex;
+    align-self: center;
+    width: 100%;
+    height: 50px;
+    background: #1a2236;
+    margin-bottom: 32px;
+    justify-content: center;
+    flex-direction: column;
+    font-size: large;
+    font-weight: lighter;
+    list-style: normal;
+    line-height: 24px;
+  }
+
+  form {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
