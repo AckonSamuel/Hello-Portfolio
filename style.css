@@ -8,8 +8,9 @@
 
   .images {
     display: flex;
-    justify-content: space-between;
     flex: 1;
+    width: auto;
+    justify-content: space-between;
   }
 
   .image01 {
@@ -122,12 +123,6 @@
   .navItems {
     display: flex;
     justify-content: flex-end;
-  }
-
-  .space {
-    display: flex;
-    justify-content: flex-start;
-    flex: 1;
   }
 
   /* works section */
@@ -526,5 +521,14 @@
 
   .disc {
     list-style-type: disc;
+  }
+
+  .footspace,
+  .space {
+    width: 111px;
+    height: 74.02px;
+    background: url('assets/image_geometry_3.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 }
