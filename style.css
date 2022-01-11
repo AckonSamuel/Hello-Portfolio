@@ -132,12 +132,12 @@
   /* works section */
   .Hallelujah {
     display: grid;
-    grid-template-areas: 'Works' 'About';
+    grid-template-areas: 'Works''About';
   }
 
   .Works {
     display: grid;
-    grid-template-areas: 'Project-name' 'one' 'two' 'three' 'four' 'five' 'six';
+    grid-template-areas: 'Project-name''one''two''three''four''five''six';
   }
 
   .Project-name {
@@ -422,5 +422,19 @@
     flex: 1;
     background: #e5e5e5;
   }
-  
+
+  fieldset {
+    border: 0 0 0;
+    margin: 20px;
+    background-color: white;
+  }
+
+  input {
+    border: 0 0 0;
+  }
+
+  legend {
+    background-color: white;
+  }
+
 }
