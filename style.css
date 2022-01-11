@@ -329,7 +329,7 @@
     padding: 60px;
     margin-right: 20px;
     color: #ffff;
-    background-image: url('./assets/Vector.png');
+    background-image: url('./assets/ic_skills.svg');
     background-repeat: no-repeat;
     background-position: right bottom;
     font-size: 30px;
@@ -402,12 +402,11 @@
     width: auto;
     height: auto;
     align-self: center;
-    border-left: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    border-right: 2px solid #fff;
+    padding-top: 6px;
     padding-left: 3px;
     padding-right: 3px;
     padding-bottom: 4px;
+    justify-self: center;
   }
 
   .arrow_down {
@@ -523,5 +522,9 @@
   form {
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .disc {
+    list-style-type: disc;
   }
 }
