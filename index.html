@@ -223,7 +223,7 @@
         <fieldset>
             <div class="field">
             <legend>Your name</legend>
-            <input type="text" name="username">
+            <input type="text" name="username" maxlength="30" required>
         </div>
         </fieldset>
     </div>
@@ -231,14 +231,14 @@
         <fieldset>
             <div class="field">
             <legend>Your email</legend>
-            <input type="text" name="email">
+            <input type="text" name="email" required>
         </div>
         </fieldset>
     </div>
     <div class="fooc">
         <fieldset>
             <div class="field">
-                <textarea name="comment">Enter your message here... </textarea>
+                <textarea name="comment" maxlength="500" required>Enter your message here... </textarea>
             </div>
         </fieldset>
     </div>
