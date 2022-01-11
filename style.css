@@ -431,7 +431,7 @@
     border-radius: 4px;
     font-size: 14px;
     line-height: 21px;
-    color: #7D7C84;
+    color: #7d7c84;
   }
 
   input {
@@ -442,15 +442,16 @@
   legend {
     background-color: white;
   }
+
   .field {
     background: white;
   }
-  
+
   textarea {
     width: 100%;
     font-size: 14px;
     line-height: 21px;
-    color: #7D7C84;
+    color: #7d7c84;
     border: 0;
     min-height: 112px;
   }
@@ -479,27 +480,26 @@
     flex: 1;
     justify-content: space-evenly;
     list-style-type: none;
-    padding-left: 0px;
     padding-bottom: 20px;
-    margin-left: 0px;
   }
 
   .resume > p {
     margin-left: 20px;
-    font-family: Poppins;
+    font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 27px;
     line-height: 24px;
-    color: #92DCDC;
+    color: #92dcdc;
   }
 
-  input, textarea:focus {
+  input, 
+  textarea:focus {
     outline: none;
   }
 
   .fooc:focus-visible {
-    outline:#1a2236;
+    outline: #1a2236;
   }
 
   button {
@@ -523,17 +523,4 @@
     margin-left: 20px;
     margin-right: 20px;
   }
-  .field {
-    background: white;
-  }
-
-  textarea {
-    width: 100%;
-    font-size: 14px;
-    line-height: 21px;
-    color: #7D7C84;
-    border: 0;
-    min-height: 112px;
-  }
-
 }
