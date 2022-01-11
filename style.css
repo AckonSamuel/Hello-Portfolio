@@ -414,4 +414,11 @@
     height: 100%;
     object-fit: cover;
   }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+  }
 }
