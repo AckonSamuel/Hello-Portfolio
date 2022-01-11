@@ -420,21 +420,40 @@
     flex-direction: column;
     flex-wrap: wrap;
     flex: 1;
-    background: #e5e5e5;
+    background: #f9f9fa;
   }
 
   fieldset {
-    border: 0 0 0;
     margin: 20px;
     background-color: white;
+    border: 1px solid #dfdfe0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #7D7C84;
   }
 
   input {
-    border: 0 0 0;
+    width: 100%;
+    border: 0;
   }
 
   legend {
     background-color: white;
+  }
+
+  .field {
+    background: white;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 14px;
+    line-height: 21px;
+    color: #7D7C84;
+    border: 0;
+    min-height: 112px;
   }
 
 }
