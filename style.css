@@ -640,3 +640,143 @@
     src: local('Playfair Display Regular'), url('assets/fonts/playfair-display-cufonfonts-webfont/PlayfairDisplay-Regular.woff') format('woff');
   }
 }
+
+@media all and (min-width: 1000px) {
+  .block {
+    display: grid;
+    grid-template-areas: 'Header' 'Headline';
+  }
+
+  .first {
+    grid-area: Header;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    box-shadow: 0 0.5px 0 #dddfe6;
+    height: 100px;
+    width: 100%;
+    list-style-type: none;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a:active {
+    text-decoration: underline;
+  }
+
+  .name {
+    width: 484px;
+    height: 220px;
+  }
+
+  .name > h1 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 110px;
+    line-height: 100%;
+    color: #1a2236;
+  }
+
+  .intro {
+    width: 484px;
+    height: 84px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .rectangle {
+    display: flex;
+    align-items: center;
+    width: 254px;
+    height: 70px;
+    background: #1a2236;
+    justify-content: center;
+  }
+
+  .intro > p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #1a2236;
+  }
+
+  .rectangle > div {
+    width: 203.68px;
+    height: 26.47px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .container {
+    background: url('assets/image-geometry_1.png'), url('assets/image_dots.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: 768px 100%, 563px 702px;
+    background-size: 720px 100%, 175px 165px;
+    height: 877px;
+    margin-bottom: 210px;
+  }
+
+  .box,
+  .rectangle {
+    margin-left: 160px;
+  }
+
+  .Works {
+    display: grid;
+    grid-template-areas: 'Project-name''one''two''three''four''five''six';
+    grid-template-columns: 3;
+    
+  }
+
+  .Project-name {
+    grid-area: Project-name;
+    width: auto;
+    height: auto;
+    background: url("assets/image_dots.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+
+  .Project-name > h2 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    height: max-content;
+    width: max-content;
+    font-size: 110px;
+    line-height: 100%;
+    color: #1a2236;
+    transform: rotate(-90deg);
+    margin-left: -20px;
+    margin-bottom: 50px;
+  }
+
+  .one {
+    grid-area: one;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    height: max-content;
+    background-color: #1a2236;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+  }
+
+}
