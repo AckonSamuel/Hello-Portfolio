@@ -144,12 +144,12 @@
 
   .Project-name {
     grid-area: Project-name;
-    font-family: 'Playfair Display Regular' serif;
+    font-family: 'Playfair Display Regular';
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
     line-height: 100%;
-    color: #1A2236;
+    color: #1a2236;
     word-wrap: break-word;
     width: auto;
     height: auto;
@@ -234,7 +234,7 @@
     font-weight: 300;
     font-size: 20px;
     line-height: 80%;
-    color: #FFFFFF;    
+    color: #fff;
   }
 
   .technology {
@@ -290,7 +290,7 @@
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    color: #FFFFFF;
+    color: #fff;
     margin: 10px;
   }
 
@@ -389,7 +389,7 @@
     font-weight: 300;
     font-size: 10.3334px;
     line-height: 80%;
-    color: #1A2236;
+    color: #1a2236;
     text-align: center;
     margin-right: 10px;
     margin-left: 20px;
@@ -426,7 +426,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-    color: #1A2236
+    color: #1a2236;
   }
 
   .aboutWord {
@@ -435,7 +435,7 @@
     font-weight: normal;
     font-size: 50px;
     line-height: 100%;
-    color: #1A2236;
+    color: #1a2236;
   }
 
   .union_1 {
@@ -482,7 +482,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-    color: #1A2236;
+    color: #1a2236;
   }
 
   legend {
@@ -491,7 +491,7 @@
     font-weight: normal;
     font-size: 10px;
     line-height: 15px;
-    color: #7D7C84;
+    color: #7d7c84;
     background-color: white;
   }
 
@@ -570,13 +570,12 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px
+    line-height: 24px;
   }
 
   button > div {
     width: 100%;
     text-align: center;
-
   }
 
   form {
@@ -632,9 +631,8 @@
     font-style: normal;
     font-weight: normal;
     src: local('Poppins Regular'), url('assets/fonts/poppins-cufonfonts-webfont/Poppins-Regular.woff') format('woff');
-    }
+  }
 
-    
   @font-face {
     font-family: 'Playfair Display Regular';
     font-style: normal;
