@@ -537,7 +537,7 @@
   }
 
   .namet {
-    font-family: serif;
+    font-family: 'Playfair Display Regular';
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
@@ -548,7 +548,7 @@
   }
 
   .introt {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Poppins Regular';
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -557,5 +557,20 @@
     color: #1a2236;
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  @font-face {
+    font-family: 'Poppins Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins Regular'), url('Poppins-Regular.woff') format('woff');
+    }
+
+    
+  @font-face {
+    font-family: 'Playfair Display Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Playfair Display Regular'), url('PlayfairDisplay-Regular.woff') format('woff');
   }
 }
