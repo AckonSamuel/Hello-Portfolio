@@ -58,7 +58,7 @@
   .name {
     width: 100%;
     height: auto;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Playfair Display Regular';
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
@@ -563,7 +563,7 @@
     font-family: 'Poppins Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Poppins Regular'), url('Poppins-Regular.woff') format('woff');
+    src: local('Poppins Regular'), url('assets/fonts/poppins-cufonfonts-webfont/Poppins-Regular.woff') format('woff');
     }
 
     
@@ -571,6 +571,6 @@
     font-family: 'Playfair Display Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Playfair Display Regular'), url('PlayfairDisplay-Regular.woff') format('woff');
+    src: local('Playfair Display Regular'), url('assets/fonts/playfair-display-cufonfonts-webfont/PlayfairDisplay-Regular.woff') format('woff');
   }
 }
