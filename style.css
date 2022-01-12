@@ -144,7 +144,7 @@
 
   .Project-name {
     grid-area: Project-name;
-    font-family: 'Playfair Display Regular';
+    font-family: 'Playfair Display Regular' serif;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
