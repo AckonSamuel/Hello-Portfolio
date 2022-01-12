@@ -498,10 +498,10 @@
   }
 
   button {
-    text-align: center;
+    display: flex;
     color: white;
     display: flex;
-    align-self: center;
+    align-content: center;
     width: 100%;
     height: 50px;
     background: #1a2236;
