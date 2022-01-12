@@ -63,7 +63,8 @@
     font-weight: normal;
     font-size: 50px;
     line-height: 80px;
-    color: #1a2236;    letter-spacing: -0.01em;
+    color: #1a2236; 
+    letter-spacing: -0.01em;
   }
 
   .intro {
@@ -78,7 +79,8 @@
     font-size: 20px;
     line-height: 21px;
     letter-spacing: -0.01em;
-    color: #1a2236;  }
+    color: #1a2236;
+  }
 
   .rectangle {
     text-align: center;
@@ -87,7 +89,8 @@
     align-self: center;
     width: 100%;
     height: 50px;
-    background: #1a2236;    margin-bottom: 32px;
+    background: #1a2236; 
+    margin-bottom: 32px;
     justify-content: center;
     flex-direction: column;
   }
@@ -140,7 +143,8 @@
     font-weight: normal;
     font-size: 40px;
     line-height: 100%;
-    color: #1a2236;    word-wrap: break-word;
+    color: #1a2236;
+    word-wrap: break-word;
     width: auto;
     height: auto;
     word-break: break-all;
@@ -151,7 +155,8 @@
     grid-area: one;
     width: 100%;
     height: max-content;
-    background-color: #1a2236;    display: flex;
+    background-color: #1a2236;    
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     flex: 1;
@@ -161,31 +166,36 @@
     grid-area: two;
     width: 100%;
     height: max-content;
-    background-color: #1a2236;  }
+    background-color: #1a2236;
+  }
 
   .three {
     grid-area: three;
     width: 100%;
     height: max-content;
-    background-color: #1a2236;  }
+    background-color: #1a2236;
+  }
 
   .four {
     grid-area: four;
     width: 100%;
     height: max-content;
-    background-color: #1a2236;  }
+    background-color: #1a2236;
+  }
 
   .five {
     grid-area: five;
     width: 100%;
     height: max-content;
-    background-color: #1a2236;  }
+    background-color: #1a2236;
+  }
 
   .six {
     grid-area: six;
     width: 100%;
     height: max-content;
-    background-color: #1a2236;  }
+    background-color: #1a2236;
+  }
 
   .photo {
     width: auto;
@@ -201,7 +211,8 @@
   .summary {
     padding-left: 20px;
     padding-top: 20px;
-    background: #1a2236;    display: flex;
+    background: #1a2236;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -237,7 +248,8 @@
   }
 
   .project-view {
-    background: #1a2236;    display: flex;
+    background: #1a2236;    
+    display: flex;
     flex-direction: row;
     border: 1px solid #fff;
     width: max-content;
@@ -439,7 +451,8 @@
   .footer-items {
     display: flex;
     flex-direction: column;
-    background: #1a2236;  }
+    background: #1a2236;
+  }
 
   .resume {
     display: flex;
@@ -478,7 +491,8 @@
   }
 
   .fooc:focus-visible {
-    outline: #1a2236;  }
+    outline: #1a2236;
+  }
 
   button {
     text-align: center;
@@ -515,13 +529,14 @@
   }
 
   .namet {
-    font: Playfair;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
     line-height: 100%;
     margin-left: 20px;
-    color: #1a2236;    margin-bottom: -40px;
+    color: #1a2236; 
+    margin-bottom: -40px;
   }
 
   .introt {
@@ -531,7 +546,8 @@
     font-size: 16px;
     line-height: 21px;
     letter-spacing: -0.01em;
-    color: #1a2236;    margin-left: 20px;
+    color: #1a2236;   
+    margin-left: 20px;
     margin-right: 20px;
   }
 }
