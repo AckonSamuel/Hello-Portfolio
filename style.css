@@ -74,7 +74,7 @@
     height: auto;
     margin-bottom: 30px;
     justify-self: center;
-    font-family: 'Poppins Regular';
+    font-family: poppins, sans serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -94,7 +94,7 @@
     margin-bottom: 32px;
     justify-content: center;
     flex-direction: column;
-    font-family: 'Poppins Regular';
+    font-family: poppins, sans serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -229,7 +229,7 @@
     width: auto;
     height: auto;
     flex-grow: 1;
-    font-family: 'Poppins Regular';
+    font-family: poppins, sans serif;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -284,7 +284,7 @@
   }
 
   .word {
-    font-family: 'Poppins Regular';
+    font-family: poppins, sans serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -351,7 +351,7 @@
   .lang > h4,
   .skills > h4,
   .Frameworks > h4 {
-    font-family: 'Poppins Regular';
+    font-family: poppins, sans serif;
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
@@ -384,7 +384,7 @@
 
   .maybe {
     list-style-type: none;
-    font-family: 'Poppins Regular';
+    font-family: poppins, sans serif;
     font-style: normal;
     font-weight: 300;
     font-size: 10.3334px;
@@ -408,7 +408,7 @@
     justify-content: center;
     flex-direction: row;
     gap: 8px;
-    font-family: 'Poppins Regular';
+    font-family: poppins, sans serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -421,7 +421,7 @@
   }
 
   .aboutText {
-    font-family: 'Poppins Regular';
+    font-family: poppins, sans serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -477,7 +477,7 @@
   input {
     width: 100%;
     border: 0;
-    font-family: 'Poppins Regular';
+    font-family: poppins, sans serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -486,7 +486,7 @@
   }
 
   legend {
-    font-family: 'Poppins Regular';
+    font-family: poppins, sans serif;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
@@ -506,7 +506,7 @@
     color: #1a2236;
     border: 0;
     min-height: 112px;
-    font-family: 'Poppins Regular';
+    font-family: poppins, sans serif;
   }
 
   .footer-items {
@@ -539,7 +539,7 @@
 
   .resume > p {
     margin-left: -20px;
-    font-family: 'Poppins Regular';
+    font-family: poppins, sans serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -566,7 +566,7 @@
     margin-bottom: 32px;
     justify-content: center;
     flex-direction: column;
-    font-family: 'Poppins Regular';
+    font-family: poppins, sans serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -585,7 +585,7 @@
 
   .disc {
     list-style-type: disc;
-    font-family: 'Poppins Regular';
+    font-family: poppins, sans serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -615,7 +615,7 @@
   }
 
   .introt {
-    font-family: 'Poppins Regular';
+    font-family: poppins, sans serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -627,7 +627,7 @@
   }
 
   @font-face {
-    font-family: 'Poppins Regular';
+    font-family: poppins, sans serif;
     font-style: normal;
     font-weight: normal;
     src: local('Poppins Regular'), url('assets/fonts/poppins-cufonfonts-webfont/Poppins-Regular.woff') format('woff');
@@ -739,9 +739,8 @@
 
   .Works {
     display: grid;
-    grid-template-areas: 'Project-name''one''two''three''four''five''six';
-    grid-template-columns: 3;
-    
+    grid-template-areas: 'Project-name''one''two''three''four''five''six' 'Extra';
+    grid-template-columns: 4;
   }
 
   .Project-name {
@@ -779,4 +778,154 @@
     flex: 1;
   }
 
+  .summary {
+    padding-left: 20px;
+    padding-top: 20px;
+    background: #1a2236;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .nameP {
+    word-wrap: break-word;
+    width: auto;
+    height: auto;
+    flex-grow: 1;
+    font-family: poppins, sans serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 80%;
+    color: #fff;
+  }
+
+  .two {
+    grid-area: two;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: max-content;
+    background-color: #1a2236;
+  }
+
+
+
+  .three {
+    grid-area: three;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    width: 100%;
+    height: max-content;
+    background-color: #1a2236;
+  }
+
+  .four {
+    grid-area: four;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    width: 100%;
+    height: max-content;
+    background-color: #1a2236;
+  }
+
+  .five {
+    grid-area: five;
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    width: 100%;
+    height: max-content;
+    background-color: #1a2236;
+  }
+
+  .six {
+    grid-area: six;
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+    width: 100%;
+    height: max-content;
+    background-color: #1a2236;
+  }
+
+  .photo {
+    width: 465px;
+    height: 270px;
+  }
+
+  .work_one {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .nameP {
+    word-wrap: break-word;
+    width: auto;
+    height: auto;
+    flex-grow: 1;
+    font-family: poppins, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 80%;
+    color: #fff;
+  }
+
+  .technology {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .tech1 {
+    background: #98dede;
+    padding-right: 10px;
+  }
+
+  .project-view {
+    background: #1a2236;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #fff;
+    width: max-content;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 100%;
+    line-height: 100%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 15px;
+    margin-top: -24px;
+  }
+
+  .union {
+    width: auto;
+    height: auto;
+    align-self: center;
+  }
+
+  .arrow {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .word {
+    font-family: poppins, sans serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    margin: 10px;
+  }
 }
