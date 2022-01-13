@@ -919,7 +919,60 @@
     height: 270px
   }
 
+  .About {
+    display: grid;
+    grid-template-areas: 'dsa Portion';
+    border: 2px solid #1a2236;
+    height: 568px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+ 
+  .dsa {
+    grid-area: dsa;
+    display: grid;
+    grid-template-areas: 'lang framework' 'skills .';
+    grid-template-columns: repeat(2, 289px);
+    grid-template-rows: repeat(2, 289px);
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+    border: 2px solid #e2505c
+  }
+
+
+
+  .portion {
+    grid-area: Portion;
+    grid-column: 2 / 3;
+    grid-row: 1 /s;
+    border: 2px solid #e2505c
+  }
   
+  .lang {
+    grid-area: lang;
+    grid-column: 1 / 2;
+    background: #1C528A;
+    height: 289px;
+  }
+
+  .Frameworks {
+    grid-area: framework;
+    grid-column: 1 / 2;
+    background: #E2505C;
+    height: 289px;
+  }
+
+  .skills {
+    grid-area: skills;
+    grid-column: 1 / 2;
+    background: #FEBF52;
+    height: 289px;
+  }
+
+  .yeah {
+
+  }
+
 /*
   .three {
     grid-area: three;
