@@ -1,9 +1,13 @@
-@media all and (max-width: 1000px) {
+@media all and (max-width: 500px) {
   .container {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     justify-content: space-between;
+  }
+
+  .first {
+    display: none;
   }
 
   .images {
@@ -640,5 +644,155 @@
     font-style: normal;
     font-weight: normal;
     src: local('Playfair Display Regular'), url('assets/fonts/playfair-display-cufonfonts-webfont/PlayfairDisplay-Regular.woff') format('woff');
+  }
+}
+
+@media all and  (min-width: 992px) {
+  .amen {
+    display: grid;
+    grid-template-areas: 'navItems' 'container';
+    width: 100%;
+  }
+
+  .images {
+    display: none;
+  }
+
+  .navItems {
+    grid-area: navItems;
+    grid-row: 1 /2;
+    height:100px;
+    border: solid #1a2236;
+  }
+
+  .container {
+    grid-area: 'container';
+    grid-row: 2 / 3;
+    border: solid #1a2236;
+    height: 877px;
+  }
+
+  .first {
+    grid-area: navItems;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    box-shadow: 0 0.5px 0 #dddfe6;
+    height: 100px;
+    width: 100%;
+    list-style-type: none;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: -2px;
+    color: #1a2236;
+  }
+
+  a {
+    color: #1a2236;
+  }
+
+  a:link {
+    text-decoration: none;
+    color: #1a2236;
+  }
+
+  a:active {
+    text-decoration: underline;
+    color: #1a2236;
+  }
+
+  .name {
+    width: 484px;
+    height: 220px;
+  }
+
+  .name > h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 110px;
+    line-height: 100%;
+    color: #1a2236;
+  }
+
+  .intro {
+    width: 484px;
+    height: 84px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .rectangle {
+    display: flex;
+    align-items: center;
+    width: 254px;
+    height: 70px;
+    background: #1a2236;
+    justify-content: center;
+  }
+
+  .intro > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #1a2236;
+  }
+
+  button > div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .rectangle > div {
+    width: 203.68px;
+    height: 26.47px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .container {
+    grid-area: container;
+    display: grid;
+    grid-row: 2/3;
+    grid-template-areas: 'Child_container Designs';
+    grid-template-columns: repeat(2, 1fr);
+    height: 877px;
+    margin-bottom: 210px;
+    margin-left: 0;
+    margin-right: -50px;
+  }
+
+  .designs {
+    grid-area: Designs;
+    grid-column: 2/3;
+    background: url('assets/image-geometry_1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+  }
+
+  .child_container {
+    grid-area: Child_container;
+    grid-column: 1/2;
+    background-image: url('assets/image_dots.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  .box,
+  .rectangle {
+    margin-left: 160px;
   }
 }
