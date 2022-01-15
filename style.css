@@ -647,17 +647,6 @@
     display: none;
   }
 
-  /* .nav-items {
-    grid-area: "nav-items";
-    grid-row: 1 /2;
-  }
-
-  .container {
-    grid-area: "container";
-    grid-row: 2 / 3;
-
-  } */
-
   .first {
     grid-area: navItems;
     grid-row: 1/2;
@@ -749,8 +738,6 @@
     width: 100%;
     text-align: center;
   }
-
-
 
   .rectangle > div {
     width: 203.68px;
@@ -1032,8 +1019,6 @@
     background: #1a2236;
     height: 216px;
     padding-left: 40px;
-
-    /* padding-bottom: 25px; */
   }
 
   .man h6 {
