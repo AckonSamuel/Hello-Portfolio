@@ -52,7 +52,7 @@
     height: 14px;
   }
 
-  .ic_menu {
+  .ic-menu {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -66,7 +66,7 @@
   .name {
     width: 100%;
     height: auto;
-    font-family: 'Playfair Display Regular';
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
@@ -82,7 +82,7 @@
     height: auto;
     margin-bottom: 30px;
     justify-self: center;
-    font-family: 'Poppins Regular';
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -102,7 +102,7 @@
     margin-bottom: 32px;
     justify-content: center;
     flex-direction: column;
-    font-family: 'Poppins Regular';
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -129,35 +129,34 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    flex-wrap: wrap;
     flex: 1;
     height: max-content;
   }
 
-  .navItems {
+  .nav-items {
     display: flex;
     justify-content: flex-end;
   }
 
   /* works section */
-  .Hallelujah {
+  .hallelujah {
     display: grid;
-    grid-template-areas: 'Works''About';
+    grid-template-areas: "Works""About";
   }
 
-  .Works {
+  .works {
     display: grid;
-    grid-template-areas: 'Project-name''one''two''three''four''five''six';
+    grid-template-areas: "Project-name""one""two""three""four""five""six";
   }
 
-  .Project-name {
+  .project-name {
     grid-area: Project-name;
-    font-family: 'Playfair Display Regular' serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
     line-height: 100%;
-    color: #1A2236;
+    color: #1a2236;
     word-wrap: break-word;
     width: auto;
     height: auto;
@@ -216,7 +215,7 @@
     height: auto;
   }
 
-  .work_one {
+  .work-one {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -228,21 +227,20 @@
     background: #1a2236;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: flex-start;
   }
 
-  .nameP {
+  .namep {
     word-wrap: break-word;
     width: auto;
     height: auto;
     flex-grow: 1;
-    font-family: 'Poppins Regular';
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 80%;
-    color: #FFFFFF;    
+    color: #fff;
   }
 
   .technology {
@@ -268,7 +266,7 @@
     width: max-content;
     margin-bottom: 20px;
     border-radius: 4px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 100%;
@@ -292,17 +290,17 @@
   }
 
   .word {
-    font-family: 'Poppins Regular';
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    color: #FFFFFF;
+    color: #fff;
     margin: 10px;
   }
 
-  .About {
+  .about {
     grid-area: About;
     width: 100%;
     height: max-content;
@@ -311,29 +309,23 @@
   .lang {
     grid-area: lang;
     background: #1c528a;
-    padding-top: 50px;
-    padding-right: 60px;
-    padding-left: 50px;
-    padding-bottom: 100px;
+    padding: 50px 60px 100px 50px;
     margin-right: -20px;
     color: #fff;
-    background-image: url('./assets/hash_tag.png');
+    background-image: url("./assets/hash_tag.png");
     background-repeat: no-repeat;
     background-position: right bottom;
     font-size: 30px;
     margin-left: -20px;
   }
 
-  .Frameworks {
+  .frameworks {
     grid-area: frameworks;
     background-color: #e2505c;
-    padding-top: 50px;
-    padding-right: 60px;
-    padding-left: 50px;
-    padding-bottom: 100px;
+    padding: 50px 60px 100px 50px;
     margin-right: -20px;
     color: #fff;
-    background-image: url('./assets/Rectanglepp.png');
+    background-image: url("./assets/Rectanglepp.png");
     background-repeat: no-repeat;
     background-position: right bottom;
     font-size: 30px;
@@ -343,13 +335,10 @@
   .skills {
     grid-area: skills;
     background: #febf52;
-    padding-top: 50px;
-    padding-right: 60px;
-    padding-left: 50px;
-    padding-bottom: 100px;
+    padding: 50px 60px 100px 50px;
     margin-right: -20px;
     color: #ffff;
-    background-image: url('./assets/ic_skills.svg');
+    background-image: url("./assets/ic_skills.svg");
     background-repeat: no-repeat;
     background-position: right bottom;
     font-size: 30px;
@@ -358,8 +347,8 @@
 
   .lang > h4,
   .skills > h4,
-  .Frameworks > h4 {
-    font-family: 'Poppins Regular';
+  .frameworks > h4 {
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
@@ -370,9 +359,9 @@
     list-style-type: none;
     display: grid;
     grid-template-areas:
-      'lang'
-      'frameworks'
-      'skills';
+      "lang"
+      "frameworks"
+      "skills";
     gap: 10px;
     padding: 30px;
   }
@@ -381,8 +370,7 @@
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    flex-wrap: wrap;
-    padding-left: 0.000000001px;
+    padding-left: 0.0001px;
     margin-top: -30px;
     margin-right: 20px;
     width: auto;
@@ -392,18 +380,18 @@
 
   .maybe {
     list-style-type: none;
-    font-family: 'Poppins Regular';
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 300;
     font-size: 10.3334px;
     line-height: 80%;
-    color: #1A2236;
+    color: #1a2236;
     text-align: center;
     margin-right: 10px;
     margin-left: 20px;
   }
 
-  .cvBox {
+  .cvbox {
     text-align: center;
     color: white;
     display: flex;
@@ -416,7 +404,7 @@
     justify-content: center;
     flex-direction: row;
     gap: 8px;
-    font-family: 'Poppins Regular';
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -428,37 +416,34 @@
     text-decoration: none;
   }
 
-  .aboutText {
-    font-family: 'Poppins Regular';
+  .abouttext {
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-    color: #1A2236
+    color: #1a2236;
   }
 
-  .aboutWord {
-    font-family: 'Playfair Display Regular';
+  .aboutword {
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
     line-height: 100%;
-    color: #1A2236;
+    color: #1a2236;
   }
 
-  .union_1 {
+  .union-1 {
     width: auto;
     height: auto;
     align-self: center;
-    padding-top: 6px;
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-bottom: 4px;
+    padding: 6px 3px 4px;
     justify-self: center;
     margin-top: 9px;
   }
 
-  .arrow_down {
+  .arrow-down {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -467,7 +452,6 @@
   footer {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     flex: 1;
     background: #f9f9fa;
   }
@@ -485,21 +469,21 @@
   input {
     width: 100%;
     border: 0;
-    font-family: 'Poppins Regular';
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-    color: #1A2236;
+    color: #1a2236;
   }
 
   legend {
-    font-family: 'Poppins Regular';
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
     line-height: 15px;
-    color: #7D7C84;
+    color: #7d7c84;
     background-color: white;
   }
 
@@ -514,7 +498,7 @@
     color: #1a2236;
     border: 0;
     min-height: 112px;
-    font-family: 'Poppins Regular';
+    font-family: Georgia, "Times New Roman", Times, serif;
   }
 
   .footer-items {
@@ -529,6 +513,11 @@
     flex-direction: row;
     justify-content: flex-start;
     margin-left: 50px;
+  }
+
+  button > div {
+    width: 100%;
+    text-align: center;
   }
 
   .resume > div {
@@ -547,7 +536,7 @@
 
   .resume > p {
     margin-left: -20px;
-    font-family: 'Poppins Regular';
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -567,24 +556,17 @@
   button {
     display: flex;
     color: white;
-    display: flex;
     width: 100%;
     height: 50px;
     background: #1a2236;
     margin-bottom: 32px;
     justify-content: center;
     flex-direction: column;
-    font-family: 'Poppins Regular';
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px
-  }
-
-  button > div {
-    width: 100%;
-    text-align: center;
-
+    line-height: 24px;
   }
 
   form {
@@ -594,12 +576,12 @@
 
   .disc {
     list-style-type: disc;
-    font-family: 'Poppins Regular';
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
-    letter-spacing: -0.00001em;
+    letter-spacing: -0.0001em;
     margin-left: -20px;
   }
 
@@ -607,13 +589,13 @@
   .space {
     width: 111px;
     height: 74.02px;
-    background: url('assets/image_geometry_3.png');
+    background: url("assets/image_geometry_3.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
   .namet {
-    font-family: 'Playfair Display Regular';
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
@@ -624,7 +606,7 @@
   }
 
   .introt {
-    font-family: 'Poppins Regular';
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -634,27 +616,12 @@
     margin-left: 20px;
     margin-right: 20px;
   }
-
-  @font-face {
-    font-family: 'Poppins Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Poppins Regular'), url('assets/fonts/poppins-cufonfonts-webfont/Poppins-Regular.woff') format('woff');
-    }
-
-    
-  @font-face {
-    font-family: 'Playfair Display Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Playfair Display Regular'), url('assets/fonts/playfair-display-cufonfonts-webfont/PlayfairDisplay-Regular.woff') format('woff');
-  }
 }
 
 @media all and  (min-width: 992px) {
   .amen {
     display: grid;
-    grid-template-areas: 'navItems' 'container';
+    grid-template-areas: "nav-items" "container";
     width: 100%;
   }
 
@@ -662,18 +629,16 @@
     display: none;
   }
 
-  .navItems {
-    grid-area: navItems;
+  /* .nav-items {
+    grid-area: "nav-items";
     grid-row: 1 /2;
-    
   }
 
   .container {
-    grid-area: 'container';
+    grid-area: "container";
     grid-row: 2 / 3;
-    
-    height: 877px;
-  }
+
+  } */
 
   .first {
     grid-area: navItems;
@@ -681,7 +646,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
     flex-grow: 1;
     box-shadow: 0 0.5px 0 #dddfe6;
     height: 100px;
@@ -714,7 +678,7 @@
   }
 
   .name > h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 110px;
@@ -756,7 +720,7 @@
   .rectangle > div {
     width: 203.68px;
     height: 26.47px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -769,7 +733,7 @@
     grid-area: container;
     display: grid;
     grid-row: 2/3;
-    grid-template-areas: 'Child_container Designs';
+    grid-template-areas: "Child_container Designs";
     grid-template-columns: repeat(2, 1fr);
     height: 877px;
     margin-bottom: 210px;
@@ -780,7 +744,7 @@
   .designs {
     grid-area: Designs;
     grid-column: 2/3;
-    background: url('assets/image-geometry_1.png');
+    background: url("assets/image-geometry_1.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center center;
@@ -790,10 +754,10 @@
     display: none;
   }
 
-  .child_container {
+  .child-container {
     grid-area: Child_container;
     grid-column: 1/2;
-    background-image: url('assets/image_dots.png');
+    background-image: url("assets/image_dots.png");
     background-repeat: no-repeat;
     background-position: bottom right;
   }
@@ -803,9 +767,9 @@
     margin-left: 60px;
   }
 
-  .Works {
+  .works {
     display: grid;
-    grid-template-areas: 'Project-name one';
+    grid-template-areas: "Project-name one";
     grid-template-columns: 480px auto;
   }
 
@@ -813,8 +777,7 @@
     display: none;
   }
 
-
-  .Project-name {
+  .project-name {
     grid-area: Project-name;
     grid-column: 1/2;
     width: 480px;
@@ -824,9 +787,9 @@
     background-repeat: no-repeat;
   }
 
-  .Project-name > h2 {
+  .project-name > h2 {
     margin-top: 180px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 110px;
@@ -838,12 +801,11 @@
   .one {
     grid-area: one;
     grid-column: 2 / 3;
-    background: url('assets/Desktop/Rectangle_21.png');
+    background: url("assets/Desktop/Rectangle_21.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     display: flex;
-    
     flex-direction: column-reverse;
   }
 
@@ -853,7 +815,6 @@
     background: #1a2236;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
   }
 
   .namedesk {
@@ -861,7 +822,7 @@
     width: auto;
     height: auto;
     flex-grow: 1;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -897,7 +858,7 @@
     width: max-content;
     margin-bottom: 20px;
     border-radius: 4px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 100%;
@@ -917,7 +878,7 @@
     width: max-content;
     margin-bottom: 20px;
     border-radius: 4px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 100%;
@@ -928,8 +889,6 @@
     margin-top: -24px;
   }
 
-
-
   .uniondesk {
     width: auto;
     height: auto;
@@ -938,7 +897,6 @@
 
   .arrowdesk {
     filter: brightness(0%);
-    -webkit-filter: brightness(0%);
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -946,14 +904,13 @@
 
   .arrowdesk:hover {
     filter: none;
-    -webkit-filter: none;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
   .worddesk {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -964,7 +921,7 @@
   }
 
   .worddesk:hover {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -974,14 +931,11 @@
     margin: 10px;
   }
 
-
-
   .hellodesk {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    flex-wrap: wrap;
-    padding-left: 0.000000001px;
+    padding-left: 0.0001px;
     margin-top: -30px;
     margin-right: 20px;
     width: auto;
@@ -993,17 +947,17 @@
     display: grid;
     grid-column: 1 / 3;
     grid-template-areas:
-      'helloman helloman helloman helloman middleman middleman middleman middleman middleman middleman middle rightman'
-      'leftdown leftdown leftdown leftdown leftdown leftdown leftdown leftdown . . . rightdown'
-      '. . . . . . . cornerback cornerback cornerback cornerback cornerback'
-      'lastkiller lastkiller lastkiller lastkiller lastkiller lastkiller lastkiller blowman blowman blowman blowman blowman';
+      "helloman helloman helloman helloman middleman middleman middleman middleman middleman middleman middle rightman"
+      "leftdown leftdown leftdown leftdown leftdown leftdown leftdown leftdown . . . rightdown"
+      ". . . . . . . cornerback cornerback cornerback cornerback cornerback"
+      "lk lk lk lk lk lk lk blowman blowman blowman blowman blowman";
   }
 
   .left {
     grid-area: helloman;
     grid-column: 1 / 5;
     height: 270px;
-    background: url('assets/Desktop/Rectangle_46.png');
+    background: url("assets/Desktop/Rectangle_46.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center center;
@@ -1014,7 +968,7 @@
     grid-area: middleman;
     grid-column: 5 / 12;
     height: 350px;
-    background: url('assets/Desktop/image-geometry_2.png');
+    background: url("assets/Desktop/image-geometry_2.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center center;
@@ -1024,7 +978,7 @@
     grid-area: rightman;
     grid-column: 12 / 13;
     height: 270px;
-    background: url('assets/Desktop/Rectangle_25.png');
+    background: url("assets/Desktop/Rectangle_25.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center center;
@@ -1041,7 +995,7 @@
   }
 
   .man h6 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -1071,7 +1025,7 @@
     grid-column: 12 / 13;
     margin-top: -80px;
     height: 270px;
-    background: url('assets/Desktop/Rectangle_26.png');
+    background: url("assets/Desktop/Rectangle_26.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center center;
@@ -1081,7 +1035,7 @@
     grid-area: leftdown;
     grid-column: 1 / 10;
     height: 465px;
-    background: url('assets/Desktop/Rectangle_27.png');
+    background: url("assets/Desktop/Rectangle_27.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center center;
@@ -1092,16 +1046,16 @@
     grid-column: 10 / 13;
     margin-top: -275.42px;
     height: 275.42px;
-    background: url('assets/Desktop/image-geometry_3.png');
+    background: url("assets/Desktop/image-geometry_3.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center center;
   }
 
-  .lastkiller {
-    grid-area: lastkiller;
+  .lk {
+    grid-area: lk;
     grid-column: 1 / 10;
-    background: url('assets/Desktop/image-geometry_5.png'), url('assets/Desktop/image-geometry_4.png');
+    background: url("assets/Desktop/image-geometry_5.png"), url("assets/Desktop/image-geometry_4.png");
     background-repeat: no-repeat, no-repeat;
     background-size: auto, auto;
     background-position: top left, top right;
@@ -1111,29 +1065,28 @@
   .blowman {
     grid-area: blowman;
     grid-column: 10 / 13;
-    background: url('assets/Desktop/Rectangle_47.png');
+    background: url("assets/Desktop/Rectangle_47.png");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: top left;
     height: 270px;
   }
 
-  .About {
+  .about {
     display: grid;
-    grid-template-areas: 'dsa Portion';
+    grid-template-areas: "dsa Portion";
     height: auto;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 216px;
     width: 100%;
-    gap: 5%
+    gap: 5%;
   }
 
   .dsa {
     grid-area: dsa;
     display: grid;
-    grid-template-areas: 'lang framework' 'skills yeah';
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template: repeat(2, auto) / repeat(2, 1fr);
+    grid-template-areas: "lang framework" "skills yeah";
     grid-column: 1 / 2;
     grid-row: 1/2;
     list-style-type: none;
@@ -1154,12 +1107,12 @@
     padding-right: 16px;
     padding-left: 16px;
     color: #fff;
-    background-image: url('./assets/hash_tag.png');
+    background-image: url("./assets/hash_tag.png");
     background-repeat: no-repeat;
     background-position: right bottom;
   }
 
-  .Frameworks {
+  .frameworks {
     grid-area: framework;
     grid-column: 1 / 2;
     background: #e2505c;
@@ -1168,7 +1121,7 @@
     padding-right: 16px;
     padding-left: 16px;
     color: #fff;
-    background-image: url('./assets/Rectanglepp.png');
+    background-image: url("./assets/Rectanglepp.png");
     background-repeat: no-repeat;
     background-position: right bottom;
   }
@@ -1182,26 +1135,26 @@
     padding-right: 16px;
     padding-left: 16px;
     color: #ffff;
-    background-image: url('./assets/ic_skills.svg');
+    background-image: url("./assets/ic_skills.svg");
     background-repeat: no-repeat;
     background-position: right bottom;
   }
 
   .disc {
     list-style-type: disc;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
-    letter-spacing: -0.00001em;
+    letter-spacing: -0.0001em;
     margin-left: -20px;
   }
 
   .lang > h4,
   .skills > h4,
-  .Frameworks > h4 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  .frameworks > h4 {
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
@@ -1213,14 +1166,14 @@
     grid-area: yeah;
     grid-column: 2 /3;
     grid-row: 2/3;
-    background-image: url('assets/Desktop/image_dots_with_teal.png');
+    background-image: url("assets/Desktop/image_dots_with_teal.png");
     background-repeat: no-repeat;
     background-position: right bottom;
     padding-right: 60px;
     padding-left: 50px;
   }
 
-  .cvBox {
+  .cvbox {
     text-align: center;
     color: white;
     display: flex;
@@ -1231,7 +1184,7 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -1239,13 +1192,13 @@
     margin-top: 30px;
   }
 
-  .cvBox a {
+  .cvbox a {
     color: white;
     text-decoration: none;
   }
 
-  .aboutText {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  .abouttext {
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -1255,8 +1208,8 @@
     height: 84px;
   }
 
-  .aboutWord {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  .aboutword {
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 110px;
@@ -1264,7 +1217,7 @@
     color: #1a2236;
   }
 
-  .union_1 {
+  .union-1 {
     width: auto;
     height: auto;
     align-self: center;
@@ -1275,7 +1228,7 @@
     margin-top: 9px;
   }
 
-  .arrow_down {
+  .arrow-down {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1286,7 +1239,7 @@
     flex-direction: column;
     flex: 1;
     background: #f9f9fa;
-    background-image: url('assets/Desktop/image-geometry_6.png'), url('assets/Desktop/image-geometry_7.png');
+    background-image: url("assets/Desktop/image-geometry_6.png"), url("assets/Desktop/image-geometry_7.png");
     background-repeat: no-repeat, no-repeat;
     background-position: top left, right 650px;
     height: 1000px;
@@ -1298,9 +1251,9 @@
   form {
     display: grid;
     grid-template-areas:
-      'name name name email email email'
-      'textmessage textmessage textmessage textmessage textmessage textmessage'
-      '. . collabo collabo . .';
+      "name name name email email email"
+      "textmessage textmessage textmessage textmessage textmessage textmessage"
+      ". . collabo collabo . .";
     align-self: center;
     width: 815px;
     gap: 20px;
@@ -1341,7 +1294,7 @@
   input {
     width: 100%;
     height: 60px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -1355,7 +1308,7 @@
   }
 
   legend {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -1374,7 +1327,7 @@
     line-height: 21px;
     color: #1a2236;
     min-height: 112px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     border: 1px solid #dfdfe0;
     box-sizing: border-box;
     border-radius: 4px;
@@ -1410,7 +1363,7 @@
   }
 
   .resume > p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -1442,25 +1395,24 @@
     margin-bottom: 32px;
     justify-content: center;
     flex-direction: column;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
   }
 
-
   .footspace,
   .space {
     width: 111px;
     height: 74.02px;
-    background: url('assets/image_geometry_3.png');
+    background: url("assets/image_geometry_3.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
   .namet {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 110px;
@@ -1472,7 +1424,7 @@
   }
 
   .introt {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
