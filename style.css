@@ -1,4 +1,4 @@
-@media all and (max-width: 500px) {
+@media all and (max-width: 992px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -99,6 +99,24 @@
     width: 100%;
     height: 50px;
     background: #1a2236;
+    margin-bottom: 32px;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .rectangle:hover {
+    text-align: center;
+    color: #1a2236;
+    display: flex;
+    align-self: center;
+    width: 100%;
+    height: 50px;
+    background: white;
     margin-bottom: 32px;
     justify-content: center;
     flex-direction: column;
@@ -702,6 +720,21 @@
     justify-content: center;
   }
 
+  .box,
+  .rectangle {
+    margin-left: 60px;
+  }
+
+  .rectangle:hover {
+    display: flex;
+    align-items: center;
+    width: 254px;
+    height: 70px;
+    background: white;
+    justify-content: center;
+    border: solid #1a2236;
+  }
+
   .intro > p {
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -717,6 +750,8 @@
     text-align: center;
   }
 
+
+
   .rectangle > div {
     width: 203.68px;
     height: 26.47px;
@@ -727,6 +762,18 @@
     line-height: 27px;
     text-align: center;
     color: #fff;
+  }
+
+  .rectangle:hover > div {
+    width: 203.68px;
+    height: 26.47px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #1a2236;
   }
 
   .container {
@@ -760,11 +807,6 @@
     background-image: url("assets/image_dots.png");
     background-repeat: no-repeat;
     background-position: bottom right;
-  }
-
-  .box,
-  .rectangle {
-    margin-left: 60px;
   }
 
   .works {
@@ -1402,41 +1444,59 @@
     line-height: 24px;
   }
 
-  .footspace,
-  .space {
-    width: 111px;
-    height: 74.02px;
-    background: url("assets/image_geometry_3.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-
-  .namet {
+  button:hover {
+    display: flex;
+    color: #1a2236;
+    width: 254px;
+    height: 70px;
+    background: white;
+    margin-bottom: 32px;
+    justify-content: center;
+    flex-direction: column;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
-    font-weight: normal;
-    font-size: 110px;
-    line-height: 100%;
-    margin-left: 20px;
-    color: #1a2236;
-    margin-bottom: -40px;
-    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border: solid #1a2236;
   }
+}
 
-  .introt {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 21px;
-    line-height: 21px;
-    letter-spacing: -0.01em;
-    color: #1a2236;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
-    width: 815px;
-    height: auto;
-    align-self: center;
-    margin-bottom: 80px;
-  }
+.footspace,
+.space {
+  width: 111px;
+  height: 74.02px;
+  background: url("assets/image_geometry_3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.namet {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 110px;
+  line-height: 100%;
+  margin-left: 20px;
+  color: #1a2236;
+  margin-bottom: -40px;
+  text-align: center;
+}
+
+.introt {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  width: 815px;
+  height: auto;
+  align-self: center;
+  margin-bottom: 80px;
+}
 }
