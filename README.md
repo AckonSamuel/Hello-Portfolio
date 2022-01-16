@@ -6,9 +6,9 @@ Built With
     HTML
     CSS
 
-##Authors
+## Author
 
-👤 **Ukwishaka Levy**
+👤 **Ackon Samuel**
 
     GitHub: @AckonSamuel
     Twitter: @AckonSamuel2
