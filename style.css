@@ -8,8 +8,9 @@
 
   .images {
     display: flex;
-    justify-content: space-between;
     flex: 1;
+    width: auto;
+    justify-content: space-between;
   }
 
   .image01 {
@@ -57,12 +58,14 @@
   .name {
     width: 100%;
     height: auto;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Playfair Display Regular';
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
-    line-height: 100%;
+    line-height: 80px;
     color: #1a2236;
+    letter-spacing: -0.01em;
+    margin-bottom: -20px;
   }
 
   .intro {
@@ -71,10 +74,10 @@
     height: auto;
     margin-bottom: 30px;
     justify-self: center;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-family: 'Poppins Regular';
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 21px;
     letter-spacing: -0.01em;
     color: #1a2236;
@@ -91,6 +94,11 @@
     margin-bottom: 32px;
     justify-content: center;
     flex-direction: column;
+    font-family: 'Poppins Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
   }
 
   .designs {
@@ -123,31 +131,25 @@
     justify-content: flex-end;
   }
 
-  .space {
-    display: flex;
-    justify-content: flex-start;
-    flex: 1;
-  }
-
   /* works section */
   .Hallelujah {
     display: grid;
-    grid-template-areas: 'Works' 'About';
+    grid-template-areas: 'Works''About';
   }
 
   .Works {
     display: grid;
-    grid-template-areas: 'Project-name' 'one' 'two' 'three' 'four' 'five' 'six';
+    grid-template-areas: 'Project-name''one''two''three''four''five''six';
   }
 
   .Project-name {
     grid-area: Project-name;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Playfair Display Regular' serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 50px;
     line-height: 100%;
-    color: #1a2236;
+    color: #1A2236;
     word-wrap: break-word;
     width: auto;
     height: auto;
@@ -227,12 +229,12 @@
     width: auto;
     height: auto;
     flex-grow: 1;
-    color: #fff;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-family: 'Poppins Regular';
     font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
+    font-weight: 300;
+    font-size: 20px;
     line-height: 80%;
+    color: #FFFFFF;    
   }
 
   .technology {
@@ -247,7 +249,6 @@
 
   .tech1 {
     background: #98dede;
-    padding-left: 10px;
     padding-right: 10px;
   }
 
@@ -267,6 +268,7 @@
     text-align: center;
     padding-left: 10px;
     padding-right: 15px;
+    margin-top: -24px;
   }
 
   .union {
@@ -282,13 +284,13 @@
   }
 
   .word {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Poppins Regular';
     font-style: normal;
     font-weight: 500;
-    font-size: 100%;
-    line-height: 100%;
+    font-size: 16px;
+    line-height: 24px;
     text-align: center;
-    color: #fff;
+    color: #FFFFFF;
     margin: 10px;
   }
 
@@ -301,37 +303,59 @@
   .lang {
     grid-area: lang;
     background: #1c528a;
-    padding: 60px;
-    margin-right: 20px;
+    padding-top: 50px;
+    padding-right: 60px;
+    padding-left: 50px;
+    padding-bottom: 100px;
+    margin-right: -20px;
     color: #fff;
     background-image: url('./assets/hash_tag.png');
     background-repeat: no-repeat;
     background-position: right bottom;
     font-size: 30px;
+    margin-left: -20px;
   }
 
   .Frameworks {
     grid-area: frameworks;
     background-color: #e2505c;
-    padding: 60px;
-    margin-right: 20px;
+    padding-top: 50px;
+    padding-right: 60px;
+    padding-left: 50px;
+    padding-bottom: 100px;
+    margin-right: -20px;
     color: #fff;
     background-image: url('./assets/Rectanglepp.png');
     background-repeat: no-repeat;
     background-position: right bottom;
     font-size: 30px;
+    margin-left: -20px;
   }
 
   .skills {
     grid-area: skills;
     background: #febf52;
-    padding: 60px;
-    margin-right: 20px;
+    padding-top: 50px;
+    padding-right: 60px;
+    padding-left: 50px;
+    padding-bottom: 100px;
+    margin-right: -20px;
     color: #ffff;
-    background-image: url('./assets/Vector.png');
+    background-image: url('./assets/ic_skills.svg');
     background-repeat: no-repeat;
     background-position: right bottom;
     font-size: 30px;
+    margin-left: -20px;
+  }
+
+  .lang > h4,
+  .skills > h4,
+  .Frameworks > h4 {
+    font-family: 'Poppins Regular';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .dsa {
@@ -349,13 +373,26 @@
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    gap: 15px;
-    margin-right: 40px;
     flex-wrap: wrap;
+    padding-left: 0.000000001px;
+    margin-top: -30px;
+    margin-right: 20px;
+    width: auto;
+    flex-grow: 1;
+    gap: 15px;
   }
 
   .maybe {
     list-style-type: none;
+    font-family: 'Poppins Regular';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10.3334px;
+    line-height: 80%;
+    color: #1A2236;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 20px;
   }
 
   .cvBox {
@@ -371,47 +408,237 @@
     justify-content: center;
     flex-direction: row;
     gap: 8px;
+    font-family: 'Poppins Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   a {
     color: #fff;
+    text-decoration: none;
   }
 
   .aboutText {
-    color: #1a2236;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Poppins Regular';
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 100%;
-    letter-spacing: -0.01em;
+    font-size: 14px;
+    line-height: 21px;
+    color: #1A2236
   }
 
   .aboutWord {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Playfair Display Regular';
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 50px;
     line-height: 100%;
-    letter-spacing: -0.01em;
-    color: #1a2236;
+    color: #1A2236;
   }
 
   .union_1 {
     width: auto;
     height: auto;
     align-self: center;
-    border-left: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    border-right: 2px solid #fff;
+    padding-top: 6px;
     padding-left: 3px;
     padding-right: 3px;
     padding-bottom: 4px;
+    justify-self: center;
+    margin-top: 9px;
   }
 
   .arrow_down {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    background: #f9f9fa;
+  }
+
+  fieldset {
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid #dfdfe0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    line-height: 21px;
+    color: #7d7c84;
+  }
+
+  input {
+    width: 100%;
+    border: 0;
+    font-family: 'Poppins Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #1A2236;
+  }
+
+  legend {
+    font-family: 'Poppins Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 15px;
+    color: #7D7C84;
+    background-color: white;
+  }
+
+  .field {
+    background: white;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 14px;
+    line-height: 21px;
+    color: #1a2236;
+    border: 0;
+    min-height: 112px;
+    font-family: 'Poppins Regular';
+  }
+
+  .footer-items {
+    display: flex;
+    flex-direction: column;
+    background: #1a2236;
+  }
+
+  .resume {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 50px;
+  }
+
+  .resume > div {
+    align-self: center;
+  }
+
+  .social-media {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-bottom: 40px;
+    margin-left: -35px;
+  }
+
+  .resume > p {
+    margin-left: -20px;
+    font-family: 'Poppins Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #92dcdc;
+  }
+
+  input,
+  textarea:focus {
+    outline: none;
+  }
+
+  .fooc:focus-visible {
+    outline: #1a2236;
+  }
+
+  button {
+    display: flex;
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background: #1a2236;
+    margin-bottom: 32px;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px
+  }
+
+  button > div {
+    width: 100%;
+    text-align: center;
+
+  }
+
+  form {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .disc {
+    list-style-type: disc;
+    font-family: 'Poppins Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.00001em;
+    margin-left: -20px;
+  }
+
+  .footspace,
+  .space {
+    width: 111px;
+    height: 74.02px;
+    background: url('assets/image_geometry_3.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .namet {
+    font-family: 'Playfair Display Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 100%;
+    margin-left: 20px;
+    color: #1a2236;
+    margin-bottom: -40px;
+  }
+
+  .introt {
+    font-family: 'Poppins Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #1a2236;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  @font-face {
+    font-family: 'Poppins Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins Regular'), url('assets/fonts/poppins-cufonfonts-webfont/Poppins-Regular.woff') format('woff');
+    }
+
+    
+  @font-face {
+    font-family: 'Playfair Display Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Playfair Display Regular'), url('assets/fonts/playfair-display-cufonfonts-webfont/PlayfairDisplay-Regular.woff') format('woff');
   }
 }
