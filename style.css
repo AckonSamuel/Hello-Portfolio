@@ -880,6 +880,23 @@
     text-align: center;
     color: #1a2236;
     margin: 10px;
+    margin-left: inherit;
+    gap: 10px;
+  }
+
+  .viewdesk a {
+    color: #1a2236;
+    font-size: 16px;
+  }
+
+  .getflex a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .viewdesk a:hover {
+    color: #fff;
+    font-size: 16px;
   }
 
   .viewdesk:hover {
@@ -899,6 +916,7 @@
     text-align: center;
     color: #fff;
     margin: 10px;
+    gap: 10px;
   }
 
   .arrowdesk {
@@ -975,7 +993,7 @@
   .man {
     background: #1a2236;
     height: 216px;
-    padding-left: 40px;
+    padding-left: 20px;
   }
 
   .man h6 {
@@ -992,7 +1010,7 @@
     margin-top: -80px;
     display: flex;
     flex-direction: row;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     gap: 20px;
     list-style-type: none;
     margin-left: -33px;
@@ -1175,10 +1193,7 @@
     line-height: 24px;
   }
 
-  .getflex a {
-    color: #fff;
-    text-decoration: none;
-  }
+
 
   .getflex a:hover {
     color: #1a2236;
