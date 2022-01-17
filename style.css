@@ -327,6 +327,8 @@
   }
 
   .about {
+    display: flex;
+    flex-direction: column-reverse;
     grid-area: About;
     width: 100%;
     height: max-content;
