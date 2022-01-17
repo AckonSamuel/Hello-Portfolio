@@ -1,4 +1,10 @@
 @media all and (max-width: 992px) {
+
+  body {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  }
+
+
   .container {
     display: flex;
     flex-direction: column;
@@ -71,7 +77,7 @@
     font-weight: normal;
     font-size: 50px;
     line-height: 80px;
-    color: #1a2236;
+    color: #dfdfe0;
     letter-spacing: -0.01em;
     margin-bottom: -20px;
   }
@@ -88,7 +94,7 @@
     font-size: 14px;
     line-height: 21px;
     letter-spacing: -0.01em;
-    color: #1a2236;
+    color: #dfdfe0;
   }
 
   .intro p::after {
@@ -440,7 +446,7 @@
   }
 
   a {
-    color: #fff;
+    color: #dfdfe0;
     text-decoration: none;
   }
 
@@ -450,7 +456,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-    color: #1a2236;
+    color: #dfdfe0;
   }
 
   .aboutword {
@@ -459,7 +465,7 @@
     font-weight: normal;
     font-size: 50px;
     line-height: 100%;
-    color: #1a2236;
+    color: #dfdfe0;
   }
 
   .union-1 {
