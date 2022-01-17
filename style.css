@@ -286,7 +286,6 @@
     text-align: center;
     padding-left: 10px;
     padding-right: 15px;
-    margin-top: -24px;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
@@ -296,15 +295,12 @@
     margin-top: 10px;
   }
 
-
   .arrow {
     width: auto;
     height: auto;
     align-self: center;
     object-fit: cover;
   }
-
-
 
   .about {
     grid-area: About;
@@ -451,6 +447,7 @@
     align-self: center;
     padding: 6px 3px 4px;
     justify-self: center;
+
     /* margin-top: 9px; */
   }
 
@@ -718,7 +715,6 @@
     color: #1a2236;
   }
 
-
   .rectangle > div {
     width: 203.68px;
     height: 26.47px;
@@ -854,8 +850,6 @@
     gap: 10px;
   }
 
-
-
   .maybe {
     list-style-type: none;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -874,19 +868,11 @@
     flex-direction: row;
     border: 1px solid #1a2236;
     width: max-content;
-    margin-bottom: 20px;
     border-radius: 4px;
     font-family: Georgia, "Times New Roman", Times, serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 100%;
-    line-height: 100%;
-    text-align: center;
     padding-left: 10px;
     padding-right: 15px;
-    margin-top: -24px;
     cursor: pointer;
-    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -902,18 +888,10 @@
     flex-direction: row;
     border: 1px solid #fff;
     width: max-content;
-    margin-bottom: 20px;
     border-radius: 4px;
     font-family: Georgia, "Times New Roman", Times, serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 100%;
-    line-height: 100%;
-    text-align: center;
     padding-left: 10px;
     padding-right: 15px;
-    margin-top: -24px;
-    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -934,13 +912,10 @@
   .arrowdesk:hover {
     filter: none;
     object-fit: cover;
-    filter: brightness(0%);
-    object-fit: cover;
     width: auto;
     height: auto;
     align-self: center;
   }
-
 
   .hellodesk {
     display: flex;
@@ -1204,6 +1179,7 @@
     color: #fff;
     text-decoration: none;
   }
+
   .getflex a:hover {
     color: #1a2236;
     text-decoration: none;
@@ -1247,7 +1223,6 @@
     line-height: 100%;
     color: #1a2236;
   }
-   
 
   .arrow-down {
     object-fit: cover;
