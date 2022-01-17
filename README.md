@@ -33,5 +33,5 @@ To get a local copy up and running
 
 Contributions, issues, and feature requests are welcome!
 
-
 Feel free to check the [issues page](.../).
+
