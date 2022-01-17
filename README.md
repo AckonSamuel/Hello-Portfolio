@@ -25,8 +25,8 @@ To get a local copy up and running
 
 👤 **Ackon Samuel**
 
-- [GitHub](https://github.com/levy002)
-- [LinkedIn](https://www.linkedin.com/in/levy-ukwishaka-405391223)
+- [GitHub](https://github.com/AckonSamuel)
+- [LinkedIn](https://www.linkedin.com/in/samuel-ackon-882717190/)
 
     
 ## 🤝 Contributing
