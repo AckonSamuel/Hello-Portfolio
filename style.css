@@ -268,7 +268,6 @@
     justify-content: flex-start;
     gap: 10px;
     margin-top: 30px;
-    margin-bottom: 30px;
   }
 
   .tech1 {
@@ -284,39 +283,28 @@
     width: max-content;
     margin-bottom: 20px;
     border-radius: 4px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 100%;
-    line-height: 100%;
     text-align: center;
     padding-left: 10px;
     padding-right: 15px;
     margin-top: -24px;
-  }
-
-  .union {
-    width: auto;
-    height: auto;
-    align-self: center;
-  }
-
-  .arrow {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .word {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    text-align: center;
     color: #fff;
-    margin: 10px;
+    margin-top: 10px;
   }
+
+
+  .arrow {
+    width: auto;
+    height: auto;
+    align-self: center;
+    object-fit: cover;
+  }
+
+
 
   .about {
     grid-area: About;
@@ -408,10 +396,11 @@
     color: #1a2236;
     text-align: center;
     margin-right: 10px;
-    margin-left: 20px;
+    background: #98dede;
+    padding: 10px;
   }
 
-  .cvbox {
+  .getflex {
     text-align: center;
     color: white;
     display: flex;
@@ -429,6 +418,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+    padding: 20px;
   }
 
   a {
@@ -454,19 +444,14 @@
     color: #1a2236;
   }
 
-  .union-1 {
+  .arrow-down {
+    object-fit: cover;
     width: auto;
     height: auto;
     align-self: center;
     padding: 6px 3px 4px;
     justify-self: center;
-    margin-top: 9px;
-  }
-
-  .arrow-down {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    /* margin-top: 9px; */
   }
 
   footer {
@@ -535,11 +520,6 @@
     margin-left: 50px;
   }
 
-  button > div {
-    width: 100%;
-    text-align: center;
-  }
-
   .resume > div {
     align-self: center;
   }
@@ -587,6 +567,8 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+    align-items: center;
+    gap: 10px;
   }
 
   form {
@@ -736,10 +718,6 @@
     color: #1a2236;
   }
 
-  button > div {
-    width: 100%;
-    text-align: center;
-  }
 
   .rectangle > div {
     width: 203.68px;
@@ -819,7 +797,7 @@
   }
 
   .project-name > h2 {
-    margin-top: 180px;
+    margin-top: -1px;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
@@ -827,6 +805,7 @@
     line-height: 100%;
     color: #1a2236;
     transform: rotate(-90deg);
+    margin-left: -180px;
   }
 
   .one {
@@ -842,10 +821,11 @@
 
   .desksum {
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
     background: #1a2236;
     display: flex;
     flex-direction: column;
+    padding-bottom: 10px;
   }
 
   .namedesk {
@@ -872,13 +852,20 @@
     flex: 0 1 auto;
     justify-content: flex-start;
     gap: 10px;
-    margin-bottom: 30px;
   }
 
-  .tech1desk {
+
+
+  .maybe {
+    list-style-type: none;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 80%;
+    color: #1a2236;
+    text-align: center;
     background: #98dede;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding: 10px;
   }
 
   .viewdesk {
@@ -899,6 +886,14 @@
     padding-right: 15px;
     margin-top: -24px;
     cursor: pointer;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #1a2236;
+    margin: 10px;
   }
 
   .viewdesk:hover {
@@ -918,40 +913,6 @@
     padding-left: 10px;
     padding-right: 15px;
     margin-top: -24px;
-  }
-
-  .uniondesk {
-    width: auto;
-    height: auto;
-    align-self: center;
-  }
-
-  .arrowdesk {
-    filter: brightness(0%);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .arrowdesk:hover {
-    filter: none;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .worddesk {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: #1a2236;
-    margin: 10px;
-  }
-
-  .worddesk:hover {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 500;
@@ -961,6 +922,25 @@
     color: #fff;
     margin: 10px;
   }
+
+  .arrowdesk {
+    filter: brightness(0%);
+    object-fit: cover;
+    width: auto;
+    height: auto;
+    align-self: center;
+  }
+
+  .arrowdesk:hover {
+    filter: none;
+    object-fit: cover;
+    filter: brightness(0%);
+    object-fit: cover;
+    width: auto;
+    height: auto;
+    align-self: center;
+  }
+
 
   .hellodesk {
     display: flex;
@@ -1202,9 +1182,9 @@
     padding-left: 50px;
   }
 
-  .cvbox {
+  .getflex {
     text-align: center;
-    color: white;
+    color: #fff;
     display: flex;
     width: 254px;
     height: 70px;
@@ -1218,12 +1198,33 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    margin-top: 30px;
   }
 
-  .cvbox a {
-    color: white;
+  .getflex a {
+    color: #fff;
     text-decoration: none;
+  }
+  .getflex a:hover {
+    color: #1a2236;
+    text-decoration: none;
+  }
+
+  .getflex:hover {
+    text-align: center;
+    color: #1a2236;
+    display: flex;
+    width: 254px;
+    height: 70px;
+    background: white;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .abouttext {
@@ -1235,6 +1236,7 @@
     color: #1a2236;
     margin-top: -60px;
     height: 84px;
+    margin-bottom: 60px;
   }
 
   .aboutword {
@@ -1245,8 +1247,10 @@
     line-height: 100%;
     color: #1a2236;
   }
+   
 
-  .union-1 {
+  .arrow-down {
+    object-fit: cover;
     width: auto;
     height: auto;
     align-self: center;
@@ -1255,12 +1259,6 @@
     padding-bottom: 4px;
     justify-self: center;
     margin-top: 9px;
-  }
-
-  .arrow-down {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
 
   footer {
@@ -1429,6 +1427,8 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+    align-items: center;
+    gap: 10px;
   }
 
   button:hover {
@@ -1446,6 +1446,8 @@
     font-size: 16px;
     line-height: 24px;
     border: solid #1a2236;
+    align-items: center;
+    gap: 10px;
   }
 
   .footspace,
