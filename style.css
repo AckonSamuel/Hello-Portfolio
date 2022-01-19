@@ -58,7 +58,7 @@
   .name {
     width: 100%;
     height: auto;
-    font-family: "Playfair Display Regular";
+    font-family: Georgia, 'Times New Roman', Times, serif; 
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
@@ -74,7 +74,7 @@
     height: auto;
     margin-bottom: 30px;
     justify-self: center;
-    font-family: "Poppins Regular";
+   font-family: Georgia, 'Times New Roman', Times, serif; 
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -94,7 +94,7 @@
     margin-bottom: 32px;
     justify-content: center;
     flex-direction: column;
-    font-family: "Poppins Regular";
+   font-family: Georgia, 'Times New Roman', Times, serif; 
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -229,7 +229,7 @@
     width: auto;
     height: auto;
     flex-grow: 1;
-    font-family: "Poppins Regular";
+   font-family: Georgia, 'Times New Roman', Times, serif; 
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -284,7 +284,7 @@
   }
 
   .word {
-    font-family: "Poppins Regular";
+   font-family: Georgia, 'Times New Roman', Times, serif; 
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -351,7 +351,7 @@
   .lang > h4,
   .skills > h4,
   .Frameworks > h4 {
-    font-family: "Poppins Regular";
+   font-family: Georgia, 'Times New Roman', Times, serif; 
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
@@ -384,7 +384,7 @@
 
   .maybe {
     list-style-type: none;
-    font-family: "Poppins Regular";
+   font-family: Georgia, 'Times New Roman', Times, serif; 
     font-style: normal;
     font-weight: 300;
     font-size: 10.3334px;
@@ -408,7 +408,7 @@
     justify-content: center;
     flex-direction: row;
     gap: 8px;
-    font-family: "Poppins Regular";
+   font-family: Georgia, 'Times New Roman', Times, serif; 
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -421,7 +421,7 @@
   }
 
   .aboutText {
-    font-family: "Poppins Regular";
+   font-family: Georgia, 'Times New Roman', Times, serif; 
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -430,7 +430,7 @@
   }
 
   .aboutWord {
-    font-family: "Playfair Display Regular";
+    font-family: Georgia, 'Times New Roman', Times, serif; 
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
@@ -477,7 +477,7 @@
   input {
     width: 100%;
     border: 0;
-    font-family: "Poppins Regular";
+   font-family: Georgia, 'Times New Roman', Times, serif; 
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -486,7 +486,7 @@
   }
 
   legend {
-    font-family: "Poppins Regular";
+   font-family: Georgia, 'Times New Roman', Times, serif; 
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
@@ -506,7 +506,7 @@
     color: #1a2236;
     border: 0;
     min-height: 112px;
-    font-family: "Poppins Regular";
+   font-family: Georgia, 'Times New Roman', Times, serif; 
   }
 
   .footer-items {
@@ -539,7 +539,7 @@
 
   .resume > p {
     margin-left: -20px;
-    font-family: "Poppins Regular";
+   font-family: Georgia, 'Times New Roman', Times, serif; 
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -566,7 +566,7 @@
     margin-bottom: 32px;
     justify-content: center;
     flex-direction: column;
-    font-family: "Poppins Regular";
+   font-family: Georgia, 'Times New Roman', Times, serif; 
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -585,7 +585,7 @@
 
   .disc {
     list-style-type: disc;
-    font-family: "Poppins Regular";
+   font-family: Georgia, 'Times New Roman', Times, serif; 
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -604,7 +604,7 @@
   }
 
   .namet {
-    font-family: "Playfair Display Regular";
+    font-family: Georgia, 'Times New Roman', Times, serif; 
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
@@ -615,7 +615,7 @@
   }
 
   .introt {
-    font-family: "Poppins Regular";
+   font-family: Georgia, 'Times New Roman', Times, serif; 
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -626,17 +626,5 @@
     margin-right: 20px;
   }
 
-  @font-face {
-    font-family: "Poppins Regular";
-    font-style: normal;
-    font-weight: normal;
-    src: local("Poppins Regular"), url("assets/fonts/poppins-cufonfonts-webfont/Poppins-Regular.woff") format("woff");
-  }
 
-  @font-face {
-    font-family: "Playfair Display Regular";
-    font-style: normal;
-    font-weight: normal;
-    src: local("Playfair Display Regular"), url("assets/fonts/playfair-display-cufonfonts-webfont/PlayfairDisplay-Regular.woff") format("woff");
-  }
 }
