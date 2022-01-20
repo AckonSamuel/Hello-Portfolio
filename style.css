@@ -1491,4 +1491,55 @@ body {
     align-self: center;
     margin-bottom: 80px;
   }
+  /* animation */
+  .tom {
+    float: right;
+    width: 40px;
+    height: 40px;
+  }
+
+  .tom .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #e45865;
+    float: right;
+    animation: kinkin 3s infinite ease-in-out;
+  }
+
+  .tom .sk-cube1 {
+    animation-delay: 0.2s;
+  }
+
+  .tom .sk-cube2 {
+    animation-delay: 0.3s;
+  }
+
+  .tom .sk-cube3 {
+    animation-delay: 0.4s;
+  }
+
+  .tom .sk-cube4 {
+    animation-delay: 0.1s;
+  }
+
+  .tom .sk-cube5 {
+    animation-delay: 0.2s;
+  }
+
+  .tom .sk-cube6 {
+    animation-delay: 0.3s;
+  }
+
+  .tom .sk-cube7 {
+    animation-delay: 0s;
+  }
+
+  .tom .sk-cube8 {
+    animation-delay: 0.1s;
+  }
+
+  .tom .sk-cube9 {
+    animation-delay: 0.2s;
+  }
+
 }
