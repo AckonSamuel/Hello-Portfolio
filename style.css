@@ -578,6 +578,9 @@ body {
   }
 
   .disc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     list-style-type: disc;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
@@ -1152,6 +1155,9 @@ body {
   }
 
   .disc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     list-style-type: disc;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
