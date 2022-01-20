@@ -1542,4 +1542,55 @@ body {
     animation-delay: 0.2s;
   }
 
+  .tom1 {
+    float: left;
+    width: 40px;
+    height: 40px;
+  }
+
+  .tom1 .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #1c528a;
+    float: right;
+    animation: kinkin 3s infinite ease-in-out;
+  }
+
+  .tom1 .sk-cube1 {
+    animation-delay: 0.2s;
+  }
+
+  .tom1 .sk-cube2 {
+    animation-delay: 0.3s;
+  }
+
+  .tom1 .sk-cube3 {
+    animation-delay: 0.4s;
+  }
+
+  .tom1 .sk-cube4 {
+    animation-delay: 0.1s;
+  }
+
+  .tom1 .sk-cube5 {
+    animation-delay: 0.2s;
+  }
+
+  .tom1 .sk-cube6 {
+    animation-delay: 0.3s;
+  }
+
+  .tom1 .sk-cube7 {
+    animation-delay: 0s;
+  }
+
+  .tom1 .sk-cube8 {
+    animation-delay: 0.1s;
+  }
+
+  .tom1 .sk-cube9 {
+    animation-delay: 0.2s;
+  }
+
+
 }
