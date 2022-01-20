@@ -1640,5 +1640,62 @@ body {
     animation-delay: 0.2s;
   }
 
+  .tom3 .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #98dede;
+    float: right;
+    animation: kinkin 3s infinite ease-in-out;
+  }
+
+  .tom3 .sk-cube1 {
+    animation-delay: 0.2s;
+  }
+
+  .tom3 .sk-cube2 {
+    animation-delay: 0.3s;
+  }
+
+  .tom3 .sk-cube3 {
+    animation-delay: 0.4s;
+  }
+
+  .tom3 .sk-cube4 {
+    animation-delay: 0.1s;
+  }
+
+  .tom3 .sk-cube5 {
+    animation-delay: 0.2s;
+  }
+
+  .tom3 .sk-cube6 {
+    animation-delay: 0.3s;
+  }
+
+  .tom3 .sk-cube7 {
+    animation-delay: 0s;
+  }
+
+  .tom3 .sk-cube8 {
+    animation-delay: 0.1s;
+  }
+
+  .tom3 .sk-cube9 {
+    animation-delay: 0.2s;
+  }
+
+  @keyframes kinkin {
+    0%,
+    70%,
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+
+    35% {
+      transform: scale3d(0, 0, 1);
+    }
+  }
+
+
 
 }
