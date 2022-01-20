@@ -1591,6 +1591,54 @@ body {
   .tom1 .sk-cube9 {
     animation-delay: 0.2s;
   }
+  .tom2 {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tom2 .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #fec55f;
+    float: right;
+    animation: kinkin 3s infinite ease-in-out;
+  }
+
+  .tom2 .sk-cube1 {
+    animation-delay: 0.2s;
+  }
+
+  .tom2 .sk-cube2 {
+    animation-delay: 0.3s;
+  }
+
+  .tom2 .sk-cube3 {
+    animation-delay: 0.4s;
+  }
+
+  .tom2 .sk-cube4 {
+    animation-delay: 0.1s;
+  }
+
+  .tom2 .sk-cube5 {
+    animation-delay: 0.2s;
+  }
+
+  .tom2 .sk-cube6 {
+    animation-delay: 0.3s;
+  }
+
+  .tom2 .sk-cube7 {
+    animation-delay: 0s;
+  }
+
+  .tom2 .sk-cube8 {
+    animation-delay: 0.1s;
+  }
+
+  .tom2 .sk-cube9 {
+    animation-delay: 0.2s;
+  }
 
 
 }
