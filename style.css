@@ -1,3 +1,7 @@
+body {
+  background-color: white;
+}
+
 @media all and (max-width: 992px) {
   .container {
     display: flex;
@@ -889,6 +893,11 @@
     font-size: 16px;
   }
 
+
+  .rectangle a {
+    color: #dfdfe0;
+  }
+
   .getflex a {
     color: #fff;
     text-decoration: none;
@@ -1256,7 +1265,7 @@
     background: #f9f9fa;
     background-image: url("assets/Desktop/image-geometry_6.png"), url("assets/Desktop/image-geometry_7.png");
     background-repeat: no-repeat, no-repeat;
-    background-position: top left, right 650px;
+    background-position: top left, right 665px;
     height: 1000px;
     padding-bottom: 100px;
     margin-right: -50px;
@@ -1346,6 +1355,7 @@
     border: 1px solid #dfdfe0;
     box-sizing: border-box;
     border-radius: 4px;
+    padding: 14px;
   }
 
   .footer-items {
