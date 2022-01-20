@@ -3,37 +3,6 @@ body {
 }
 
 @media all and (max-width: 992px) {
-
-  #dot {
-    width: 1px;
-    height: 1px;
-    background: transparent;
-    box-shadow:
-      751px 1738px yellow,
-      1009px 954px yellow,
-      602px 1531px yellow,
-      800px 1837px yellow,
-      9px 1468px yellow,
-      87px 1646px yellow,
-      776px 1560px yellow;
-    animation: rounded 4000s linear infinite;
-  }
-
-  #dot::after {
-    content: " ";
-    width: 1px;
-    height: 1px;
-    background: transparent;
-    box-shadow:
-      751px 1738px #fff,
-      1009px 954px #fff,
-      602px 1531px #fff,
-      800px 1837px #fff,
-      9px 1468px #fff,
-      87px 1646px #fff,
-      776px 1560px #fff;
-  }
-
   .container {
     display: flex;
     flex-direction: column;
