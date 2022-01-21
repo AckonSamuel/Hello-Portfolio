@@ -896,7 +896,6 @@ body {
     font-size: 16px;
   }
 
-
   .rectangle a {
     color: #dfdfe0;
   }
@@ -1491,6 +1490,7 @@ body {
     align-self: center;
     margin-bottom: 80px;
   }
+
   /* animation */
   .tom {
     float: right;
@@ -1591,6 +1591,7 @@ body {
   .tom1 .sk-cube9 {
     animation-delay: 0.2s;
   }
+
   .tom2 {
     width: 40px;
     height: 40px;
@@ -1701,7 +1702,4 @@ body {
       transform: scale3d(0, 0, 1);
     }
   }
-
-
-
 }
