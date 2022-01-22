@@ -896,7 +896,6 @@ body {
     font-size: 16px;
   }
 
-
   .rectangle a {
     color: #dfdfe0;
   }
@@ -1490,5 +1489,217 @@ body {
     height: auto;
     align-self: center;
     margin-bottom: 80px;
+  }
+
+  /* animation */
+  .tom {
+    float: right;
+    width: 40px;
+    height: 40px;
+  }
+
+  .tom .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #e45865;
+    float: right;
+    animation: kinkin 3s infinite ease-in-out;
+  }
+
+  .tom .sk-cube1 {
+    animation-delay: 0.2s;
+  }
+
+  .tom .sk-cube2 {
+    animation-delay: 0.3s;
+  }
+
+  .tom .sk-cube3 {
+    animation-delay: 0.4s;
+  }
+
+  .tom .sk-cube4 {
+    animation-delay: 0.1s;
+  }
+
+  .tom .sk-cube5 {
+    animation-delay: 0.2s;
+  }
+
+  .tom .sk-cube6 {
+    animation-delay: 0.3s;
+  }
+
+  .tom .sk-cube7 {
+    animation-delay: 0s;
+  }
+
+  .tom .sk-cube8 {
+    animation-delay: 0.1s;
+  }
+
+  .tom .sk-cube9 {
+    animation-delay: 0.2s;
+  }
+
+  .tom1 {
+    float: left;
+    width: 40px;
+    height: 40px;
+  }
+
+  .tom1 .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #1c528a;
+    float: right;
+    animation: kinkin 3s infinite ease-in-out;
+  }
+
+  .tom1 .sk-cube1 {
+    animation-delay: 0.2s;
+  }
+
+  .tom1 .sk-cube2 {
+    animation-delay: 0.3s;
+  }
+
+  .tom1 .sk-cube3 {
+    animation-delay: 0.4s;
+  }
+
+  .tom1 .sk-cube4 {
+    animation-delay: 0.1s;
+  }
+
+  .tom1 .sk-cube5 {
+    animation-delay: 0.2s;
+  }
+
+  .tom1 .sk-cube6 {
+    animation-delay: 0.3s;
+  }
+
+  .tom1 .sk-cube7 {
+    animation-delay: 0s;
+  }
+
+  .tom1 .sk-cube8 {
+    animation-delay: 0.1s;
+  }
+
+  .tom1 .sk-cube9 {
+    animation-delay: 0.2s;
+  }
+
+  .tom2 {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tom2 .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #fec55f;
+    float: right;
+    animation: kinkin 3s infinite ease-in-out;
+  }
+
+  .tom2 .sk-cube1 {
+    animation-delay: 0.2s;
+  }
+
+  .tom2 .sk-cube2 {
+    animation-delay: 0.3s;
+  }
+
+  .tom2 .sk-cube3 {
+    animation-delay: 0.4s;
+  }
+
+  .tom2 .sk-cube4 {
+    animation-delay: 0.1s;
+  }
+
+  .tom2 .sk-cube5 {
+    animation-delay: 0.2s;
+  }
+
+  .tom2 .sk-cube6 {
+    animation-delay: 0.3s;
+  }
+
+  .tom2 .sk-cube7 {
+    animation-delay: 0s;
+  }
+
+  .tom2 .sk-cube8 {
+    animation-delay: 0.1s;
+  }
+
+  .tom2 .sk-cube9 {
+    animation-delay: 0.2s;
+  }
+
+  .tom3 {
+    float: right;
+    width: 40px;
+    height: 40px;
+  }
+
+  .tom3 .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #98dede;
+    float: right;
+    animation: kinkin 3s infinite ease-in-out;
+  }
+
+  .tom3 .sk-cube1 {
+    animation-delay: 0.2s;
+  }
+
+  .tom3 .sk-cube2 {
+    animation-delay: 0.3s;
+  }
+
+  .tom3 .sk-cube3 {
+    animation-delay: 0.4s;
+  }
+
+  .tom3 .sk-cube4 {
+    animation-delay: 0.1s;
+  }
+
+  .tom3 .sk-cube5 {
+    animation-delay: 0.2s;
+  }
+
+  .tom3 .sk-cube6 {
+    animation-delay: 0.3s;
+  }
+
+  .tom3 .sk-cube7 {
+    animation-delay: 0s;
+  }
+
+  .tom3 .sk-cube8 {
+    animation-delay: 0.1s;
+  }
+
+  .tom3 .sk-cube9 {
+    animation-delay: 0.2s;
+  }
+
+  @keyframes kinkin {
+    0%,
+    70%,
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+
+    35% {
+      transform: scale3d(0, 0, 1);
+    }
   }
 }
