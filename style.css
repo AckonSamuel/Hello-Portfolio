@@ -460,7 +460,7 @@ body {
     background: #f9f9fa;
   }
 
-  fieldset {
+  /* fieldset {
     margin-bottom: 10px;
     background-color: white;
     border: 1px solid #dfdfe0;
@@ -468,7 +468,7 @@ body {
     border-radius: 4px;
     line-height: 21px;
     color: #7d7c84;
-  }
+  } */
 
   input {
     width: 100%;
@@ -545,8 +545,16 @@ body {
     outline: none;
   }
 
-  .fooc:focus-visible {
-    outline: #1a2236;
+  .fooc {
+    padding-left: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid #dfdfe0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    line-height: 21px;
+    color: #7d7c84;
   }
 
   button {
@@ -1308,7 +1316,7 @@ body {
     margin-top: 40px;
   }
 
-  fieldset {
+  .fooc {
     margin-bottom: 10px;
     border: 0;
     line-height: 21px;
