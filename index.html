@@ -325,27 +325,20 @@
 <form  action="https://formspree.io/f/xknyorrb" method="post">
    <div class="fooc namei">
         <fieldset>
-            <div class="field">
-            <legend>Your name</legend>
+            <label for="fullname">Your name</label>
             <input type="text" name="username" maxlength="30" id="fullname" placeholder="Last name First name" required>
-            <label for="fullname"></label>
-        </div>
         </fieldset>
     </div>
     <div class="fooc email">
         <fieldset>
-            <div class="field">
-            <legend>Your email</legend>
-            <input type="email" name="email" placeholder="someone@domain.com" required>
-        </div>
+            <label for="email">Your email</label>
+            <input type="email" id="email" name="email" placeholder="someone@domain.com" required>
         </fieldset>
     </div>
     <div class="fooc textmessage">
         <fieldset>
-            <div class="field">
-                <legend>Message</legend>
-                <textarea name="comment" maxlength="500" placeholder="Enter your message here..." required></textarea>
-            </div>
+                <label for="message">Message</label>
+                <textarea name="comment" id="message" maxlength="500" placeholder="Enter your message here..." required></textarea>
         </fieldset>
     </div>
         <button value="submit" class="collabo">

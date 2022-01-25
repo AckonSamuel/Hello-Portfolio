@@ -483,7 +483,7 @@ body {
     color: #1a2236;
   }
 
-  legend {
+  label {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
@@ -493,9 +493,9 @@ body {
     background-color: white;
   }
 
-  .field {
+  /* .field {
     background: white;
-  }
+  } */
 
   textarea {
     width: 100%;
@@ -1336,7 +1336,7 @@ body {
     border-radius: 4px;
   }
 
-  legend {
+  label {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
@@ -1346,9 +1346,9 @@ body {
     margin-bottom: 10px;
   }
 
-  .field {
+  /* .field {
     align-self: flex-end;
-  }
+  } */
 
   textarea {
     width: 100%;
