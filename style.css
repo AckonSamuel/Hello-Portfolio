@@ -306,7 +306,7 @@ body {
     object-fit: cover;
   }
 
-  .about {
+  #about {
     grid-area: About;
     display: flex;
     flex-direction: column-reverse;
@@ -1085,7 +1085,7 @@ body {
     height: 270px;
   }
 
-  .about {
+  #about {
     display: grid;
     grid-template-areas: "dsa Portion";
     height: auto;
