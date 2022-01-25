@@ -451,8 +451,6 @@ body {
     align-self: center;
     padding: 6px 3px 4px;
     justify-self: center;
-
-    /* margin-top: 9px; */
   }
 
   footer {
@@ -487,15 +485,12 @@ body {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 10px;
-    line-height: 15px;
+    font-size: 12px;
+    line-height: 18px;
     color: #7d7c84;
     background-color: white;
   }
 
-  /* .field {
-    background: white;
-  } */
 
   textarea {
     width: 100%;
@@ -1345,10 +1340,6 @@ body {
     color: #7d7c84;
     margin-bottom: 10px;
   }
-
-  /* .field {
-    align-self: flex-end;
-  } */
 
   textarea {
     width: 100%;
