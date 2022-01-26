@@ -1,0 +1,10 @@
+#scrollspyHeading1 {
+ height: 450px;
+}
+
+.design {
+    background-image: url('./assets/image-geometry_1.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
