@@ -2,7 +2,7 @@
   height: 450px;
 }
 
- .design {
+.design {
   background-image: url("./assets/image-geometry_1.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -10,47 +10,47 @@
 }
 
 .design-mobile {
-    background-image: url("./assets/image-geometry_2.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 100%;
+  background-image: url("./assets/image-geometry_2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
 }
+
 .gbrand {
-    background-image: url("./assets/image_geometry_3.png");
-    background-position: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    width: 5em;
-    height: 2.5em;
-} 
-
- .navbar {
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
+  background-image: url("./assets/image_geometry_3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 5em;
+  height: 2.5em;
 }
+
+.navbar {
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+}
+
 @media all and (min-width: 576px) {
-    .navbar-expand-sm {
-        justify-content: center;
-    }
+  .navbar-expand-sm {
+    justify-content: center;
+  }
 }
-
 
 .container-fluid {
-    justify-self: center;
-    /* justify-self: flex-end; */
-    width: max-content;
+  justify-self: center;
+
+  /* justify-self: flex-end; */
+  width: max-content;
 }
-
-
 
 @media all and (max-width: 576px) {
-    .col-12 {
-        flex: 0 0 auto;
-        width: 100%;
-        height: 15em;
-}
+  .col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 15em;
+  }
 
-.design {
+  .design {
     background-image: url("assets/image_geometry_2.png");
     background-repeat: no-repeat;
     background-position: center center;
