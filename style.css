@@ -38,8 +38,6 @@
 
 .container-fluid {
   justify-self: center;
-
-  /* justify-self: flex-end; */
   width: max-content;
 }
 
