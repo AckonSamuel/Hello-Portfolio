@@ -166,7 +166,7 @@ body {
     grid-template-areas: "Works""About";
   }
 
-  .works {
+  #works {
     display: grid;
     grid-template-areas: "Project-name""one""two""three""four""five""six";
   }
@@ -459,16 +459,6 @@ body {
     flex: 1;
     background: #f9f9fa;
   }
-
-  /* fieldset {
-    margin-bottom: 10px;
-    background-color: white;
-    border: 1px solid #dfdfe0;
-    box-sizing: border-box;
-    border-radius: 4px;
-    line-height: 21px;
-    color: #7d7c84;
-  } */
 
   input {
     width: 100%;
@@ -781,7 +771,7 @@ body {
     background-position: bottom right;
   }
 
-  .works {
+  #works {
     display: grid;
     grid-template-areas: "Project-name one";
     grid-template-columns: 480px auto;
