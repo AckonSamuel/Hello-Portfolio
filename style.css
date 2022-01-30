@@ -166,7 +166,7 @@ body {
     grid-template-areas: "Works""About";
   }
 
-  .works {
+  #works {
     display: grid;
     grid-template-areas: "Project-name""one""two""three""four""five""six";
   }
@@ -306,7 +306,7 @@ body {
     object-fit: cover;
   }
 
-  .about {
+  #about {
     grid-area: About;
     display: flex;
     flex-direction: column-reverse;
@@ -451,8 +451,6 @@ body {
     align-self: center;
     padding: 6px 3px 4px;
     justify-self: center;
-
-    /* margin-top: 9px; */
   }
 
   footer {
@@ -460,16 +458,6 @@ body {
     flex-direction: column;
     flex: 1;
     background: #f9f9fa;
-  }
-
-  fieldset {
-    margin-bottom: 10px;
-    background-color: white;
-    border: 1px solid #dfdfe0;
-    box-sizing: border-box;
-    border-radius: 4px;
-    line-height: 21px;
-    color: #7d7c84;
   }
 
   input {
@@ -483,7 +471,7 @@ body {
     color: #1a2236;
   }
 
-  legend {
+  label {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
@@ -491,10 +479,6 @@ body {
     line-height: 15px;
     color: #7d7c84;
     background-color: white;
-  }
-
-  .field {
-    background: white;
   }
 
   textarea {
@@ -550,8 +534,16 @@ body {
     outline: none;
   }
 
-  .fooc:focus-visible {
-    outline: #1a2236;
+  .fooc {
+    padding-left: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid #dfdfe0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    line-height: 21px;
+    color: #7d7c84;
   }
 
   button {
@@ -779,7 +771,7 @@ body {
     background-position: bottom right;
   }
 
-  .works {
+  #works {
     display: grid;
     grid-template-areas: "Project-name one";
     grid-template-columns: 480px auto;
@@ -1007,7 +999,7 @@ body {
     padding-left: 20px;
   }
 
-  .man h6 {
+  .man h3 {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: bold;
@@ -1018,7 +1010,7 @@ body {
   }
 
   .hellso {
-    margin-top: -80px;
+    margin-top: -20px;
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
@@ -1085,7 +1077,7 @@ body {
     height: 270px;
   }
 
-  .about {
+  #about {
     display: grid;
     grid-template-areas: "dsa Portion";
     height: auto;
@@ -1313,7 +1305,7 @@ body {
     margin-top: 40px;
   }
 
-  fieldset {
+  .fooc {
     margin-bottom: 10px;
     border: 0;
     line-height: 21px;
@@ -1336,18 +1328,14 @@ body {
     border-radius: 4px;
   }
 
-  legend {
+  label {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 15px;
+    font-size: 12px;
+    line-height: 18px;
     color: #7d7c84;
     margin-bottom: 10px;
-  }
-
-  .field {
-    align-self: flex-end;
   }
 
   textarea {
@@ -1361,6 +1349,7 @@ body {
     box-sizing: border-box;
     border-radius: 4px;
     padding: 14px;
+    text-align: start;
   }
 
   .footer-items {
