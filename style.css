@@ -10,6 +10,11 @@ body {
     justify-content: space-between;
   }
 
+  a {
+    color: #fff;
+    text-decoration: none;
+  } 
+
   .first {
     display: none;
   }
@@ -65,6 +70,23 @@ body {
   .box {
     flex-wrap: wrap;
     word-wrap: break-word;
+  }
+
+  .firstmobile-nav {
+display: none;
+width: auto;
+height: auto;
+visibility: inherit;
+gap: 2em;
+list-style-type: none;
+flex-direction: column;
+text-align: center;
+background-color: lightblue;
+}
+
+  .firstmobile-nav a {
+    font-size: 16px;
+    color: black;
   }
 
   .name {
@@ -421,10 +443,6 @@ body {
     padding: 20px;
   }
 
-  a {
-    color: #fff;
-    text-decoration: none;
-  }
 
   .abouttext {
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -1690,5 +1708,9 @@ body {
     35% {
       transform: scale3d(0, 0, 1);
     }
+  }
+
+  .firstmobile-nav {
+    display: none;
   }
 }
