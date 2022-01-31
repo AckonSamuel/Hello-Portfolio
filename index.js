@@ -3,29 +3,21 @@
 let toggleNavStatus = false;
 
 function toggleNav() {
+  const getBoxic = document.querySelector('.ic-menu');
   const getMenubar = document.querySelector('.firstmobile-nav');
-  //   const getMenubarUl = document.querySelector('.firstmobile-nav ul');
-  //   const getMenubarLinks = document.querySelectorAll('.firstmobile-nav a');
-
+  const getImages = document.querySelector('.images');
   if (toggleNavStatus === false) {
+    getImages.style.background = '#e5e5e5';
+    getMenubar.style.position = 'absolute';
     getMenubar.style.display = 'flex';
     getMenubar.style.width = '100%';
+    document.querySelector('.container')
 
-    // const arrayLength = getMenubarLinks.length;
-    // for (let i = 0; i < arrayLength; i++) {
-    //   getMenubarLinks[i].style.opacity = '1';
-    // }
+    toggleNavStatus = true;
+  } else {
+    getImages.style.background = '#fff';
+    getMenubar.style.display = 'none';
+    toggleNavStatus = false;
   }
-
-  toggleNavStatus = true;
-  return getMenubar.style;
-  // if(toggleNavStatus === false){
-  //     document.getElementsByClassName('firstmobile-nav').style.display = 'none';
-  // }
-  // else {
-  //     document.getElementsByClassName('firstmobile-nav').style.visibility = 'visible';
-  //     return toggleNavStatus = true;
-  // }
 }
-
 document.getElementsByClassName('.firstmobile-nav').addEventListener('click', toggleNav);

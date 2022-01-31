@@ -28,6 +28,7 @@ body {
     flex: 1;
     width: auto;
     justify-content: space-between;
+    z-index: 10000;
   }
 
   .image01 {
@@ -75,13 +76,24 @@ body {
   .firstmobile-nav {
 display: none;
 width: auto;
-height: auto;
+height: calc(100vh - 14em);
+align-content: center;
 visibility: inherit;
-gap: 2em;
+gap: 4em;
 list-style-type: none;
 flex-direction: column;
 text-align: center;
-background-color: lightblue;
+background-color: #E5E5E5;
+z-index: 1000;
+margin-top: 0;
+padding-left: 1em;
+margin-left: 1em;
+padding-top: 16em;
+background-image: url('./assets/menu/Mask\ Group.png') ;
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: bottom;
+
 }
 
   .firstmobile-nav a {
