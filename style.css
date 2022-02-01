@@ -89,7 +89,7 @@ padding-left: 1em;
 margin-left: 1em;
 margin-right: -0.5em;
 padding-top: 10em;
-background: url('./assets/menu/Mask\ Group.png') bottom no-repeat, url('./assets/menu/Group\ 51.png') calc(100% - 70px) 90px no-repeat, url('./assets/menu/Group\ 51.png') 25% calc(100% - 20%) no-repeat;
+background: url('./assets/menu/Mask\ Group.png') bottom no-repeat, url('./assets/menu/Group_51.png') calc(100% - 70px) 90px no-repeat, url('./assets/menu/Group_51.png') 25% calc(100% - 20%) no-repeat;
 background-size: 100% 15%, auto auto, auto auto;
 background-color: #E5E5E5;
 }
