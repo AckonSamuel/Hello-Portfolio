@@ -2,6 +2,15 @@ body {
   background-color: white;
 }
 
+.fa-times {
+  display: none;
+}
+
+.fa-times:before {
+  display: none;
+  content: "\f00d";
+}
+
 @media all and (max-width: 992px) {
   .container {
     display: flex;
@@ -53,7 +62,7 @@ width: auto;
 height: calc(95vh - 14em);
 align-content: center;
 visibility: inherit;
-gap: 4em;
+gap: 2em;
 list-style-type: none;
 flex-direction: column;
 text-align: center;
@@ -68,7 +77,11 @@ background-size: 100% 15%, auto auto, auto auto;
 }
 
   .firstmobile-nav a {
-    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 300%;
     color: black;
   }
 
