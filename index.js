@@ -1,4 +1,4 @@
-
+/* eslint-disable linebreak-style */
 let toggleNavStatus = false;
 const getSpace = document.querySelector('.space');
 const getContainer = document.querySelector('.container');
@@ -29,7 +29,7 @@ function closeMenu() {
 }
 
 function iterat() {
-  for (let i = 0; i < linkTags.length; i++) {
+  for (let i = 0; i < linkTags.length; i += 1) {
     linkTags[i].addEventListener('click', closeMenu);
   }
 }
