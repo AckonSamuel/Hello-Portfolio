@@ -1,5 +1,5 @@
-/* eslint linebreak-style: ["error", "windows"] */
-/* eslint-disable no-plusplus */
+ eslint linebreak-style: ["error", "windows"] 
+ eslint-disable no-plusplus 
 let toggleNavStatus = false;
 const getSpace = document.querySelector('.space');
 const getContainer = document.querySelector('.container');
