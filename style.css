@@ -88,7 +88,7 @@ body {
   .name {
     width: 100%;
     height: auto;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
@@ -104,7 +104,7 @@ body {
     height: auto;
     margin-bottom: 30px;
     justify-self: center;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -124,7 +124,7 @@ body {
     margin-bottom: 32px;
     justify-content: center;
     flex-direction: column;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -142,7 +142,7 @@ body {
     margin-bottom: 32px;
     justify-content: center;
     flex-direction: column;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -191,7 +191,7 @@ body {
 
   .project-name {
     grid-area: Project-name;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
@@ -275,7 +275,7 @@ body {
     width: auto;
     height: auto;
     flex-grow: 1;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -308,7 +308,7 @@ body {
     text-align: center;
     padding-left: 10px;
     padding-right: 15px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -374,7 +374,7 @@ body {
   .lang > h4,
   .skills > h4,
   .frameworks > h4 {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
@@ -406,7 +406,7 @@ body {
 
   .maybe {
     list-style-type: none;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 10.3334px;
@@ -431,7 +431,7 @@ body {
     justify-content: center;
     flex-direction: row;
     gap: 8px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -440,7 +440,7 @@ body {
   }
 
   .abouttext {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -449,7 +449,7 @@ body {
   }
 
   .aboutword {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
@@ -476,7 +476,7 @@ body {
   input {
     width: 100%;
     border: 0;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -485,7 +485,7 @@ body {
   }
 
   label {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
@@ -501,7 +501,7 @@ body {
     color: #1a2236;
     border: 0;
     min-height: 112px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
   }
 
   .footer-items {
@@ -534,7 +534,7 @@ body {
 
   .resume > p {
     margin-left: -20px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -568,7 +568,7 @@ body {
     margin-bottom: 32px;
     justify-content: center;
     flex-direction: column;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -587,7 +587,7 @@ body {
     flex-direction: column;
     gap: 20px;
     list-style-type: disc;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -606,7 +606,7 @@ body {
   }
 
   .namet {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
@@ -617,7 +617,7 @@ body {
   }
 
   .introt {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -678,7 +678,7 @@ body {
   }
 
   .name > h1 {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 110px;
@@ -730,7 +730,7 @@ body {
   .rectangle > div {
     width: 203.68px;
     height: 26.47px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -742,7 +742,7 @@ body {
   .rectangle:hover > div {
     width: 203.68px;
     height: 26.47px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -806,7 +806,7 @@ body {
 
   .project-name > h2 {
     margin-top: -1px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 110px;
@@ -841,7 +841,7 @@ body {
     width: auto;
     height: auto;
     flex-grow: 1;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -864,7 +864,7 @@ body {
 
   .maybe {
     list-style-type: none;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 300;
     line-height: 80%;
@@ -881,7 +881,7 @@ body {
     border: 1px solid #1a2236;
     width: max-content;
     border-radius: 4px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     padding-left: 10px;
     padding-right: 15px;
     cursor: pointer;
@@ -922,7 +922,7 @@ body {
     border: 1px solid #fff;
     width: max-content;
     border-radius: 4px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     padding-left: 10px;
     padding-right: 15px;
     font-style: normal;
@@ -1013,7 +1013,7 @@ body {
   }
 
   .man h3 {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -1163,7 +1163,7 @@ body {
     flex-direction: column;
     gap: 20px;
     list-style-type: disc;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -1175,7 +1175,7 @@ body {
   .lang > h4,
   .skills > h4,
   .frameworks > h4 {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
@@ -1205,7 +1205,7 @@ body {
     gap: 20px;
     justify-content: center;
     align-items: center;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -1228,7 +1228,7 @@ body {
     gap: 20px;
     justify-content: center;
     align-items: center;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -1236,7 +1236,7 @@ body {
   }
 
   .abouttext {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -1248,7 +1248,7 @@ body {
   }
 
   .aboutword {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 110px;
@@ -1328,7 +1328,7 @@ body {
   input {
     width: 100%;
     height: 60px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -1342,7 +1342,7 @@ body {
   }
 
   label {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -1357,7 +1357,7 @@ body {
     line-height: 21px;
     color: #1a2236;
     min-height: 112px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     border: 1px solid #dfdfe0;
     box-sizing: border-box;
     border-radius: 4px;
@@ -1395,7 +1395,7 @@ body {
   }
 
   .resume > p {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -1427,7 +1427,7 @@ body {
     margin-bottom: 32px;
     justify-content: center;
     flex-direction: column;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -1445,7 +1445,7 @@ body {
     margin-bottom: 32px;
     justify-content: center;
     flex-direction: column;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -1465,7 +1465,7 @@ body {
   }
 
   .namet {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 110px;
@@ -1477,7 +1477,7 @@ body {
   }
 
   .introt {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
