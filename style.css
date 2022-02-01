@@ -6,7 +6,7 @@ body {
   display: none;
 }
 
-.fa-times:before {
+.fa-times::before {
   display: none;
   content: "\f00d";
 }
@@ -22,7 +22,7 @@ body {
   a {
     color: #fff;
     text-decoration: none;
-  } 
+  }
 
   .first {
     display: none;
@@ -57,31 +57,31 @@ body {
   }
 
   .firstmobile-nav {
-display: none;
-width: auto;
-height: calc(100vh - 280px);
-align-content: center;
-visibility: inherit;
-gap: 1em;
-list-style-type: none;
-flex-direction: column;
-text-align: center;
-z-index: 1000;
-margin-top: 0;
-padding-left: 1em;
-margin-left: 1em;
-margin-right: -0.5em;
-padding-top: 10em;
-background: url('./assets/menu/Mask\ Group.png') bottom no-repeat, url('./assets/menu/Group_51.png') calc(100% - 70px) 90px no-repeat, url('./assets/menu/Group_51.png') 25% calc(100% - 20%) no-repeat;
-background-size: 100% 15%, auto auto, auto auto;
-}
+    display: none;
+    width: auto;
+    height: calc(100vh - 280px);
+    align-content: center;
+    visibility: inherit;
+    gap: 1em;
+    list-style-type: none;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1000;
+    margin-top: 0;
+    padding-left: 1em;
+    margin-left: 1em;
+    margin-right: -0.5em;
+    padding-top: 10em;
+    background: url("./assets/menu/Mask\ Group.png") bottom no-repeat, url("./assets/menu/Group_51.png") calc(100% - 70px) 90px no-repeat, url("./assets/menu/Group_51.png") 25% calc(100% - 20%) no-repeat;
+    background-size: 100% 15%, auto auto, auto auto;
+  }
 
   .firstmobile-nav a {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 300%;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 300%;
     color: black;
   }
 
@@ -438,7 +438,6 @@ line-height: 300%;
     line-height: 24px;
     padding: 20px;
   }
-
 
   .abouttext {
     font-family: Georgia, "Times New Roman", Times, serif;
