@@ -10,19 +10,19 @@ function toggleNav() {
   if (toggleNavStatus === false) {
     getSpace.style.background = "url('./assets/menu/Group_98.png') 100% 100% no-repeat";
     getContainer.style.marginTop = '75vh';
-    getImages.style.background = '#e5e5e5';
+    getImages.style.background = '#fff';
     getMenubar.style.position = 'absolute';
     getMenubar.style.display = 'flex';
     getMenubar.style.width = '100%';
     toggleNavStatus = true;
   } else {
     getImages.style.background = '#fff';
-    getSpace.style.width = '111px';
-    getSpace.style.height = '74.02px';
-    getSpace.style.background = "url('assets/image_geometry_3.png') 100% 100% no-repeat";
+    // getSpace.style.background = "url('./assets/image_geometry_3.png') no-repeat";
+    getSpace.style = document.querySelector('.footspace').sytle;
+    getSpace.style.backgroundPosition = 'center center';
     getMenubar.style.display = 'none';
-    toggleNavStatus = false;
     getContainer.style.marginTop = 'inherit';
+    toggleNavStatus = false;
   }
 }
 document.getElementsByClassName('.firstmobile-nav').addEventListener('click', toggleNav);
