@@ -5,22 +5,17 @@ const getSpace = document.querySelector('.space');
 const getContainer = document.querySelector('.container');
 const getMenubar = document.querySelector('.firstmobile-nav');
 const getImages = document.querySelector('.images');
-const menuLinks = document.querySelectorAll('.firstmobile a');
+const menuLinks = document.querySelectorAll('.firstmobile li');
 
 function bb() {
+  getImages.style.background = '#fff';
+  getSpace.style = document.querySelector('.footspace').sytle;
+  getSpace.style.backgroundPosition = 'center center';
   getMenubar.style.display = 'none';
-}
-
-function iterat() {
-  for (let i = 0; i < menuLinks.length; i++) {
-    menuLinks[i].addEventListener('click', bb);
-  }
+  getContainer.style.marginTop = 'inherit';
 }
 
 function toggleNav() {
-  for (let i = 0; i < menuLinks.length; i += 1) {
-    menuLinks[i].addEventListener('click', toggleNavStatus = true);
-  }
   if (toggleNavStatus === false) {
     getSpace.style.background = "url('./assets/menu/Group_98.png') 100% 100% no-repeat";
     getContainer.style.marginTop = '75vh';
@@ -37,10 +32,13 @@ function toggleNav() {
     getContainer.style.marginTop = 'inherit';
     toggleNavStatus = false;
   }
-
-  iterat();
 }
 
+function iterat() {
+  for (let i = 0; i < menuLinks.length; i++) {
+    menuLinks[i].addEventListener('click', toggleNav);
+  }
+}
 // function myFunction() {
 //   const x = document.getElementById('myDIV');
 //   if (x.style.display === 'none') {
@@ -50,4 +48,5 @@ function toggleNav() {
 //   }
 // }
 
+document.getElementsByClassName('.firstmobile-nav').addEventListener('click', toggleNav);
 document.getElementsByClassName('.firstmobile-nav').addEventListener('click', toggleNav);
