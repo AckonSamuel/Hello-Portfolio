@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XTH2FG33ZD"></script>
 <script>
@@ -10,11 +13,14 @@
 
   gtag('config', 'G-XTH2FG33ZD');
 </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Samuel's Portfolio homepage</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d7c4625610.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id='dot'></div>
@@ -25,22 +31,31 @@
         <header class="nav-items">
                <div class="images">
                    <div class="space">
+                      
                    </div> 
                    <div class="menuitem">
-                       <div class="boxic"><img src="assets/ic_menu.svg"  alt="#" class="ic-menu">
+                    <i class="fas fa-times fa-2x"></i>
+                       <div class="boxic" ><img src="assets/ic_menu.svg"  alt="menu bar" class="ic-menu" onclick="toggleNav()">
                        </div>  
                     </div>
 
                 </div>
 
                 <ul class="first">
-                   <li><a href="#" alt="#">Home</a></li>
-                   <li><a href="#" alt="#">Portfolio</a></li>
-                   <li><a href="#" alt="#">About</a></li>
-                   <li><a href="#" alt="#">Contact</a></li>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#works">Portfolio</a></li>
+                   <li><a href="#about">About</a></li>
+                   <li><a href="#gaga">Contact</a></li>
                 </ul>
-        </header>
 
+                <ul class="firstmobile-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#works" onclick="iterat()">Portfolio</a></li>
+                    <li><a href="#about"  onclick="iterat()">About</a></li>
+                    <li><a href="#gaga"  onclick="iterat()">Contact</a></li>
+                 </ul>
+        </header>
+        
         <section class="container">
             <div class="child-container">
                 <div class=" box name"><div class="tom1">
@@ -65,16 +80,9 @@
                     <div class="sk-cube sk-cube8"></div>
                     <div class="sk-cube sk-cube9"></div>
                   </div>
-                  <h1>Samuel Ackon<div class="tom">
-                    <div class="sk-cube sk-cube1"></div>
-                    <div class="sk-cube sk-cube2"></div>
-                    <div class="sk-cube sk-cube3"></div>
-                    <div class="sk-cube sk-cube4"></div>
-                    <div class="sk-cube sk-cube5"></div>
-                    <div class="sk-cube sk-cube6"></div>
-                    <div class="sk-cube sk-cube7"></div>
-                    <div class="sk-cube sk-cube8"></div>
-                    <div class="sk-cube sk-cube9"></div>
+                  
+                  
+                  <h1>Samuel Ackon</h1>
                   </div>
                   <div class="tom2">
                     <div class="sk-cube sk-cube1"></div>
@@ -86,18 +94,27 @@
                     <div class="sk-cube sk-cube7"></div>
                     <div class="sk-cube sk-cube8"></div>
                     <div class="sk-cube sk-cube9"></div>
-                  </div></h1></div>
+                  </div>
+                  <div class="tom">
+                    <div class="sk-cube sk-cube1"></div>
+                    <div class="sk-cube sk-cube2"></div>
+                    <div class="sk-cube sk-cube3"></div>
+                    <div class="sk-cube sk-cube4"></div>
+                    <div class="sk-cube sk-cube5"></div>
+                    <div class="sk-cube sk-cube6"></div>
+                    <div class="sk-cube sk-cube7"></div>
+                    <div class="sk-cube sk-cube8"></div>
+                    <div class="sk-cube sk-cube9"></div>
+                  </div>
                 <div class=" box intro"><p>Hello! I am a software developer! 
                     I can help you build a product, feature or website. 
-                    Taka a look of my works. 
+                    Take a look at my works. 
                     If you like what you see and have a 
                     project you need coded,
                     don’t hesitate and contact me.</p>
                 </div>
-                <button class="rectangle">
-                  <a href="#gaga">
+                <button class="rectangle"  onclick="window.location.href = '#gaga';">
                     Start collaboration
-                </a>
                 </button>
             </div>
             <div class="designs">
@@ -110,13 +127,13 @@
 
 
 <main class="hallelujah">
-    <section class="works">
+    <section id="works">
         <div class="project-name">
             <h2>Projects</h2>
         </div>
         <div class="work one">
             <div class="project photo">
-                <img src="assets/work/work_one.png" class="work-one" alt="#">
+                <img src="assets/work/work_one.png" class="work-one" alt="first project image">
             </div>
             <div class="project summary desksum">
                 <div class="namep namedesk">
@@ -129,31 +146,30 @@
                         <li class="maybe">JavaScript</li>
                     </ul>
                 </div>
-                <button alt="#" class="project-view viewdesk">
-                    <a href="https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3" alt="#">  See this project
+                <button class="project-view viewdesk"  onclick='window.location.href = "https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3";'>
+                    See this project
                     <img src="assets/work/Union.png" class="arrow arrowdesk" alt="#">
-                    </a>
                 </button>
             </div>
         </div>
-        
+    
 
         <div class="work two">
             <div class="option left"></div>
             <div class="option middle"></div>
             <div class="option right">
                 <div class="man">
-                    <h6>Project name goes...</h6>
+                    <h3>Project name goes...</h3>
                        <ul class="hellso">
                            <li class="maybe">HTML/CSS</li>
                             <li class="maybe">Ruby on rails</li>
                             <li class="maybe">+1</li>
                        </ul>
-                    <div claas="being"> 
-                        <button alt="#" class="project-view viewdesk">
-                            <a href="https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3" alt="#">  See this project
+                    <div class="being"> 
+                        <button class="project-view viewdesk" onclick='window.location.href = "https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3";'>
+                             See this project
                                 <img src="assets/work/Union.png" class="arrow arrowdesk" alt="#">
-                            </a>
+        
                         </button>
                     </div>
                 </div>
@@ -166,7 +182,7 @@
             <div class="option blowman"></div>
            
             <div class="project photo">
-                <img src="assets/work/work_two.png" class="work-one" alt="#">
+                <img src="assets/work/work_two.png" class="work-one" alt="second project image">
             </div>
             <div class="project summary">
                 <div class="namep">
@@ -179,16 +195,16 @@
                         <li class="maybe">JavaScript</li>
                     </ul>
                 </div>
-                <button class="project-view">
-                   <a href="https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3" alt="#">See this project
+                <button class="project-view" onclick='window.location.href = "https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3";'>
+                   See this project
                         <img src="assets/work/Union.png" class="arrow" alt="#">
-                    </a>
+                
                 </button>
             </div>
         </div>
 
         <div class="work three">
-                <div class="project photo"><img src="assets/work/work_three.png" class="work-one" alt="#"></div>
+                <div class="project photo"><img src="assets/work/work_three.png" class="work-one" alt="project image three"></div>
                  <div class="project summary">
                     <div class="namep"><h3>Project name goes here</h3></div>
                     <div class="technology">
@@ -197,15 +213,15 @@
                         <li class="maybe">Ruby on rails</li>
                        <li class="maybe">JavaScript</li>
                     </ul> </div>
-                    <button class="project-view">
-                        <a href="https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3" alt="#">See this project
-                        <img src="assets/work/Union.png" class="arrow" alt="#"></a>
+                    <button class="project-view" onclick='window.location.href = "https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3";'>
+                        See this project
+                        <img src="assets/work/Union.png" class="arrow" alt="#">
                     </button>
 
                  </div>
                  </div>
                  <div class="work four">
-                     <div class="project photo"><img src="assets/work/work_four.png" class="work-one" alt="#"></div>
+                     <div class="project photo"><img src="assets/work/work_four.png" class="work-one" alt="project image four"></div>
             <div class="project summary">
                 <div class="namep"><h3>Project name goes here</h3></div>
                 <div class="technology">
@@ -214,9 +230,9 @@
                     <li class="maybe">Ruby on rails</li>
                    <li class="maybe">JavaScript</li>
                 </ul></div>
-                <button class="project-view">
-                   <a href="https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3" alt="#">See this project
-                    <img src="assets/work/Union.png" class="arrow" alt="#"></a>
+                <button class="project-view" onclick='window.location.href = "https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3";'>
+                   See this project
+                    <img src="assets/work/Union.png" class="arrow" alt="#">
                 </button>
 
                      </div> 
@@ -224,7 +240,7 @@
                      
                      
                      <div class="work five">
-                         <div class="project photo"><img src="assets/work/work_five.png" class="work-one" alt="#"></div>
+                         <div class="project photo"><img src="assets/work/work_five.png" class="work-one" alt="project image five"></div>
                          <div class="project summary">
                             <div class="namep"><h3>Project name goes here</h3></div>
                             <div class="technology">
@@ -233,9 +249,9 @@
                                 <li class="maybe">Ruby on rails</li>
                                <li class="maybe">JavaScript</li>
                             </ul> </div>
-                            <button class="project-view">
-                             <a href="https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3" alt="#">   See this project
-                                <img src="assets/work/Union.png" class="arrow" alt="#"></a>
+                            <button class="project-view" onclick='window.location.href = "https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3";'>
+                             See this project
+                                <img src="assets/work/Union.png" class="arrow" alt="#">
                             </button>
 
                          </div>
@@ -243,7 +259,7 @@
                         
 
                          <div class="work six">
-                             <div class="project photo"><img src="assets/work/work_six.png" class="work-one" alt="#"></div>
+                             <div class="project photo"><img src="assets/work/work_six.png" class="work-one" alt="project image six"></div>
                              <div class="project summary">
                                 <div class="namep"><h3>Project name goes here</h3></div>
                                 <div class="technology">
@@ -252,16 +268,16 @@
                                     <li class="maybe">Ruby on rails</li>
                                   <li class="maybe">JavaScript</li>
                                 </ul> </div>
-                                <button class="project-view">
-                                    <a href="https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3" alt="#">See this project
-                                    <img src="assets/work/Union.png" class="arrow" alt="#"></a>
+                                <button class="project-view" onclick='window.location.href = "https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3";'>
+                                    See this project
+                                    <img src="assets/work/Union.png" class="arrow" alt="#">
                                 </button>
 
                              </div>
                              </div>        
     </section>
 
-    <section class="about">
+    <section id="about">
         
         <ul class="dsa">
                 <li><div class="lang"><h4>Languages</h4>
@@ -296,7 +312,7 @@
         </ul>
 
         <div class="portion">
-            <div class="aboutword"><h1>About</h1></div>
+            <div class="aboutword"><h3>About</h3></div>
             <div class="abouttext"><p>Lorem ipsum 
                 dolor sit amet, consectetur 
                 adipiscing elit, sed do eiusmod 
@@ -307,8 +323,8 @@
                  laboris nisi ut aliquip ea eiusmod</p>
                 </div>
             
-                <button class="getflex">
-                    <a href="https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3" alt="#">Get my CV</a>
+                <button class="getflex" onclick='window.location.href = "https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3";'>
+                    Get my CV
             <img src="assets/ic_download.svg" class="arrow-down" alt="#"></button>
         </div>
             
@@ -324,70 +340,56 @@
               incididunt ut labore et dolore magna.</p></div>
 <form  action="https://formspree.io/f/xknyorrb" method="post">
    <div class="fooc namei">
-        <fieldset>
-            <div class="field">
-            <legend>Your name</legend>
-            <input type="text" name="username" maxlength="30" placeholder="Last name First name" required>
-        </div>
-        </fieldset>
+            <label for="fullname">Your name</label>
+            <input type="text" name="username" maxlength="30" id="fullname" placeholder="Last name First name" required>
     </div>
     <div class="fooc email">
-        <fieldset>
-            <div class="field">
-            <legend>Your email</legend>
-            <input type="email" name="email" placeholder="someone@domain.com" required>
-        </div>
-        </fieldset>
+            <label for="email">Your email</label>
+            <input type="email" id="email" name="email" placeholder="someone@domain.com" required>
     </div>
     <div class="fooc textmessage">
-        <fieldset>
-            <div class="field">
-                <legend>Message</legend>
-                <textarea name="comment" maxlength="500" placeholder="Enter your message here..." required></textarea>
-            </div>
-        </fieldset>
-    </div>
-        <button value="submit" class="collabo">
+    <label for="comment">Message</label>
+    <textarea name="comment" id="comment" maxlength="500" placeholder="Enter your message here" required></textarea>
+</div>
+    <button value="submit" class="collabo">
             Start collaboration</button> 
 </form>
 <hr>
 <div class="footer-items">
     <div class="resume">
         <p>Get my Resume</p>
-        <div><img src="assets/ic_link_teal.png"></div>
+        <div><img src="assets/ic_link_teal.png" alt="#"></div>
     </div>
     <ul class="social-media">
       <li>
         <a href="#">
-            <img src="assets/ic_stackoverflow.png" alt="#">
+            <img src="assets/ic_stackoverflow.png" alt="stackoverflow account">
         </a>
       </li>
       <li>
-        <a href="#">
-            <img src="assets/ic_github.png" alt="#">
+        <a href="https://github.com/AckonSamuel">
+            <img src="assets/ic_github.png" alt="github account">
         </a>
       </li>
       <li>
-        <a href="#">
-            <img src="assets/ic_linkedin.png" alt="#">
+        <a href="https://www.linkedin.com/in/samuel-ackon-882717190/">
+            <img src="assets/ic_linkedin.png" alt="linkedin account">
         </a>
       </li>
       <li>
-        <a href="#">
-            <img src="assets/ic_medium.png" alt="#">
-        </a>
+        <a href="#"><img src="assets/ic_medium.png" alt="medium account"></a>
     </li>
     <li>
-        <a href="#">
-            <img src="assets/ic_angellist.png" alt="#">
-        </a>
+        <a href="#"><img src="assets/ic_angellist.png" alt="angellist account"></a>
       </li>
       <li>
-        <a href="#">
-            <img src="assets/ic_twitter.png" alt="#">
+        <a href="https://twitter.com/AckonSamuel2"><img src="assets/ic_twitter.png" alt="twitter account"></a>
       </li>
     </ul>
   </div>
 </footer>
+
+<script src="./index.js"></script>
+
 </body>
 </html>
