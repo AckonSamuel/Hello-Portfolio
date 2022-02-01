@@ -59,10 +59,10 @@ body {
   .firstmobile-nav {
 display: none;
 width: auto;
-height: calc(95vh - 14em);
+height: calc(100vh - 280px);
 align-content: center;
 visibility: inherit;
-gap: 2em;
+gap: 1em;
 list-style-type: none;
 flex-direction: column;
 text-align: center;
