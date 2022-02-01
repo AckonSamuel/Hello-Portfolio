@@ -16,8 +16,7 @@ function bb() {
   getContainer.style.marginTop = 'inherit';
 }
 
-function toggleNav() {
-  if (toggleNavStatus === false) {
+function openMenu() {
     getSpace.style.background = "url('./assets/menu/Group_98.png') 100% 100% no-repeat";
     getContainer.style.marginTop = '75vh';
     getImages.style.background = '#fff';
@@ -27,7 +26,8 @@ function toggleNav() {
     navIcon.src = "assets/menu/Union.png";
     toggleNavStatus = true;
     }
-  else {
+
+  function closeMenu(){
     getImages.style.background = '#fff';
     getSpace.style = document.querySelector('.footspace').sytle;
     getSpace.style.backgroundPosition = 'center center';
@@ -36,13 +36,23 @@ function toggleNav() {
     toggleNavStatus = false;
     navIcon.src = "assets/ic_menu.svg";
   }
-}
 
 function iterat() {
+    toggleNavStatus = true;
   for (let i = 0; i < menuLinks.length; i++) {
-    menuLinks[i].addEventListener('click', toggleNav);
+    menuLinks[i].addEventListener('click', closeMenu);
+    
   }
 }
+function toggleNav() {
+    if (toggleNavStatus === false) {
+      openMenu();
+      iterat();
+    } else {
+      closeMenu();
+    }
+  }
+  
 // function myFunction() {
 //   const x = document.getElementById('myDIV');
 //   if (x.style.display === 'none') {
@@ -53,4 +63,4 @@ function iterat() {
 // }
 
 document.getElementsByClassName('.firstmobile-nav').addEventListener('click', toggleNav);
-document.getElementsByClassName('.firstmobile-nav').addEventListener('click', toggleNav);
+menuLinks.addEventListener('click', iterat());
