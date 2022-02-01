@@ -89,10 +89,11 @@ margin-top: 0;
 padding-left: 1em;
 margin-left: 1em;
 padding-top: 16em;
-background-image: url('./assets/menu/Mask\ Group.png') ;
-background-repeat: no-repeat;
-background-size: 100%;
-background-position: bottom;
+background-image: url('./assets/menu/Mask\ Group.png'), url('./assets/menu/Group\ 51.png'), url('./assets/menu/Group\ 51.png') ;
+background-repeat: no-repeat, no-repeat, no-repeat;
+background-size: 100%, auto, auto ;
+padding-bottom: 10em;
+background-position: bottom, top -20px, center;
 
 }
 
