@@ -191,7 +191,7 @@ body {
 
   .project-name {
     grid-area: Project-name;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
@@ -449,7 +449,7 @@ body {
   }
 
   .aboutword {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
@@ -606,7 +606,7 @@ body {
   }
 
   .namet {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
@@ -806,7 +806,7 @@ body {
 
   .project-name > h2 {
     margin-top: -1px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 110px;
@@ -1248,7 +1248,7 @@ body {
   }
 
   .aboutword {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 110px;
@@ -1465,7 +1465,7 @@ body {
   }
 
   .namet {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 110px;
