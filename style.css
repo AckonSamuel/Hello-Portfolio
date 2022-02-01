@@ -76,25 +76,22 @@ body {
   .firstmobile-nav {
 display: none;
 width: auto;
-height: calc(100vh - 14em);
+height: calc(95vh - 14em);
 align-content: center;
 visibility: inherit;
 gap: 4em;
 list-style-type: none;
 flex-direction: column;
 text-align: center;
-background-color: #E5E5E5;
 z-index: 1000;
 margin-top: 0;
 padding-left: 1em;
 margin-left: 1em;
-padding-top: 16em;
-background-image: url('./assets/menu/Mask\ Group.png'), url('./assets/menu/Group\ 51.png'), url('./assets/menu/Group\ 51.png') ;
-background-repeat: no-repeat, no-repeat, no-repeat;
-background-size: 100%, auto, auto ;
-padding-bottom: 10em;
-background-position: bottom, top -20px, center;
-
+margin-right: -0.5em;
+padding-top: 10em;
+background: url('./assets/menu/Mask\ Group.png') bottom no-repeat, url('./assets/menu/Group\ 51.png') calc(100% - 70px) 90px no-repeat, url('./assets/menu/Group\ 51.png') 25% calc(100% - 20%) no-repeat;
+background-size: 100% 15%, auto auto, auto auto;
+background-color: #E5E5E5;
 }
 
   .firstmobile-nav a {
