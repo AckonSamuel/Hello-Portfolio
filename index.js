@@ -6,6 +6,7 @@ const getContainer = document.querySelector('.container');
 const getMenubar = document.querySelector('.firstmobile-nav');
 const getImages = document.querySelector('.images');
 const menuLinks = document.querySelectorAll('.firstmobile li');
+const navIcon = document.querySelector(".ic-menu");
 
 function bb() {
   getImages.style.background = '#fff';
@@ -23,14 +24,17 @@ function toggleNav() {
     getMenubar.style.position = 'absolute';
     getMenubar.style.display = 'flex';
     getMenubar.style.width = '100%';
+    navIcon.src = "assets/menu/Union.png";
     toggleNavStatus = true;
-  } else {
+    }
+  else {
     getImages.style.background = '#fff';
     getSpace.style = document.querySelector('.footspace').sytle;
     getSpace.style.backgroundPosition = 'center center';
     getMenubar.style.display = 'none';
     getContainer.style.marginTop = 'inherit';
     toggleNavStatus = false;
+    navIcon.src = "assets/ic_menu.svg";
   }
 }
 
