@@ -74,46 +74,38 @@ function popupWindow(cardObj) {
   body.appendChild(modalParent);
 
   const modal = document.createElement('div');
-  modal.classList.add('container', 'content', 'modal');
+  modal.classList.add('modal');
   modal.setAttribute('id', cardObj.id);
   modalParent.appendChild(modal);
 
-  const headline = document.createElement('div');
-  headline.classList.add('container', 'headline');
-  modal.appendChild(headline);
+  const modalHeader = document.createElement('div');
+  modalHeader.classList.add('modal-header');
+  modal.appendChild(modalHeader);
 
   const h3 = document.createElement('h3');
   h3.textContent = cardObj.title;
-  headline.appendChild(h3);
+  modalHeader.appendChild(h3);
 
-  const closeButton = document.createElement('button');
-  closeButton.setAttribute('id', 'closeButtonPopup');
-  closeButton.setAttribute('type', 'button');
-  headline.appendChild(closeButton);
+  const closeButton = document.createElement('img');
+  closeButton.setAttribute('src', 'assets/menu/Union.png');
+  closeButton.setAttribute('alt', 'close button');
+  modalHeader.appendChild(closeButton);
   closeButton.addEventListener('click', () => {
     body.removeChild(modalParent);
   });
 
-  const closeImage = document.createElement('img');
-  closeImage.setAttribute('src', 'icons/close-icon.svg');
-  closeImage.setAttribute('alt', 'close icon');
-  closeButton.appendChild(closeImage);
+  const modalBody = document.createElement('div');
+  modalBody.classList.add('modal-body');
+  modal.appendChild(modalBody);
 
   const ultags = document.createElement('ul');
-  ultags.classList.add('container', 'tags');
-  modal.appendChild(ultags);
+  ultags.classList.add('model-tech');
+  modalBody.appendChild(ultags);
 
   cardObj.tags.forEach((tag) => {
     const litag = document.createElement('li');
-    litag.classList.add('textPlaceholder', 'tag');
+    litag.textContent = tag;
     ultags.appendChild(litag);
-
-    const alink = document.createElement('a');
-    alink.setAttribute('rel', 'noopener noreferrer');
-    alink.setAttribute('href', '#');
-    alink.setAttribute('aria-label', '');
-    alink.textContent = tag;
-    litag.appendChild(alink);
   });
 
   const modalGrid = document.createElement('div');
