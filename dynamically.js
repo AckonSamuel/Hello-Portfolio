@@ -8,19 +8,17 @@ portfolioContainer.addEventListener('click', (e) => {
 
   const modalToggle = e.target.closest('.project-view');
 
-  console.log('modalToggle');
+  if (!modalToggle) return;
 
-  //   if (!modalToggle) return;
+  const modal = modalToggle.parentNode.parentNode;
 
-  //   const modal = modalToggle.parentNode;
+  const modalParent = modal.parentNode.parentNode.parentNode.firstChild;
+  console.log(modalParent);
+  const closeButton = modalParent.querySelector('.closebox');
 
-  //   const modalParent = modal.parentNode.previousElementSibling;
-  //   console.log(modalParent);
-  //   const closeButton = modalParent.querySelector('.closebox');
+  modalParent.classList.add('is-open');
 
-  //   modalParent.classList.add('is-open');
-
-//   closeButton.addEventListener('click', (_) => {
-//     modalParent.classList.remove('is-open');
-//   });
+  closeButton.addEventListener('click', (_) => {
+    modalParent.classList.remove('is-open');
+  });
 });
