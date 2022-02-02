@@ -112,58 +112,74 @@ function popupWindow(cardObj) {
   modalGrid.classList.add('modal-grid');
   modalBody.appendChild(modalGrid);
 
-  const projectImg = document.createElement('div');
-  projectImg.classList.add('projectImg');
-  modalGrid.appendChild(projectImg);
+  const projectImg1 = document.createElement('div');
+  projectImg1.classList.add('projectImg');
+  modalGrid.appendChild(projectImg1);
 
-  const projectImg = document.createElement('div');
-  projectImg.classList.add('projectImg');
-  modalGrid.appendChild(projectImg);
+  const projectImg2 = document.createElement('div');
+  projectImg2.classList.add('projectImg');
+  modalGrid.appendChild(projectImg2);
 
-  const projectImg = document.createElement('div');
-  projectImg.classList.add('projectImg');
-  modalGrid.appendChild(projectImg);
+  const projectImg3 = document.createElement('div');
+  projectImg3.classList.add('projectImg');
+  modalGrid.appendChild(projectImg3);
 
-  const projectImg = document.createElement('div');
-  projectImg.classList.add('projectImg');
-  modalGrid.appendChild(projectImg);
-  
-  const projectImg = document.createElement('div');
-  projectImg.classList.add('projectImg');
-  modalGrid.appendChild(projectImg);
+  const projectImg4 = document.createElement('div');
+  projectImg4.classList.add('projectImg');
+  modalGrid.appendChild(projectImg4);
 
-  const image = document.createElement('img');
-  image.setAttribute('src', cardObj.image);
-  image.setAttribute('alt', '');
-  projectImg.appendChild(image);
+  const projectImg5 = document.createElement('div');
+  projectImg5.classList.add('projectImg');
+  modalGrid.appendChild(projectImg5);
 
-  const modalInfo = document.createElement('div');
-  modalInfo.classList.add('modal-info');
-  modalGrid.appendChild(modalInfo);
+  const image1 = document.createElement('img');
+  image1.setAttribute('src', cardObj.image1);
+  image1.setAttribute('alt', '');
+  projectImg1.appendChild(image1);
+
+  const image2 = document.createElement('img');
+  image2.setAttribute('src', cardObj.image2);
+  image2.setAttribute('alt', '');
+  projectImg2.appendChild(image2);
+
+  const image3 = document.createElement('img');
+  image3.setAttribute('src', cardObj.image3);
+  image3.setAttribute('alt', '');
+  projectImg1.appendChild(image3);
+
+  const image4 = document.createElement('img');
+  image1.setAttribute('src', cardObj.image4);
+  image1.setAttribute('alt', '');
+  projectImg1.appendChild(image4);
+
+  const image5 = document.createElement('img');
+  image1.setAttribute('src', cardObj.image5);
+  image1.setAttribute('alt', '');
+  projectImg1.appendChild(image5);
 
   const p = document.createElement('p');
-  p.textContent = cardObj.longDescription;
-  modalInfo.appendChild(p);
+  p.textContent = cardObj.Description;
+  modalBody.appendChild(p);
 
-  const popupbtn = document.createElement('div');
-  popupbtn.classList.add('popUpButtons');
-  modalInfo.appendChild(popupbtn);
+  const modalbtns = document.createElement('div');
+  modalbtns.classList.add('modalbtns');
+  modalBody.appendChild(modalbtns);
 
-  const live = document.createElement('a');
-  live.setAttribute('rel', 'noopener noreferrer');
-  live.setAttribute('href', cardObj.linkLive);
-  live.setAttribute('aria-label', 'See Live');
-  live.setAttribute('target', '_blank');
-  live.classList.add('interaction');
+  const live = document.createElement('button');
+  live.classList.add('modal-btn');
   live.textContent = 'See Live';
-  popupbtn.appendChild(live);
+  modalbtns.appendChild(live);
 
-  const source = document.createElement('a');
-  source.setAttribute('rel', 'noopener noreferrer');
-  source.setAttribute('href', cardObj.linkSource);
-  source.setAttribute('aria-label', 'See Source');
-  source.setAttribute('target', '_blank');
-  source.classList.add('interaction');
-  source.textContent = 'See Source';
-  popupbtn.appendChild(source);
+  const btnImg = document.createElement('img');
+  btnImg.setAttribute('src', 'assets/modal/Union.png');
+  live.appendChild(btnImg);
+
+  const source = document.createElement('button');
+  live.classList.add('modal-btn');
+  live.textContent = 'See source';
+  modalbtns.appendChild(live);
+
+  const btnImg2 = document.createElement('img');
+  btnImg2.setAttribute('src', 'assets/modal/Vector.png');
+  source.appendChild(btnImg2);
 }
