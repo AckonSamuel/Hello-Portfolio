@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable no-unused-vars */
-
+let toggleNavStatus = false;
 const cards = [];
 let counter = 0;
 
@@ -66,7 +66,7 @@ cards.push(travailSeize);
 
 // Modal window
 
-function popupWindow(cardObj) {
+function popupWindow() {
   const body = document.querySelector('body');
 
   const modalParent = document.createElement('div');
@@ -75,7 +75,7 @@ function popupWindow(cardObj) {
 
   const modal = document.createElement('div');
   modal.classList.add('modal');
-  modal.setAttribute('id', cardObj.id);
+  modal.setAttribute('id', travailUno.id);
   modalParent.appendChild(modal);
 
   const modalHeader = document.createElement('div');
@@ -83,7 +83,7 @@ function popupWindow(cardObj) {
   modal.appendChild(modalHeader);
 
   const h3 = document.createElement('h3');
-  h3.textContent = cardObj.title;
+  h3.textContent = travailUno.title;
   modalHeader.appendChild(h3);
 
   const closeButton = document.createElement('img');
@@ -102,7 +102,7 @@ function popupWindow(cardObj) {
   ultags.classList.add('model-tech');
   modalBody.appendChild(ultags);
 
-  cardObj.tags.forEach((tag) => {
+  travailUno.tags.forEach((tag) => {
     const litag = document.createElement('li');
     litag.textContent = tag;
     ultags.appendChild(litag);
@@ -116,49 +116,49 @@ function popupWindow(cardObj) {
   projectImg1.classList.add('projectImg');
   modalGrid.appendChild(projectImg1);
 
-  const projectImg2 = document.createElement('div');
-  projectImg2.classList.add('projectImg');
-  modalGrid.appendChild(projectImg2);
+  //   const projectImg2 = document.createElement('div');
+  //   projectImg2.classList.add('projectImg');
+  //   modalGrid.appendChild(projectImg2);
 
-  const projectImg3 = document.createElement('div');
-  projectImg3.classList.add('projectImg');
-  modalGrid.appendChild(projectImg3);
+  //   const projectImg3 = document.createElement('div');
+  //   projectImg3.classList.add('projectImg');
+  //   modalGrid.appendChild(projectImg3);
 
-  const projectImg4 = document.createElement('div');
-  projectImg4.classList.add('projectImg');
-  modalGrid.appendChild(projectImg4);
+  //   const projectImg4 = document.createElement('div');
+  //   projectImg4.classList.add('projectImg');
+  //   modalGrid.appendChild(projectImg4);
 
-  const projectImg5 = document.createElement('div');
-  projectImg5.classList.add('projectImg');
-  modalGrid.appendChild(projectImg5);
+  //   const projectImg5 = document.createElement('div');
+  //   projectImg5.classList.add('projectImg');
+  //   modalGrid.appendChild(projectImg5);
 
   const image1 = document.createElement('img');
-  image1.setAttribute('src', cardObj.image1);
+  image1.setAttribute('src', travailUno.image1);
   image1.setAttribute('alt', '');
   projectImg1.appendChild(image1);
 
-  const image2 = document.createElement('img');
-  image2.setAttribute('src', cardObj.image2);
-  image2.setAttribute('alt', '');
-  projectImg2.appendChild(image2);
+  //   const image2 = document.createElement('img');
+  //   image2.setAttribute('src', travailUno.image2);
+  //   image2.setAttribute('alt', '');
+  //   projectImg2.appendChild(image2);
 
-  const image3 = document.createElement('img');
-  image3.setAttribute('src', cardObj.image3);
-  image3.setAttribute('alt', '');
-  projectImg1.appendChild(image3);
+  //   const image3 = document.createElement('img');
+  //   image3.setAttribute('src', travailUno.image3);
+  //   image3.setAttribute('alt', '');
+  //   projectImg1.appendChild(image3);
 
-  const image4 = document.createElement('img');
-  image1.setAttribute('src', cardObj.image4);
-  image1.setAttribute('alt', '');
-  projectImg1.appendChild(image4);
+  //   const image4 = document.createElement('img');
+  //   image1.setAttribute('src', travailUno.image4);
+  //   image1.setAttribute('alt', '');
+  //   projectImg1.appendChild(image4);
 
-  const image5 = document.createElement('img');
-  image1.setAttribute('src', cardObj.image5);
-  image1.setAttribute('alt', '');
-  projectImg1.appendChild(image5);
+  //   const image5 = document.createElement('img');
+  //   image1.setAttribute('src', travailUno.image5);
+  //   image1.setAttribute('alt', '');
+  //   projectImg1.appendChild(image5);
 
   const p = document.createElement('p');
-  p.textContent = cardObj.Description;
+  p.textContent = travailUno.Description;
   modalBody.appendChild(p);
 
   const modalbtns = document.createElement('div');
@@ -182,4 +182,7 @@ function popupWindow(cardObj) {
   const btnImg2 = document.createElement('img');
   btnImg2.setAttribute('src', 'assets/modal/Vector.png');
   source.appendChild(btnImg2);
+  
+
+
 }
