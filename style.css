@@ -396,6 +396,10 @@ body {
   display: none;
 }
 
+.modal.is-open {
+  display: block;
+}
+
 .modal-header {
   font-family: 'Poppins' sans-serif;
   display: flex;
@@ -1860,6 +1864,22 @@ color: #1A2236;
   }
 
   .firstmobile-nav {
+    display: none;
+  }
+
+  .modal {
+    position: fixed;
+    z-index: 400000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    background: white;
+    box-shadow: 0 0 0 3em rgba(black, .5);
+    overflow-y: scroll;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 9px;
+  
     display: none;
   }
 }
