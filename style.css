@@ -627,6 +627,101 @@ body {
     margin-left: 20px;
     margin-right: 20px;
   }
+
+  .modal {
+    position: fixed;
+    z-index: 400000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    background: white;
+    box-shadow: 0 0 0 3em rgba(black, .5);
+    overflow-y: scroll;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 9px;
+  
+    display: none;
+  }
+  
+  .modal.is-open {
+    display: block;
+  }
+  
+  .modal-header {
+    font-family: 'Poppins' sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  
+  .closebox {
+    align-self: flex-end;
+  }
+  
+  .title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 80%;
+  
+  
+  color: #1A2236;
+  
+  }
+  
+  .model-tech {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    padding: 0;
+    font-style: normal;
+  font-weight: 300;
+  font-size: 10.3334px;
+  line-height: 80%;
+  
+  margin-bottom: 10px;
+  color: #1A2236
+  }
+  
+  .model-tech li {
+    border: .6px solid black;
+    padding: 6px 10px 6px 10px;
+  }
+  
+  .modalbtns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .modal-btn {
+    background-color: #fff;
+    width: 70%;
+    color: #1a2236;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 45px;
+  
+  }
+  
+  .modal-body p {
+    font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  
+  color: #1A2236;
+  }
+  
+  .modal-btn img {
+    justify-self: flex-end;
+  }
 }
 
 @media all and  (min-width: 992px) {
