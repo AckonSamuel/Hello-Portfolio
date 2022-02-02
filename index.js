@@ -1,4 +1,5 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable no-unused-vars */
 let toggleNavStatus = false;
 const getSpace = document.querySelector('.space');
 const getContainer = document.querySelector('.container');
@@ -42,4 +43,64 @@ function toggleNav() {
     closeMenu();
   }
 }
-document.getElementsByClassName('.firstmobile-nav').addEventListener('click', toggleNav);
+// document.getElementsByClassName('.firstmobile-nav').addEventListener('click', toggleNav);
+// function openPopup() {
+//   getPop.style.position = 'fixed';
+//   getPop.style.display = 'flex';
+//   getPop.style.flexDirection = 'column';
+//   getPop.style.width = '100%';
+//   getPop.style.minHeight = '100vh';
+//   toggleNavStatus = true;
+// }
+
+// function closePopup() {
+//   getPop.style.display = 'none';
+//   toggleNavStatus = false;
+// }
+
+// function popIt() {
+//   if (toggleNavStatus === false) {
+//     openPopup();
+//   } else {
+//     closePopup();
+//   }
+// }
+
+// document.getElementsByClassName('.project-view').addEventListener('click', popIt);
+
+// const openModalButtons = document.querySelectorAll('[data-modal-target]');
+// // const closeModalButtons = document.querySelectorAll('[data-close-button]');
+// // const overlay = document.getElementById('overlay');
+// // const button = document.getElementsByTagName('button');
+// // // const buttonclass = document.querySelector('project-view');
+
+// // function openModal(modal) {
+// //   if (modal == null) return;
+// //   modal.classList.add('active');
+// //   overlay.classList.add('active');
+// // }
+// // function clickpen() {
+// //   const modal = document.querySelector('project-view');
+// //   openModal(modal);
+// // }
+// // function closeModal(modal) {
+// //   if (modal == null) return;
+// //   modal.classList.remove('active');
+// //   overlay.classList.remove('active');
+// // }
+
+// // function clicklose() {
+// //   const modal = button.closest('.modal');
+// //   closeModal(modal);
+// // }
+// // function actionOpen() {
+// //   openModalButtons.forEach((button) => {
+// //     button.addEventListener('click', clickpen);
+// //   });
+// // }
+
+// // function actionclose() {
+// //   closeModalButtons.forEach((button) => {
+// //     button.addEventListener('click', clicklose);
+// //   });
+// // }
