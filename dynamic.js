@@ -109,11 +109,27 @@ function popupWindow(cardObj) {
   });
 
   const modalGrid = document.createElement('div');
-  modalGrid.classList.add('card', 'featured', 'modal-grid');
-  modal.appendChild(modalGrid);
+  modalGrid.classList.add('modal-grid');
+  modalBody.appendChild(modalGrid);
 
   const projectImg = document.createElement('div');
-  projectImg.classList.add('container', 'projectImg');
+  projectImg.classList.add('projectImg');
+  modalGrid.appendChild(projectImg);
+
+  const projectImg = document.createElement('div');
+  projectImg.classList.add('projectImg');
+  modalGrid.appendChild(projectImg);
+
+  const projectImg = document.createElement('div');
+  projectImg.classList.add('projectImg');
+  modalGrid.appendChild(projectImg);
+
+  const projectImg = document.createElement('div');
+  projectImg.classList.add('projectImg');
+  modalGrid.appendChild(projectImg);
+  
+  const projectImg = document.createElement('div');
+  projectImg.classList.add('projectImg');
   modalGrid.appendChild(projectImg);
 
   const image = document.createElement('img');
