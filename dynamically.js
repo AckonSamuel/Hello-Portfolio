@@ -20,6 +20,14 @@ const projects = [
   },
   {
     title: 'Project name goes here',
+    src: 'assets/work/work_two.png',
+    description: ['Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cupiditate eveniet velit corrupti saepe, in eos est corporis nihil excepturi magnam unde nisi eligendi error ut voluptatum odit rem? Fugiat nisi sed sapiente ullam asperiores omnis.', 'Eos facilis dignissimos hic saepe? Mollitia excepturi fugiat unde praesentium blanditiis! Illum ipsam facere nesciunt accusamus fugit officia perspiciatis et, eligendi in. Nobis aut non laborum minus est, cupiditate commodi ipsam debitis eius quis praesentium quam corrupti deserunt tenetur accusamus magni saepe ipsum quo.'],
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    seeLiveLink: '#',
+    seeSourceLink: '#',
+  },
+  {
+    title: 'Project name goes here',
     src: 'assets/work/work_three.png',
     description: ['Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cupiditate eveniet velit corrupti saepe, in eos est corporis nihil excepturi magnam unde nisi eligendi error utvoluptatum odit rem? Fugiat nisi sed sapiente ullam asperiores omnis.', 'Eos facilisdignissimos hic saepe? Mollitia excepturi fugiat unde praesentium blanditiis! Illum ipsam facere nesciunt accusamus fugit officia perspiciatis et, eligendi in. Nobis aut non laborum minus est, cupiditate commodi ipsam debitis eius quis praesentium quam corrupti deserunttenetur accusamus magni saepe ipsum quo.'],
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
@@ -56,7 +64,7 @@ const AllButtons = document.getElementsByClassName('project-view');
 const work = document.querySelector('body');
 const popUp = document.createElement('section');
 popUp.classList.add('modal');
-const getModal = document.querySelector('.modal');
+const getUilo = document.querySelectorAll('.uilo img');
 function popUpMobile(cardNumber) {
   popUp.style.display = 'block';
   work.appendChild(popUp);
@@ -72,13 +80,10 @@ function popUpMobile(cardNumber) {
         <li>${projects[cardNumber].technologies[1]}</li>
         <li>${projects[cardNumber].technologies[2]}</li>
     </ul>
-
-    <button class="directPhoto"><img src="assets/modal/vectorLeft.png" alt="previous"></button>
-          <button class="directPhoto"><img src="assets/modal/vectorRight.png" alt="next"></button>
-    <div class="project photo uilo">
-          <img src=${projects[cardNumber].src}  class="work-one kli" alt="first project image">
-          <button class="directPhoto linkupi"><img src="assets/modal/vectorLeft.png" alt="previous"></button>
+    <button class="directPhoto linkupi"><img src="assets/modal/vectorLeft.png" alt="previous"></button>
           <button class="directPhoto linkdowni"><img src="assets/modal/vectorRight.png" alt="next"></button>
+ <div class="project photo uilo">
+          <img src=${projects[cardNumber].src}  class="work-one kli" alt="first project image">
           <img src=${projects[cardNumber].src}  class="work-one hy" alt="first project image">
           <img src=${projects[cardNumber].src}  class="work-one hi" alt="first project image">
           <img src=${projects[cardNumber].src}  class="work-one ji" alt="first project image">
@@ -104,7 +109,6 @@ function popUpMobile(cardNumber) {
   document.addEventListener('click', (event) => {
     if (event.target.id === 'closeup') {
       popUp.style.display = 'none';
-      getModal.style.display = 'none';
     }
   });
 }
@@ -116,4 +120,11 @@ for (let i = 0; i < AllButtons.length; i += 1) {
   AllButtons[i].addEventListener('click', () => {
     popUpMobile(i);
   });
+
+  for (let i = 1; i < getUilo.length; i += 1) {
+    getUilo[i].addEventListener('click', () => {
+      getUilo[i].style.border = 'solid black';
+      getUilo[i].style.cursor = 'pointer';
+    });
+  }
 }
