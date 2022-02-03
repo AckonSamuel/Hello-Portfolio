@@ -179,7 +179,7 @@ body {
   }
 
   /* works section */
-  .hallelujah {
+  #hallelujah {
     display: grid;
     grid-template-areas: "Works""About";
   }
