@@ -796,6 +796,15 @@ body {
   .squad {
     display: none;
   }
+
+  .try-again {
+    display: none;
+    color: rgb(240, 34, 34);
+    font-size: 15px;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+  }
 }
 
 @media all and  (min-width: 992px) {
@@ -2106,5 +2115,14 @@ body {
     flex-direction: row;
     padding: 0;
     cursor: pointer;
+  }
+
+  .try-again {
+    display: none;
+    color: rgb(240, 34, 34);
+    font-size: 15px;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
   }
 }
