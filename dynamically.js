@@ -64,7 +64,7 @@ const AllButtons = document.getElementsByClassName('project-view');
 const work = document.querySelector('body');
 const popUp = document.createElement('section');
 popUp.classList.add('modalD');
-const getUilo = document.querySelectorAll('.uilo img');
+
 function popUpMobile(cardNumber) {
   popUp.style.display = 'block';
   work.appendChild(popUp);
@@ -72,7 +72,7 @@ function popUpMobile(cardNumber) {
       <div class="modal" id="modal">
       <div class="modal-header">
     <div id="closebox" ><img src="assets/menu/Union.png" id="closeup" alt="close"></div> 
-          <h3 class="title">${projects[cardNumber]['title']}</h3>
+          <h3 class="title">${projects[cardNumber].title}</h3>
       
         <div class="modal-body">
         <ul class="model-tech">
@@ -125,36 +125,28 @@ function popUpMobile(cardNumber) {
   });
 
   document.querySelector('.lastRight').addEventListener('click', () => {
-    cardNumber+=1
-    if(cardNumber === 2 ){
+    cardNumber += 1;
+    if (cardNumber === 2) {
       cardNumber += 1;
     }
-    if(cardNumber > 7)
-    cardNumber = 0;
+    if (cardNumber > 7) { cardNumber = 0; }
     popUpMobile(cardNumber);
     return null;
   });
 
   document.querySelector('.lastLeft').addEventListener('click', () => {
-    cardNumber-=1;
-    if(cardNumber == 2 )
-    cardNumber -=1;
-    if(cardNumber < 0)
-    cardNumber = 6;
+    cardNumber -= 1;
+    if (cardNumber === 2) { cardNumber -= 1; }
+    if (cardNumber < 0) { cardNumber = 6; }
     popUpMobile(cardNumber);
     return null;
   });
-
 }
 
-
-for ( let i = 0; i < projects.length; i += 1) {
+for (let i = 0; i < projects.length; i += 1) {
   AllButtons[i].addEventListener('click', () => {
-    if(i === 0){
+    if (i === 0) {
       popUpMobile(i);
-    }
-else
-    popUpMobile(6);
-    
+    } else { popUpMobile(6); }
   });
 }
