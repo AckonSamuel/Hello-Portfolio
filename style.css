@@ -393,12 +393,9 @@ body {
   font-family: 'Poppins', sans-serif;
   padding-left: 9px;
 
-  display: none;
-}
-
-.modal.is-open {
   display: block;
 }
+
 
 .modal-header {
   font-family: 'Poppins' sans-serif;
