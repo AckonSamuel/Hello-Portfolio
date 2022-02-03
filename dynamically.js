@@ -1,5 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable no-console */
+/* eslint-disable max-len */
 
 const projects = [
   {
@@ -102,8 +103,8 @@ function popUpMobile(cardNumber) {
     <button class="modal-btn">
     See source
     <img src="assets/modal/Vector.png" alt="see source">
-    </button>
-    </div>
+  </button>
+        </div>
         <div class="squad">
         
           <button class="lastLeft">
@@ -113,28 +114,33 @@ function popUpMobile(cardNumber) {
         Next project
         <img class="toLeft" src="assets/modal/UnionNext.png">
         </button>
-        </div>
+
       </div>
+      </div>
+      <div class="backcontainer"></div>
       </section>`;
   document.addEventListener('click', (event) => {
     if (event.target.id === 'closeup') {
       popUp.style.display = 'none';
     }
   });
-}
-for (let a = 0; a < projects.length; a += 1) {
-  document.querySelector('.lastRight').addEventListener('click', () => {
-    console.log(a);
-    popUpMobile(a + 1);
-  });
 
-  document.querySelector('.lastLeft').addEventListener('click', () => {
-    console.log(a);
-    popUpMobile(a - 1);
-  });
+  for (let a = 0; a < projects.length; a += 1) {
+    document.querySelector('.lastRight').addEventListener('click', () => {
+      console.log(a);
+      popUpMobile(a + 1);
+    });
+
+    document.querySelector('.lastLeft').addEventListener('click', () => {
+      console.log(a);
+      popUpMobile(a - 1);
+    });
+  }
 }
+
 for (let i = 0; i < AllButtons.length; i += 1) {
   AllButtons[i].addEventListener('click', () => {
     popUpMobile(i);
+    document.querySelector('body').style.backdropFilter = '#blue';
   });
 }
