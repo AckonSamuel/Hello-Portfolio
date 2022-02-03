@@ -1,5 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable no-console */
+/* eslint-disable max-len */
 
 const projects = [
   {
@@ -63,7 +64,7 @@ const projects = [
 const AllButtons = document.getElementsByClassName('project-view');
 const work = document.querySelector('body');
 const popUp = document.createElement('section');
-popUp.classList.add('modal');
+popUp.classList.add('modalD');
 const getUilo = document.querySelectorAll('.uilo img');
 function popUpMobile(cardNumber) {
   popUp.style.display = 'block';
@@ -104,27 +105,42 @@ function popUpMobile(cardNumber) {
     <img src="assets/modal/Vector.png" alt="see source">
   </button>
         </div>
+        <div class="squad">
+        
+          <button class="lastLeft">
+          <img class="toLeft" src="assets/modal/UnionPrevious.png">
+        Previous project</button>
+        <button class="lastRight">
+        Next project
+        <img class="toLeft" src="assets/modal/UnionNext.png">
+        </button>
+
       </div>
+      </div>
+      <div class="backcontainer"></div>
       </section>`;
   document.addEventListener('click', (event) => {
     if (event.target.id === 'closeup') {
       popUp.style.display = 'none';
     }
   });
+
+  for (let a = 0; a < projects.length; a += 1) {
+    document.querySelector('.lastRight').addEventListener('click', () => {
+      console.log(a);
+      popUpMobile(a + 1);
+    });
+
+    document.querySelector('.lastLeft').addEventListener('click', () => {
+      console.log(a);
+      popUpMobile(a - 1);
+    });
+  }
 }
 
 for (let i = 0; i < AllButtons.length; i += 1) {
-  //   AllButtons[i].addEventListener('click', () => {
-  //     popUpDesktop(i);
-  //   });
   AllButtons[i].addEventListener('click', () => {
     popUpMobile(i);
+    document.querySelector('body').style.backdropFilter = '#blue';
   });
-
-  for (let i = 1; i < getUilo.length; i += 1) {
-    getUilo[i].addEventListener('click', () => {
-      getUilo[i].style.border = 'solid black';
-      getUilo[i].style.cursor = 'pointer';
-    });
-  }
 }
