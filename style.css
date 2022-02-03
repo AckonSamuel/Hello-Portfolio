@@ -634,38 +634,34 @@ body {
     top: 0;
     bottom: 0;
     left: 0;
-    right:0;
+    right: 0;
     background: white;
-    box-shadow: 0 0 0 3em rgba(black, .5);
     overflow-y: scroll;
     font-family: 'Poppins', sans-serif;
     padding-left: 9px;
   }
-  
+
   .modal-header {
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     margin: 10px;
   }
-  
+
   #closebox {
     align-self: flex-end;
   }
-  
+
   .title {
     margin-top: 0;
     margin-bottom: 10px;
     font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 80%;
-  
-  
-  color: #1A2236;
-  
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 80%;
+    color: #1a2236;
   }
-  
+
   .model-tech {
     list-style: none;
     display: flex;
@@ -673,27 +669,26 @@ body {
     gap: 5%;
     padding: 0;
     font-style: normal;
-  font-weight: 300;
-  font-size: 10.3334px;
-  line-height: 80%;
-  
-  margin-bottom: 10px;
-  color: black;
+    font-weight: 300;
+    font-size: 10.3334px;
+    line-height: 80%;
+    margin-bottom: 10px;
+    color: black;
   }
-  
+
   .model-tech li {
-    border: .4px solid #1a2236;
+    border: 0.4px solid #1a2236;
     padding: 6px 10px 6px 10px;
   }
 
   .uilo {
     display: grid;
     grid-template-areas:
-     'hone hone hone hone'
-     'hone hone hone hone'
-     'hone hone hone hone'
-     'hone hone hone hone' 
-     'hy hi ji lp';
+      'hone hone hone hone'
+      'hone hone hone hone'
+      'hone hone hone hone'
+      'hone hone hone hone'
+      'hy hi ji lp';
     width: inherit;
   }
 
@@ -717,14 +712,14 @@ body {
   }
 
   .ji {
-    grid-area: ji; 
+    grid-area: ji;
     grid-column: 3/4;
     grid-row: 5/6;
   }
 
   .lp {
     grid-area: lp;
-    grid-area: ji; 
+    grid-area: ji;
     grid-column: 4/5;
     grid-row: 5/6;
   }
@@ -732,7 +727,7 @@ body {
   .directPhoto {
     position: absolute;
     background: none;
-    border:0;
+    border: 0;
     padding: 0;
     width: 20px;
     height: 10px;
@@ -750,7 +745,6 @@ body {
     right: 9px;
     top: 30%;
     bottom: 50%;
-
   }
 
   .hi,
@@ -763,36 +757,34 @@ body {
   }
 
   .desktt {
-    width: 40px
+    width: 40px;
   }
-  
+
   .modalbtns {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .modal-btn {
     background-color: #fff;
     width: 70%;
     color: #1a2236;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-left: 45px;
-  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 45px;
   }
-  
+
   .modal-body p {
-    font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 27px;
-  
-  color: #1A2236;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1a2236;
   }
-  
+
   .modal-btn img {
     justify-self: flex-end;
   }
@@ -895,7 +887,7 @@ body {
   }
 
   .intro > p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -1029,10 +1021,6 @@ body {
 
   .photo {
     display: none;
-  }
-
-  .uilo {
-    display: grid;
   }
 
   .techdesk {
@@ -1889,90 +1877,87 @@ body {
   .firstmobile-nav {
     display: none;
   }
-.modalD {
-  position: fixed;
-  z-index: 500;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #1a2236;
-}
+
+  .modalD {
+    position: fixed;
+    z-index: 500;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1a2236;
+  }
+
   .modal {
     position: fixed;
     z-index: 400000;
     top: 20px;
     bottom: 20px;
     left: 20px;
-    right:20px;
+    right: 20px;
     background: white;
-    box-shadow: 0 0 0 3em rgba(black, .5);
     overflow-y: scroll;
     font-family: 'Poppins', sans-serif;
     padding-left: 9px;
   }
 
   .modal-header {
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     margin: 10px;
   }
-  
+
   #closebox {
     align-self: flex-end;
   }
-  
+
   .title {
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 60px;
     line-height: 80%;
     margin: 0 0 34px 0;
-    
-    color: #1A2236;
-    
-  
+    color: #1a2236;
   }
-  
+
   .model-tech {
     list-style: none;
     display: flex;
     flex-direction: row;
     gap: 5%;
     padding: 0;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 80%;
-    color: #1A2236;
-    
+    color: #1a2236;
   }
-  
+
   .model-tech li {
-    border: .4px solid #1a2236;
+    border: 0.4px solid #1a2236;
     padding: 6px 10px 6px 10px;
   }
 
   .uilo {
     display: grid;
     grid-template-areas:
-     'hone hone hone hone'
-     'hone hone hone hone'
-     'hone hone hone hone'
-     'hone hone hone hone' 
-     'hy hi ji lp';
+      'hone hone hone hone'
+      'hone hone hone hone'
+      'hone hone hone hone'
+      'hone hone hone hone'
+      'hy hi ji lp';
     width: 100%;
     height: max-content;
   }
 
   .kli {
     grid-area: hone;
-    height:100%;
+    height: 100%;
     grid-column: 1 /5;
     grid-row: 1/5;
   }
@@ -1991,13 +1976,13 @@ body {
   }
 
   .ji {
-    grid-area: ji; 
+    grid-area: ji;
     grid-column: 3/4;
     grid-row: 5/6;
   }
 
   .lp {
-    grid-area: lp; 
+    grid-area: lp;
     grid-column: 4/5;
     grid-row: 5/6;
   }
@@ -2005,7 +1990,7 @@ body {
   .directPhoto {
     position: absolute;
     background: none;
-    border:0;
+    border: 0;
     padding: 0;
     width: 20px;
     height: 10px;
@@ -2016,7 +2001,7 @@ body {
   .directPhoto:hover {
     position: absolute;
     background: none;
-    border:0;
+    border: 0;
     padding: 0;
     width: 40px;
     height: 10px;
@@ -2040,7 +2025,6 @@ body {
     right: 9px;
     top: 50%;
     bottom: 50%;
-
   }
 
   .hi,
@@ -2051,7 +2035,7 @@ body {
   .linkdowni {
     cursor: pointer;
   }
-  
+
   .modalbtns {
     display: flex;
     flex-direction: row;
@@ -2059,23 +2043,23 @@ body {
     margin: 10% 20% 10% 20%;
     gap: 60px;
   }
-  
+
   .modal-btn {
     background-color: #fff;
     width: 40%;
     color: #1a2236;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .modal-btn:hover {
     background-color: #1a2236;
     width: 40%;
     color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .modal-description {
@@ -2083,17 +2067,16 @@ body {
     flex-direction: column;
     margin: 10% 20% 10% 20%;
   }
-  
+
   .modal-body p {
-    font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 27px;
-  
-  color: #1A2236;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1a2236;
   }
-  
+
   .modal-btn img {
     justify-self: flex-end;
   }
@@ -2123,6 +2106,5 @@ body {
     flex-direction: row;
     padding: 0;
     cursor: pointer;
-    
   }
 }
