@@ -72,8 +72,18 @@ function popUpMobile(cardNumber) {
         <li>${projects[cardNumber].technologies[1]}</li>
         <li>${projects[cardNumber].technologies[2]}</li>
     </ul>
-    <div class="project photo">
-          <img src=${projects[cardNumber].src}  class="work-one" alt="first project image">
+
+    <button class="directPhoto"><img src="assets/modal/vectorLeft.png" alt="previous"></button>
+          <button class="directPhoto"><img src="assets/modal/vectorRight.png" alt="next"></button>
+    <div class="project photo uilo">
+          <img src=${projects[cardNumber].src}  class="work-one kli" alt="first project image">
+          <button class="directPhoto linkupi"><img src="assets/modal/vectorLeft.png" alt="previous"></button>
+          <button class="directPhoto linkdowni"><img src="assets/modal/vectorRight.png" alt="next"></button>
+          <img src=${projects[cardNumber].src}  class="work-one hy" alt="first project image">
+          <img src=${projects[cardNumber].src}  class="work-one hi" alt="first project image">
+          <img src=${projects[cardNumber].src}  class="work-one ji" alt="first project image">
+          <img src=${projects[cardNumber].src}  class="work-one lp" alt="first project image">
+
         </div>
         <div class="modal-description">
           <p>${projects[cardNumber].description[0]}</p>
