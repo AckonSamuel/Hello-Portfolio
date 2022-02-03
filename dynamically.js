@@ -145,8 +145,12 @@ function popUpMobile(cardNumber) {
 
 for (let i = 0; i < projects.length; i += 1) {
   AllButtons[i].addEventListener('click', () => {
-    if (i === 0) {
+    if (AllButtons.length === 2) {
+      if (i === 0) { popUpMobile(i); } else {
+        popUpMobile(6);
+      }
+    } else {
       popUpMobile(i);
-    } else { popUpMobile(6); }
+    }
   });
 }
