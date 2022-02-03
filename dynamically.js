@@ -117,7 +117,7 @@ vreds.style.display = 'inherit';
 vreds1.style.display = 'inherit';
 vreds2.style.display = 'inherit';
 
-// vreds4.style.display = 'inherit';
+vreds4.style.display = 'flex';
 vreds5.style.display = 'inherit';
 vreds.style.display = 'inherit';
 
