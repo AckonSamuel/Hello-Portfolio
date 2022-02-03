@@ -1,7 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable no-console */
 /* eslint-disable max-len */
-
 const projects = [
   {
     title: 'Project name goes here',
@@ -73,7 +72,7 @@ function popUpMobile(cardNumber) {
       <div class="modal" id="modal">
       <div class="modal-header">
     <div id="closebox" ><img src="assets/menu/Union.png" id="closeup" alt="close"></div> 
-          <h3 class="title">${projects[cardNumber].title}</h3>
+          <h3 class="title">${projects[cardNumber]['title']}</h3>
       
         <div class="modal-body">
         <ul class="model-tech">
@@ -125,22 +124,37 @@ function popUpMobile(cardNumber) {
     }
   });
 
-  for (let a = 0; a < projects.length; a += 1) {
-    document.querySelector('.lastRight').addEventListener('click', () => {
-      console.log(a);
-      popUpMobile(a + 1);
-    });
+  document.querySelector('.lastRight').addEventListener('click', () => {
+    cardNumber+=1
+    if(cardNumber === 2 ){
+      cardNumber += 1;
+    }
+    if(cardNumber > 7)
+    cardNumber = 0;
+    popUpMobile(cardNumber);
+    return null;
+  });
 
-    document.querySelector('.lastLeft').addEventListener('click', () => {
-      console.log(a);
-      popUpMobile(a - 1);
-    });
-  }
+  document.querySelector('.lastLeft').addEventListener('click', () => {
+    cardNumber-=1;
+    if(cardNumber == 2 )
+    cardNumber -=1;
+    if(cardNumber < 0)
+    cardNumber = 6;
+    popUpMobile(cardNumber);
+    return null;
+  });
+
 }
 
-for (let i = 0; i < AllButtons.length; i += 1) {
+
+for ( let i = 0; i < projects.length; i += 1) {
   AllButtons[i].addEventListener('click', () => {
-    popUpMobile(i);
-    document.querySelector('body').style.backdropFilter = '#blue';
+    if(i === 0){
+      popUpMobile(i);
+    }
+else
+    popUpMobile(6);
+    
   });
 }
