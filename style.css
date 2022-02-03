@@ -708,7 +708,6 @@ body {
     grid-area: hy;
     grid-column: 1 /2;
     grid-row: 5/6;
-    border: solid black;
   }
 
   .hi {
@@ -759,8 +758,12 @@ body {
   .ji,
   .lp,
   .linkupi,
-  .linkdown {
+  .linkdowni {
     cursor: pointer;
+  }
+
+  .desktt {
+    width: 40px
   }
   
   .modalbtns {
@@ -1886,20 +1889,29 @@ body {
   .firstmobile-nav {
     display: none;
   }
-
+.modalD {
+  position: fixed;
+  z-index: 500;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1a2236;
+}
   .modal {
     position: fixed;
     z-index: 400000;
-    top: 10%;
-    bottom: 10%;
-    left: 10%;
-    right:10%;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right:20px;
     background: white;
     box-shadow: 0 0 0 3em rgba(black, .5);
     overflow-y: scroll;
     font-family: 'Poppins', sans-serif;
     padding-left: 9px;
-
   }
 
   .modal-header {
@@ -2001,6 +2013,17 @@ body {
     z-index: 100;
   }
 
+  .directPhoto:hover {
+    position: absolute;
+    background: none;
+    border:0;
+    padding: 0;
+    width: 40px;
+    height: 10px;
+    opacity: 1;
+    z-index: 100;
+  }
+
   .work-one {
     width: 100%;
     height: 100%;
@@ -2009,13 +2032,13 @@ body {
 
   .linkupi {
     left: inherit;
-    top: 30%;
+    top: 50%;
     bottom: 50%;
   }
 
   .linkdowni {
     right: 9px;
-    top: 30%;
+    top: 50%;
     bottom: 50%;
 
   }
@@ -2025,7 +2048,7 @@ body {
   .ji,
   .lp,
   .linkupi,
-  .linkdown {
+  .linkdowni {
     cursor: pointer;
   }
   
@@ -2100,5 +2123,6 @@ body {
     flex-direction: row;
     padding: 0;
     cursor: pointer;
+    
   }
 }

@@ -80,8 +80,8 @@ function popUpMobile(cardNumber) {
         <li>${projects[cardNumber].technologies[1]}</li>
         <li>${projects[cardNumber].technologies[2]}</li>
     </ul>
-    <button class="directPhoto linkupi"><img src="assets/modal/vectorLeft.png" alt="previous"></button>
-          <button class="directPhoto linkdowni"><img src="assets/modal/vectorRight.png" alt="next"></button>
+    <button class="directPhoto linkupi desktt"><img src="assets/modal/vectorLeft.png" alt="previous"></button>
+          <button class="directPhoto linkdowni desktt"><img src="assets/modal/vectorRight.png" alt="next"></button>
  <div class="project photo uilo">
           <img src=${projects[cardNumber].src}  class="work-one kli" alt="first project image">
           <img src=${projects[cardNumber].src}  class="work-one hy" alt="first project image">
