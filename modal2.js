@@ -56,15 +56,16 @@ const AllButtons = document.getElementsByClassName('project-view');
 const work = document.querySelector('body');
 const popUp = document.createElement('section');
 popUp.classList.add('modal');
+const getModal = document.querySelector('.modal');
 function popUpMobile(cardNumber) {
   popUp.style.display = 'block';
   work.appendChild(popUp);
   popUp.innerHTML = `
     <div class="modal" id="modal">
     <div class="modal-header">
-  <div id="close-popUp"><img src="assets/menu/Union.png" alt="close"></div> 
+  <div id="closebox" ><img src="assets/menu/Union.png" id="closeup" alt="close"></div> 
         <h3>${projects[cardNumber].title}</h3>
-      </div>
+    
       <div class="modal-body">
       <ul class="model-tech">
       <li>${projects[cardNumber].technologies[0]}</li>
@@ -91,8 +92,9 @@ function popUpMobile(cardNumber) {
     </div>
     </section>`;
   document.addEventListener('click', (event) => {
-    if (event.target.id === 'close-popUp') {
+    if (event.target.id === 'closeup') {
       popUp.style.display = 'none';
+      getModal.style.display = 'none';
     }
   });
 }

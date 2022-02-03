@@ -404,7 +404,7 @@ body {
   margin: 10px;
 }
 
-.closebox {
+#closebox {
   align-self: flex-end;
 }
 
