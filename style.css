@@ -2,12 +2,26 @@ body {
   background-color: white;
 }
 
+.fa-times {
+  display: none;
+}
+
+.fa-times::before {
+  display: none;
+  content: "\f00d";
+}
+
 @media all and (max-width: 992px) {
   .container {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     justify-content: space-between;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
   }
 
   .first {
@@ -23,32 +37,7 @@ body {
     flex: 1;
     width: auto;
     justify-content: space-between;
-  }
-
-  .image01 {
-    position: relative;
-    width: 74px;
-    height: 74px;
-  }
-
-  .image02 {
-    position: relative;
-    width: 74px;
-    height: 74px;
-    right: 37px;
-    margin-bottom: 4.75%;
-  }
-
-  .shape00 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .shape01 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    z-index: 10000;
   }
 
   .boxic {
@@ -67,10 +56,39 @@ body {
     word-wrap: break-word;
   }
 
+  .firstmobile-nav {
+    display: none;
+    width: auto;
+    height: calc(100vh - 280px);
+    align-content: center;
+    visibility: inherit;
+    gap: 1em;
+    list-style-type: none;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1000;
+    margin-top: 0;
+    padding-left: 1em;
+    margin-left: 1em;
+    margin-right: -0.5em;
+    padding-top: 10em;
+    background: url("./assets/menu/Mask\ Group.png") bottom no-repeat, url("./assets/menu/Group_51.png") calc(100% - 70px) 90px no-repeat, url("./assets/menu/Group_51.png") 25% calc(100% - 20%) no-repeat;
+    background-size: 100% 15%, auto auto, auto auto;
+  }
+
+  .firstmobile-nav a {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 300%;
+    color: black;
+  }
+
   .name {
     width: 100%;
     height: auto;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
@@ -86,7 +104,7 @@ body {
     height: auto;
     margin-bottom: 30px;
     justify-self: center;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -106,7 +124,7 @@ body {
     margin-bottom: 32px;
     justify-content: center;
     flex-direction: column;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -124,7 +142,7 @@ body {
     margin-bottom: 32px;
     justify-content: center;
     flex-direction: column;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -161,19 +179,19 @@ body {
   }
 
   /* works section */
-  .hallelujah {
+  #hallelujah {
     display: grid;
     grid-template-areas: "Works""About";
   }
 
-  .works {
+  #works {
     display: grid;
     grid-template-areas: "Project-name""one""two""three""four""five""six";
   }
 
   .project-name {
     grid-area: Project-name;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
@@ -257,7 +275,7 @@ body {
     width: auto;
     height: auto;
     flex-grow: 1;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -290,7 +308,7 @@ body {
     text-align: center;
     padding-left: 10px;
     padding-right: 15px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -306,7 +324,7 @@ body {
     object-fit: cover;
   }
 
-  .about {
+  #about {
     grid-area: About;
     display: flex;
     flex-direction: column-reverse;
@@ -356,7 +374,7 @@ body {
   .lang > h4,
   .skills > h4,
   .frameworks > h4 {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
@@ -388,7 +406,7 @@ body {
 
   .maybe {
     list-style-type: none;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 10.3334px;
@@ -413,7 +431,7 @@ body {
     justify-content: center;
     flex-direction: row;
     gap: 8px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -421,13 +439,8 @@ body {
     padding: 20px;
   }
 
-  a {
-    color: #fff;
-    text-decoration: none;
-  }
-
   .abouttext {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -436,7 +449,7 @@ body {
   }
 
   .aboutword {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
@@ -451,8 +464,6 @@ body {
     align-self: center;
     padding: 6px 3px 4px;
     justify-self: center;
-
-    /* margin-top: 9px; */
   }
 
   footer {
@@ -462,20 +473,10 @@ body {
     background: #f9f9fa;
   }
 
-  fieldset {
-    margin-bottom: 10px;
-    background-color: white;
-    border: 1px solid #dfdfe0;
-    box-sizing: border-box;
-    border-radius: 4px;
-    line-height: 21px;
-    color: #7d7c84;
-  }
-
   input {
     width: 100%;
     border: 0;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -483,18 +484,14 @@ body {
     color: #1a2236;
   }
 
-  legend {
-    font-family: Georgia, "Times New Roman", Times, serif;
+  label {
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
     line-height: 15px;
     color: #7d7c84;
     background-color: white;
-  }
-
-  .field {
-    background: white;
   }
 
   textarea {
@@ -504,7 +501,7 @@ body {
     color: #1a2236;
     border: 0;
     min-height: 112px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
   }
 
   .footer-items {
@@ -537,7 +534,7 @@ body {
 
   .resume > p {
     margin-left: -20px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -550,8 +547,16 @@ body {
     outline: none;
   }
 
-  .fooc:focus-visible {
-    outline: #1a2236;
+  .fooc {
+    padding-left: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid #dfdfe0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    line-height: 21px;
+    color: #7d7c84;
   }
 
   button {
@@ -563,7 +568,7 @@ body {
     margin-bottom: 32px;
     justify-content: center;
     flex-direction: column;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -582,7 +587,7 @@ body {
     flex-direction: column;
     gap: 20px;
     list-style-type: disc;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -601,7 +606,7 @@ body {
   }
 
   .namet {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
@@ -612,7 +617,7 @@ body {
   }
 
   .introt {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -621,6 +626,184 @@ body {
     color: #1a2236;
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .modal {
+    position: fixed;
+    z-index: 400000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    overflow-y: scroll;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 9px;
+  }
+
+  .modal-header {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  #closebox {
+    align-self: flex-end;
+  }
+
+  .title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 80%;
+    color: #1a2236;
+  }
+
+  .model-tech {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    padding: 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10.3334px;
+    line-height: 80%;
+    margin-bottom: 10px;
+    color: black;
+  }
+
+  .model-tech li {
+    border: 0.4px solid #1a2236;
+    padding: 6px 10px 6px 10px;
+  }
+
+  .uilo {
+    display: grid;
+    grid-template-areas:
+      'hone hone hone hone'
+      'hone hone hone hone'
+      'hone hone hone hone'
+      'hone hone hone hone'
+      'hy hi ji lp';
+    width: inherit;
+  }
+
+  .kli {
+    grid-area: hone;
+    height: inherit;
+    grid-column: 1 /5;
+    grid-row: 1/5;
+  }
+
+  .hy {
+    grid-area: hy;
+    grid-column: 1 /2;
+    grid-row: 5/6;
+  }
+
+  .hi {
+    grid-area: hi;
+    grid-column: 2 /3;
+    grid-row: 5/6;
+  }
+
+  .ji {
+    grid-area: ji;
+    grid-column: 3/4;
+    grid-row: 5/6;
+  }
+
+  .lp {
+    grid-area: lp;
+    grid-area: ji;
+    grid-column: 4/5;
+    grid-row: 5/6;
+  }
+
+  .directPhoto {
+    position: absolute;
+    background: none;
+    border: 0;
+    padding: 0;
+    width: 20px;
+    height: 10px;
+    opacity: 1;
+    z-index: 100;
+  }
+
+  .linkupi {
+    left: inherit;
+    top: 30%;
+    bottom: 50%;
+  }
+
+  .linkdowni {
+    right: 9px;
+    top: 30%;
+    bottom: 50%;
+  }
+
+  .hi,
+  .hy,
+  .ji,
+  .lp,
+  .linkupi,
+  .linkdowni {
+    cursor: pointer;
+  }
+
+  .desktt {
+    width: 40px;
+  }
+
+  .modalbtns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-btn {
+    background-color: #fff;
+    width: 70%;
+    color: #1a2236;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 45px;
+  }
+
+  .modal-body p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1a2236;
+  }
+
+  .modal-btn img {
+    justify-self: flex-end;
+  }
+
+  #modalD {
+    display: block;
+  }
+
+  .squad {
+    display: none;
+  }
+
+  .try-again {
+    display: none;
+    color: rgb(240, 34, 34);
+    font-size: 15px;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
   }
 }
 
@@ -673,7 +856,7 @@ body {
   }
 
   .name > h1 {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 110px;
@@ -713,7 +896,7 @@ body {
   }
 
   .intro > p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -725,7 +908,7 @@ body {
   .rectangle > div {
     width: 203.68px;
     height: 26.47px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -737,7 +920,7 @@ body {
   .rectangle:hover > div {
     width: 203.68px;
     height: 26.47px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -779,7 +962,7 @@ body {
     background-position: bottom right;
   }
 
-  .works {
+  #works {
     display: grid;
     grid-template-areas: "Project-name one";
     grid-template-columns: 480px auto;
@@ -801,7 +984,7 @@ body {
 
   .project-name > h2 {
     margin-top: -1px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 110px;
@@ -836,7 +1019,7 @@ body {
     width: auto;
     height: auto;
     flex-grow: 1;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -859,7 +1042,7 @@ body {
 
   .maybe {
     list-style-type: none;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 300;
     line-height: 80%;
@@ -876,7 +1059,7 @@ body {
     border: 1px solid #1a2236;
     width: max-content;
     border-radius: 4px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     padding-left: 10px;
     padding-right: 15px;
     cursor: pointer;
@@ -917,7 +1100,7 @@ body {
     border: 1px solid #fff;
     width: max-content;
     border-radius: 4px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     padding-left: 10px;
     padding-right: 15px;
     font-style: normal;
@@ -1007,8 +1190,8 @@ body {
     padding-left: 20px;
   }
 
-  .man h6 {
-    font-family: Georgia, "Times New Roman", Times, serif;
+  .man h3 {
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -1018,7 +1201,7 @@ body {
   }
 
   .hellso {
-    margin-top: -80px;
+    margin-top: -20px;
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
@@ -1085,7 +1268,7 @@ body {
     height: 270px;
   }
 
-  .about {
+  #about {
     display: grid;
     grid-template-areas: "dsa Portion";
     height: auto;
@@ -1158,7 +1341,7 @@ body {
     flex-direction: column;
     gap: 20px;
     list-style-type: disc;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -1170,7 +1353,7 @@ body {
   .lang > h4,
   .skills > h4,
   .frameworks > h4 {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
@@ -1200,7 +1383,7 @@ body {
     gap: 20px;
     justify-content: center;
     align-items: center;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -1223,7 +1406,7 @@ body {
     gap: 20px;
     justify-content: center;
     align-items: center;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -1231,7 +1414,7 @@ body {
   }
 
   .abouttext {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -1243,7 +1426,7 @@ body {
   }
 
   .aboutword {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 110px;
@@ -1313,7 +1496,7 @@ body {
     margin-top: 40px;
   }
 
-  fieldset {
+  .fooc {
     margin-bottom: 10px;
     border: 0;
     line-height: 21px;
@@ -1323,7 +1506,7 @@ body {
   input {
     width: 100%;
     height: 60px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -1336,18 +1519,14 @@ body {
     border-radius: 4px;
   }
 
-  legend {
-    font-family: Georgia, "Times New Roman", Times, serif;
+  label {
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 15px;
+    font-size: 12px;
+    line-height: 18px;
     color: #7d7c84;
     margin-bottom: 10px;
-  }
-
-  .field {
-    align-self: flex-end;
   }
 
   textarea {
@@ -1356,11 +1535,12 @@ body {
     line-height: 21px;
     color: #1a2236;
     min-height: 112px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     border: 1px solid #dfdfe0;
     box-sizing: border-box;
     border-radius: 4px;
     padding: 14px;
+    text-align: start;
   }
 
   .footer-items {
@@ -1393,7 +1573,7 @@ body {
   }
 
   .resume > p {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -1425,7 +1605,7 @@ body {
     margin-bottom: 32px;
     justify-content: center;
     flex-direction: column;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -1443,7 +1623,7 @@ body {
     margin-bottom: 32px;
     justify-content: center;
     flex-direction: column;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -1463,7 +1643,7 @@ body {
   }
 
   .namet {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 110px;
@@ -1475,7 +1655,7 @@ body {
   }
 
   .introt {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -1701,5 +1881,248 @@ body {
     35% {
       transform: scale3d(0, 0, 1);
     }
+  }
+
+  .firstmobile-nav {
+    display: none;
+  }
+
+  .modalD {
+    position: fixed;
+    z-index: 500;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1a2236;
+  }
+
+  .modal {
+    position: fixed;
+    z-index: 400000;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: white;
+    overflow-y: scroll;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 9px;
+  }
+
+  .modal-header {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  #closebox {
+    align-self: flex-end;
+  }
+
+  .title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 80%;
+    margin: 0 0 34px 0;
+    color: #1a2236;
+  }
+
+  .model-tech {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 80%;
+    color: #1a2236;
+  }
+
+  .model-tech li {
+    border: 0.4px solid #1a2236;
+    padding: 6px 10px 6px 10px;
+  }
+
+  .uilo {
+    display: grid;
+    grid-template-areas:
+      'hone hone hone hone'
+      'hone hone hone hone'
+      'hone hone hone hone'
+      'hone hone hone hone'
+      'hy hi ji lp';
+    width: 100%;
+    height: max-content;
+  }
+
+  .kli {
+    grid-area: hone;
+    height: 100%;
+    grid-column: 1 /5;
+    grid-row: 1/5;
+  }
+
+  .hy {
+    grid-area: hy;
+    height: inherit;
+    grid-column: 1 /2;
+    grid-row: 5/6;
+  }
+
+  .hi {
+    grid-area: hi;
+    grid-column: 2 /3;
+    grid-row: 5/6;
+  }
+
+  .ji {
+    grid-area: ji;
+    grid-column: 3/4;
+    grid-row: 5/6;
+  }
+
+  .lp {
+    grid-area: lp;
+    grid-column: 4/5;
+    grid-row: 5/6;
+  }
+
+  .directPhoto {
+    position: absolute;
+    background: none;
+    border: 0;
+    padding: 0;
+    width: 20px;
+    height: 10px;
+    opacity: 1;
+    z-index: 100;
+  }
+
+  .directPhoto:hover {
+    position: absolute;
+    background: none;
+    border: 0;
+    padding: 0;
+    width: 40px;
+    height: 10px;
+    opacity: 1;
+    z-index: 100;
+  }
+
+  .work-one {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .linkupi {
+    left: inherit;
+    top: 50%;
+    bottom: 50%;
+  }
+
+  .linkdowni {
+    right: 9px;
+    top: 50%;
+    bottom: 50%;
+  }
+
+  .hi,
+  .hy,
+  .ji,
+  .lp,
+  .linkupi,
+  .linkdowni {
+    cursor: pointer;
+  }
+
+  .modalbtns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10% 20% 10% 20%;
+    gap: 60px;
+  }
+
+  .modal-btn {
+    background-color: #fff;
+    width: 40%;
+    color: #1a2236;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .modal-btn:hover {
+    background-color: #1a2236;
+    width: 40%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .modal-description {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 20% 10% 20%;
+  }
+
+  .modal-body p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1a2236;
+  }
+
+  .modal-btn img {
+    justify-self: flex-end;
+  }
+
+  .squad {
+    display: flex;
+    margin: 10% 10% 10% 15%;
+    justify-content: space-between;
+  }
+
+  .lastRight,
+  .lastLeft {
+    background: none;
+    border: 0;
+    color: #1a2236;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .lastRight:hover,
+  .lastLeft:hover {
+    background: none;
+    border: 0;
+    color: #1a2236;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .try-again {
+    display: none;
+    color: rgb(240, 34, 34);
+    font-size: 15px;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
   }
 }
