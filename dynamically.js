@@ -63,7 +63,7 @@ const projects = [
 const AllButtons = document.getElementsByClassName('project-view');
 const work = document.querySelector('body');
 const popUp = document.createElement('section');
-popUp.classList.add('modal');
+popUp.classList.add('modalD');
 const getUilo = document.querySelectorAll('.uilo img');
 function popUpMobile(cardNumber) {
   popUp.style.display = 'block';
@@ -102,7 +102,17 @@ function popUpMobile(cardNumber) {
     <button class="modal-btn">
     See source
     <img src="assets/modal/Vector.png" alt="see source">
-  </button>
+    </button>
+    </div>
+        <div class="squad">
+        
+          <button class="lastLeft">
+          <img class="toLeft" src="assets/modal/UnionPrevious.png">
+        Previous project</button>
+        <button class="lastRight">
+        Next project
+        <img class="toLeft" src="assets/modal/UnionNext.png">
+        </button>
         </div>
       </div>
       </section>`;
@@ -112,19 +122,19 @@ function popUpMobile(cardNumber) {
     }
   });
 }
+for (let a = 0; a < projects.length; a += 1) {
+  document.querySelector('.lastRight').addEventListener('click', () => {
+    console.log(a);
+    popUpMobile(a + 1);
+  });
 
+  document.querySelector('.lastLeft').addEventListener('click', () => {
+    console.log(a);
+    popUpMobile(a - 1);
+  });
+}
 for (let i = 0; i < AllButtons.length; i += 1) {
-  //   AllButtons[i].addEventListener('click', () => {
-  //     popUpDesktop(i);
-  //   });
   AllButtons[i].addEventListener('click', () => {
     popUpMobile(i);
   });
-
-  for (let i = 1; i < getUilo.length; i += 1) {
-    getUilo[i].addEventListener('click', () => {
-      getUilo[i].style.border = 'solid black';
-      getUilo[i].style.cursor = 'pointer';
-    });
-  }
 }
