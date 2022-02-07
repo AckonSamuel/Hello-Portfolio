@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable no-console */
 /* eslint-disable max-len */
+
 const projects = [
   {
     title: 'Project name goes here',
@@ -14,7 +15,7 @@ const projects = [
     title: 'Project name goes here',
     src: 'assets/work/work_two.png',
     description: ['Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cupiditate eveniet velit corrupti saepe, in eos est corporis nihil excepturi magnam unde nisi eligendi error ut voluptatum odit rem? Fugiat nisi sed sapiente ullam asperiores omnis.', 'Eos facilis dignissimos hic saepe? Mollitia excepturi fugiat unde praesentium blanditiis! Illum ipsam facere nesciunt accusamus fugit officia perspiciatis et, eligendi in. Nobis aut non laborum minus est, cupiditate commodi ipsam debitis eius quis praesentium quam corrupti deserunt tenetur accusamus magni saepe ipsum quo.'],
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    technologies: ['HTML/CSS', 'Ruby on Rails', '+1'],
     seeLiveLink: '#',
     seeSourceLink: '#',
   },
@@ -71,209 +72,348 @@ subzero.classList.add('project-name');
 subzero.style.display = 'block';
 prosec.appendChild(subzero);
 
-subzero.innerHTML = `
-<div class="project-name">
-<h2>Projects</h2>
-</div>`;
+const projectHeader = document.createElement('h2');
+projectHeader.textContent = 'Projects';
+subzero.appendChild(projectHeader);
 
-const one = document.createElement('div');
+const one = document.createElement('article');
 one.classList.add('work', 'one');
 one.style.display = 'block';
 prosec.appendChild(one);
 
-const two = document.createElement('div');
+const two = document.createElement('article');
 two.classList.add('work', 'two');
 two.style.display = 'block';
 prosec.appendChild(two);
 
-const three = document.createElement('div');
+const three = document.createElement('article');
 three.classList.add('work', 'three');
 three.style.display = 'block';
 prosec.appendChild(three);
 
-const four = document.createElement('div');
+const four = document.createElement('article');
 four.classList.add('work', 'four');
 four.style.display = 'block';
 prosec.appendChild(four);
 
-const five = document.createElement('div');
+const five = document.createElement('article');
 five.classList.add('work', 'five');
 five.style.display = 'block';
 prosec.appendChild(five);
 
-const six = document.createElement('div');
+const six = document.createElement('article');
 six.classList.add('work', 'six');
 six.style.display = 'block';
 prosec.appendChild(six);
 
-const vreds = document.querySelector('.three');
-const vreds1 = document.querySelector('.four');
-const vreds2 = document.querySelector('.five');
-const vreds4 = document.querySelector('.one');
-const vreds5 = document.querySelector('.two');
-const vreds6 = document.querySelector('.six');
+const proj1 = document.querySelector('.one');
+const proj2 = document.querySelector('.two');
+const proj3 = document.querySelector('.three');
+const proj4 = document.querySelector('.four');
+const proj5 = document.querySelector('.five');
+const proj6 = document.querySelector('.six');
 
-vreds.style.display = 'inherit';
-vreds1.style.display = 'inherit';
-vreds2.style.display = 'inherit';
+proj1.style.display = 'flex';
+proj2.style.display = 'grid';
+/* inner elements of project one */
 
-vreds4.style.display = 'flex';
-vreds5.style.display = 'inherit';
-vreds.style.display = 'inherit';
+/* primary elements */
+const contPhoto = document.createElement('div');
+contPhoto.classList.add('project', 'photo');
+proj1.appendChild(contPhoto);
 
-vreds.innerHTML = `
-                <div class="project photo"><img src=${projects[3].src} class="work-one"
-                        alt="project image three"></div>
-                <div class="project summary">
-                    <div class="namep">
-                        <h3>Project name goes here</h3>
-                    </div>
-                    <div class="technology">
-                        <ul class="hello">
-                            <li class="maybe">HTML/CSS</li>
-                            <li class="maybe">Ruby on rails</li>
-                            <li class="maybe">JavaScript</li>
-                        </ul>
-                    </div>
-                    <button class="project-view">
-                        See this project
-                        <img src="assets/work/Union.png" class="arrow" alt="#">
-                    </button>
+const contSummary = document.createElement('div');
+contSummary.classList.add('project', 'summary', 'desksum');
+proj1.appendChild(contSummary);
 
-                </div>
-            </div>`;
+const contTech = document.createElement('div');
+contTech.classList.add('technology', 'techdesk');
+proj1.appendChild(contTech);
 
-vreds1.innerHTML = `<div class="project photo"><img src=${projects[4].src} class="work-one"
-alt="project image four"></div>
-<div class="project summary">
-<div class="namep">
-<h3>Project name goes here</h3>
-</div>
-<div class="technology">
-<ul class="hello">
-    <li class="maybe">HTML/CSS</li>
-    <li class="maybe">Ruby on rails</li>
-    <li class="maybe">JavaScript</li>
-</ul>
-</div>
-<button class="project-view" id="card-4">
-See this project
-<img src="assets/work/Union.png" class="arrow" alt="#">
-</button>
+const contBtn = document.createElement('button');
+contBtn.classList.add('project-view', 'viewdesk');
+proj1.appendChild(contBtn);
 
-</div>`;
+const namp = document.createElement('h3');
+namp.classList.add('namep', 'namedesk');
+namp.textContent = projects[0].title;
+contSummary.appendChild(namp);
 
-vreds2.innerHTML = `
-<div class="project photo"><img src=${projects[5].src} class="work-one"
-                        alt="project image five"></div>
-                <div class="project summary">
-                    <div class="namep">
-                        <h3>Project name goes here</h3>
-                    </div>
-                    <div class="technology">
-                        <ul class="hello">
-                            <li class="maybe">HTML/CSS</li>
-                            <li class="maybe">Ruby on rails</li>
-                            <li class="maybe">JavaScript</li>
-                        </ul>
-                    </div>
-                    <button class="project-view" id="card-4">
-                        See this project
-                        <img src="assets/work/Union.png" class="arrow" alt="#">
-                    </button>
+contSummary.appendChild(contTech);
+contSummary.appendChild(contBtn);
 
-                </div>`;
+/* Secondary elements */
 
-vreds4.innerHTML = `
-<div class="project photo">
-<img src="${projects[0].src}" class="work-one" alt="first project image">
-</div>
-<div class="project summary desksum">
-<div class="namep namedesk">
-    <h3>Project name goes here</h3>
-</div>
-<div class="technology techdesk">
-    <ul class="hello hellodesk">
-        <li class="maybe">HTML/CSS</li>
-        <li class="maybe">Ruby on rails</li>
-        <li class="maybe">JavaScript</li>
-    </ul>
-</div>
-<button id="card-1" class="project-view viewdesk">
-    See this project
-    <img src="assets/work/Union.png" class="arrow arrowdesk" alt="#">
-</button>
-</div>
-`;
-vreds5.innerHTML = `
-<div class="option left"></div>
-                <div class="option middle"></div>
-                <div class="option right">
-                    <div class="man">
-                        <h3>Project name goes...</h3>
-                        <ul class="hellso">
-                            <li class="maybe">HTML/CSS</li>
-                            <li class="maybe">Ruby on rails</li>
-                            <li class="maybe">+1</li>
-                        </ul>
-                        <div class="being">
-                            <button id="card-2" class="project-view viewdesk">
-                                See this project
-                                <img src="assets/work/Union.png" class="arrow arrowdesk" alt="#">
+const proImg = document.createElement('img');
+proImg.classList.add('work-one');
+proImg.setAttribute('src', projects[0].src);
+proImg.setAttribute('alt', 'first project image');
+contPhoto.appendChild(proImg);
 
-                            </button>
-                        </div>
-                    </div>
+const contList = document.createElement('ul');
+contList.classList.add('hello', 'hellodesk');
+contTech.appendChild(contList);
 
-                </div>
-                <div class="option rightdown"></div>
-                <div class="option leftdown"></div>
-                <div class="option cornerback"></div>
-                <div class="option lk"></div>
-                <div class="option blowman"></div>
+const contList1 = document.createElement('li');
+contList1.classList.add('maybe');
+[contList1.textContent] = projects[0].technologies;
+contList.appendChild(contList1);
 
-                <div class="project photo">
-                    <img src=${projects[1].src} class="work-one" alt="second project image">
-                </div>
-                <div class="project summary">
-                    <div class="namep">
-                        <h3>Project name goes here</h3>
-                    </div>
-                    <div class="technology">
-                        <ul class="hello">
-                            <li class="maybe">HTML/CSS</li>
-                            <li class="maybe">Ruby on rails</li>
-                            <li class="maybe">JavaScript</li>
-                        </ul>
-                    </div>
-                    <button class="project-view">
-                        See this project
-                        <img src="assets/work/Union.png" class="arrow" alt="#">
+const contList2 = document.createElement('li');
+contList2.classList.add('maybe');
+[, contList2.textContent] = projects[0].technologies;
+contList.appendChild(contList2);
 
-                    </button>
-                </div>
-`;
+const contList3 = document.createElement('li');
+contList3.classList.add('maybe');
+[, , contList3.textContent] = projects[0].technologies;
+contList.appendChild(contList3);
 
-vreds6.innerHTML = `
-<div class="project photo"><img src=${projects[6].src} class="work-one"
-                        alt="project image five"></div>
-                <div class="project summary">
-                    <div class="namep">
-                        <h3>Project name goes here</h3>
-                    </div>
-                    <div class="technology">
-                        <ul class="hello">
-                            <li class="maybe">HTML/CSS</li>
-                            <li class="maybe">Ruby on rails</li>
-                            <li class="maybe">JavaScript</li>
-                        </ul>
-                    </div>
-                    <button class="project-view" id="card-4">
-                        See this project
-                        <img src="assets/work/Union.png" class="arrow" alt="#">
-                    </button>
+contBtn.textContent = 'See this project';
+const showProj1 = document.createElement('img');
+showProj1.classList.add('arrow');
+showProj1.setAttribute('src', 'assets/work/Union.png');
+showProj1.setAttribute('alt', '#');
+showProj1.setAttribute('type', 'button');
+contBtn.appendChild(showProj1);
 
-                </div>`;
+/* inner elements of project two */
+
+/* primary elements */
+
+const optLeft = document.createElement('div');
+optLeft.classList.add('option', 'left');
+proj2.appendChild(optLeft);
+
+const optMiddle = document.createElement('div');
+optMiddle.classList.add('option', 'middle');
+proj2.appendChild(optMiddle);
+
+const optRight = document.createElement('div');
+optRight.classList.add('option', 'right');
+proj2.appendChild(optRight);
+
+const optRightdown = document.createElement('div');
+optRightdown.classList.add('option', 'rightdown');
+proj2.appendChild(optRightdown);
+
+const optLeftdown = document.createElement('div');
+optLeftdown.classList.add('option', 'leftdown');
+proj2.appendChild(optLeftdown);
+
+const optCornerback = document.createElement('div');
+optCornerback.classList.add('option', 'cornerback');
+proj2.appendChild(optCornerback);
+
+const optLk = document.createElement('div');
+optLk.classList.add('option', 'lk');
+proj2.appendChild(optLk);
+
+const optblowman = document.createElement('div');
+optblowman.classList.add('option', 'blowman');
+proj2.appendChild(optblowman);
+
+// const contPhoto2 = document.createElement('div');
+// contPhoto2.classList.add('project', 'photo');
+// proj2.appendChild(contPhoto2);
+
+const contSummary2 = document.createElement('div');
+contSummary2.classList.add('man');
+optRight.appendChild(contSummary2);
+
+const namp2 = document.createElement('h3');
+namp2.classList.add('namep', 'namedesk');
+namp2.textContent = projects[0].title;
+contSummary2.appendChild(namp2);
+
+const ulList = document.createElement('ul');
+ulList.classList.add('hellso');
+contSummary2.appendChild(ulList);
+
+const contList12 = document.createElement('li');
+contList12.classList.add('maybe');
+[contList12.textContent] = projects[1].technologies;
+ulList.appendChild(contList12);
+
+const contList22 = document.createElement('li');
+contList22.classList.add('maybe');
+[, contList22.textContent] = projects[1].technologies;
+ulList.appendChild(contList22);
+
+const contList32 = document.createElement('li');
+contList32.classList.add('maybe');
+[, , contList32.textContent] = projects[1].technologies;
+ulList.appendChild(contList32);
+
+const being = document.createElement('div');
+being.classList.add('being');
+contSummary2.appendChild(being);
+
+const contBtn2 = document.createElement('button');
+contBtn2.classList.add('project-view', 'viewdesk');
+contSummary2.appendChild(contBtn2);
+
+contBtn2.textContent = 'See this project';
+const showProj2 = document.createElement('img');
+showProj2.classList.add('arrow');
+showProj2.setAttribute('src', 'assets/work/Union.png');
+showProj2.setAttribute('alt', '#');
+showProj2.setAttribute('type', 'button');
+contBtn2.appendChild(showProj2);
+
+// vreds.innerHTML = `
+//                 <div class="project photo">
+//                     <img src=${projects[3].src} class="work-one" alt="project image three">
+//                 </div>
+//                 <div class="project summary">
+//                     <div class="namep">
+//                         <h3>Project name goes here</h3>
+//                     </div>
+//                     <div class="technology">
+//                         <ul class="hello">
+//                             <li class="maybe">HTML/CSS</li>
+//                             <li class="maybe">Ruby on rails</li>
+//                             <li class="maybe">JavaScript</li>
+//                         </ul>
+//                     </div>
+//                     <button class="project-view">
+//                         See this project
+//                         <img src="assets/work/Union.png" class="arrow" alt="#">
+//                     </button>
+
+//                 </div>`;
+
+// vreds1.innerHTML = `<div class="project photo"><img src=${projects[4].src} class="work-one"
+// alt="project image four"></div>
+// <div class="project summary">
+// <div class="namep">
+// <h3>Project name goes here</h3>
+// </div>
+// <div class="technology">
+// <ul class="hello">
+//     <li class="maybe">HTML/CSS</li>
+//     <li class="maybe">Ruby on rails</li>
+//     <li class="maybe">JavaScript</li>
+// </ul>
+// </div>
+// <button class="project-view" id="card-4">
+// See this project
+// <img src="assets/work/Union.png" class="arrow" alt="#">
+// </button>
+
+// </div>`;
+
+// vreds2.innerHTML = `
+// <div class="project photo"><img src=${projects[5].src} class="work-one"
+//                         alt="project image five"></div>
+//                 <div class="project summary">
+//                     <div class="namep">
+//                         <h3>Project name goes here</h3>
+//                     </div>
+//                     <div class="technology">
+//                         <ul class="hello">
+//                             <li class="maybe">HTML/CSS</li>
+//                             <li class="maybe">Ruby on rails</li>
+//                             <li class="maybe">JavaScript</li>
+//                         </ul>
+//                     </div>
+//                     <button class="project-view" id="card-4">
+//                         See this project
+//                         <img src="assets/work/Union.png" class="arrow" alt="#">
+//                     </button>
+
+//                 </div>`;
+
+// vreds4.innerHTML = `
+// <div class="project photo">
+// <img src="${projects[0].src}" class="work-one" alt="first project image">
+// </div>
+// <div class="project summary desksum">
+// <div class="namep namedesk">
+//     <h3>Project name goes here</h3>
+// </div>
+// <div class="technology techdesk">
+//     <ul class="hello hellodesk">
+//         <li class="maybe">HTML/CSS</li>
+//         <li class="maybe">Ruby on rails</li>
+//         <li class="maybe">JavaScript</li>
+//     </ul>
+// </div>
+// <button id="card-1" class="project-view viewdesk">
+//     See this project
+//     <img src="assets/work/Union.png" class="arrow arrowdesk" alt="#">
+// </button>
+// </div>
+// `;
+// vreds5.innerHTML = `
+// <div class="option left"></div>
+//                 <div class="option middle"></div>
+//                 <div class="option right">
+//                     <div class="man">
+//                         <h3>Project name goes...</h3>
+//                         <ul class="hellso">
+//                             <li class="maybe">HTML/CSS</li>
+//                             <li class="maybe">Ruby on rails</li>
+//                             <li class="maybe">+1</li>
+//                         </ul>
+//                         <div class="being">
+//                             <button id="card-2" class="project-view viewdesk">
+//                                 See this project
+//                                 <img src="assets/work/Union.png" class="arrow arrowdesk" alt="#">
+
+//                             </button>
+//                         </div>
+//                     </div>
+
+//                 </div>
+//                 <div class="option rightdown"></div>
+//                 <div class="option leftdown"></div>
+//                 <div class="option cornerback"></div>
+//                 <div class="option lk"></div>
+//                 <div class="option blowman"></div>
+
+//                 <div class="project photo">
+//                     <img src=${projects[1].src} class="work-one" alt="second project image">
+//                 </div>
+//                 <div class="project summary">
+//                     <div class="namep">
+//                         <h3>Project name goes here</h3>
+//                     </div>
+//                     <div class="technology">
+//                         <ul class="hello">
+//                             <li class="maybe">HTML/CSS</li>
+//                             <li class="maybe">Ruby on rails</li>
+//                             <li class="maybe">JavaScript</li>
+//                         </ul>
+//                     </div>
+//                     <button class="project-view">
+//                         See this project
+//                         <img src="assets/work/Union.png" class="arrow" alt="#">
+
+//                     </button>
+//                 </div>
+// `;
+
+// vreds6.innerHTML = `
+// <div class="project photo"><img src=${projects[6].src} class="work-one"
+//                         alt="project image five"></div>
+//                 <div class="project summary">
+//                     <div class="namep">
+//                         <h3>Project name goes here</h3>
+//                     </div>
+//                     <div class="technology">
+//                         <ul class="hello">
+//                             <li class="maybe">HTML/CSS</li>
+//                             <li class="maybe">Ruby on rails</li>
+//                             <li class="maybe">JavaScript</li>
+//                         </ul>
+//                     </div>
+//                     <button class="project-view" id="card-4">
+//                         See this project
+//                         <img src="assets/work/Union.png" class="arrow" alt="#">
+//                     </button>
+
+//                 </div>`;
 function popUpMobile(cardNumber) {
   popUp.style.display = 'block';
   work.appendChild(popUp);

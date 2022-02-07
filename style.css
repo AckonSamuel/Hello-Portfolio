@@ -983,7 +983,7 @@ body {
   }
 
   .project-name > h2 {
-    margin-top: -1px;
+    margin-top: 0;
     font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: normal;
@@ -1025,7 +1025,6 @@ body {
     font-size: 40px;
     line-height: 80%;
     color: #fff;
-    margin-top: -20px;
   }
 
   .photo {
