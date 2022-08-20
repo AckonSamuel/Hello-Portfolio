@@ -1,393 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XTH2FG33ZD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-XTH2FG33ZD');
-</script>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XTH2FG33ZD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-XTH2FG33ZD');
+    </script>
+    <title>Samuel's Portfolio homepage</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d7c4625610.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div id='dot'></div>
-<div id='dot2'></div>
-<div id='dot3'></div>
+    <div id='dot2'></div>
+    <div id='dot3'></div>
 
     <div class="amen">
-        <header class="nav-items">
-               <div class="images">
-                   <div class="space">
-                   </div> 
-                   <div class="menuitem">
-                       <div class="boxic"><img src="assets/ic_menu.svg"  alt="#" class="ic-menu">
-                       </div>  
-                    </div>
+        <div class="nav-items">
+            <div class="images">
+                <div class="space">
 
                 </div>
+                <div class="menuitem">
+                    <i class="fas fa-times fa-2x"></i>
+                    <div class="boxic"><img src="assets/ic_menu.svg" alt="menu bar" class="ic-menu"
+                            onclick="toggleNav()">
+                    </div>
+                </div>
 
-                <ul class="first">
-                   <li><a href="#" alt="#">Home</a></li>
-                   <li><a href="#" alt="#">Portfolio</a></li>
-                   <li><a href="#" alt="#">About</a></li>
-                   <li><a href="#" alt="#">Contact</a></li>
-                </ul>
-        </header>
+            </div>
+
+            <ul class="first">
+                <li><a href="#">Home</a></li>
+                <li><a href="#works">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gaga">Contact</a></li>
+            </ul>
+
+            <ul class="firstmobile-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#works" onclick="iterat()">Portfolio</a></li>
+                <li><a href="#about" onclick="iterat()">About</a></li>
+                <li><a href="#gaga" onclick="iterat()">Contact</a></li>
+            </ul>
+        </div>
 
         <section class="container">
             <div class="child-container">
-                <div class=" box name"><div class="tom1">
-                    <div class="sk-cube sk-cube1"></div>
-                    <div class="sk-cube sk-cube2"></div>
-                    <div class="sk-cube sk-cube3"></div>
-                    <div class="sk-cube sk-cube4"></div>
-                    <div class="sk-cube sk-cube5"></div>
-                    <div class="sk-cube sk-cube6"></div>
-                    <div class="sk-cube sk-cube7"></div>
-                    <div class="sk-cube sk-cube8"></div>
-                    <div class="sk-cube sk-cube9"></div>
-                  </div>
-                  <div class="tom3">
-                    <div class="sk-cube sk-cube1"></div>
-                    <div class="sk-cube sk-cube2"></div>
-                    <div class="sk-cube sk-cube3"></div>
-                    <div class="sk-cube sk-cube4"></div>
-                    <div class="sk-cube sk-cube5"></div>
-                    <div class="sk-cube sk-cube6"></div>
-                    <div class="sk-cube sk-cube7"></div>
-                    <div class="sk-cube sk-cube8"></div>
-                    <div class="sk-cube sk-cube9"></div>
-                  </div>
-                  <h1>Samuel Ackon<div class="tom">
-                    <div class="sk-cube sk-cube1"></div>
-                    <div class="sk-cube sk-cube2"></div>
-                    <div class="sk-cube sk-cube3"></div>
-                    <div class="sk-cube sk-cube4"></div>
-                    <div class="sk-cube sk-cube5"></div>
-                    <div class="sk-cube sk-cube6"></div>
-                    <div class="sk-cube sk-cube7"></div>
-                    <div class="sk-cube sk-cube8"></div>
-                    <div class="sk-cube sk-cube9"></div>
-                  </div>
-                  <div class="tom2">
-                    <div class="sk-cube sk-cube1"></div>
-                    <div class="sk-cube sk-cube2"></div>
-                    <div class="sk-cube sk-cube3"></div>
-                    <div class="sk-cube sk-cube4"></div>
-                    <div class="sk-cube sk-cube5"></div>
-                    <div class="sk-cube sk-cube6"></div>
-                    <div class="sk-cube sk-cube7"></div>
-                    <div class="sk-cube sk-cube8"></div>
-                    <div class="sk-cube sk-cube9"></div>
-                  </div></h1></div>
-                <div class=" box intro"><p>Hello! I am a software developer! 
-                    I can help you build a product, feature or website. 
-                    Taka a look of my works. 
-                    If you like what you see and have a 
-                    project you need coded,
-                    don’t hesitate and contact me.</p>
+                <div class=" box name">
+                    <div class="tom1">
+                        <div class="sk-cube sk-cube1"></div>
+                        <div class="sk-cube sk-cube2"></div>
+                        <div class="sk-cube sk-cube3"></div>
+                        <div class="sk-cube sk-cube4"></div>
+                        <div class="sk-cube sk-cube5"></div>
+                        <div class="sk-cube sk-cube6"></div>
+                        <div class="sk-cube sk-cube7"></div>
+                        <div class="sk-cube sk-cube8"></div>
+                        <div class="sk-cube sk-cube9"></div>
+                    </div>
+                    <div class="tom3">
+                        <div class="sk-cube sk-cube1"></div>
+                        <div class="sk-cube sk-cube2"></div>
+                        <div class="sk-cube sk-cube3"></div>
+                        <div class="sk-cube sk-cube4"></div>
+                        <div class="sk-cube sk-cube5"></div>
+                        <div class="sk-cube sk-cube6"></div>
+                        <div class="sk-cube sk-cube7"></div>
+                        <div class="sk-cube sk-cube8"></div>
+                        <div class="sk-cube sk-cube9"></div>
+                    </div>
+                     <h1>Samuel Ackon</h1>
                 </div>
-                <button class="rectangle">
-                  <a href="#gaga">
+                <div class="tom2">
+                    <div class="sk-cube sk-cube1"></div>
+                    <div class="sk-cube sk-cube2"></div>
+                    <div class="sk-cube sk-cube3"></div>
+                    <div class="sk-cube sk-cube4"></div>
+                    <div class="sk-cube sk-cube5"></div>
+                    <div class="sk-cube sk-cube6"></div>
+                    <div class="sk-cube sk-cube7"></div>
+                    <div class="sk-cube sk-cube8"></div>
+                    <div class="sk-cube sk-cube9"></div>
+                </div>
+                <div class="tom">
+                    <div class="sk-cube sk-cube1"></div>
+                    <div class="sk-cube sk-cube2"></div>
+                    <div class="sk-cube sk-cube3"></div>
+                    <div class="sk-cube sk-cube4"></div>
+                    <div class="sk-cube sk-cube5"></div>
+                    <div class="sk-cube sk-cube6"></div>
+                    <div class="sk-cube sk-cube7"></div>
+                    <div class="sk-cube sk-cube8"></div>
+                    <div class="sk-cube sk-cube9"></div>
+                </div>
+                <div class=" box intro">
+                    <p>Hello! I am a software developer!
+                        I can help you build a product, feature or website.
+                        Take a look at my works.
+                        If you like what you see and have a
+                        project you need coded,
+                        don’t hesitate and contact me.</p>
+                </div>
+                <button class="rectangle" onclick="window.location.href = '#gaga';">
                     Start collaboration
-                </a>
                 </button>
             </div>
             <div class="designs">
                 <div class="image3">
+                </div>
             </div>
+
+        </section>
     </div>
-      
-  </section>
-</div>
 
 
-<main class="hallelujah">
-    <section class="works">
-        <div class="project-name">
-            <h2>Projects</h2>
-        </div>
-        <div class="work one">
-            <div class="project photo">
-                <img src="assets/work/work_one.png" class="work-one" alt="#">
-            </div>
-            <div class="project summary desksum">
-                <div class="namep namedesk">
-                    <h3>Project name goes here</h3>
-                </div>
-                <div class="technology techdesk">
-                    <ul class="hello hellodesk">
-                        <li class="maybe">HTML/CSS</li>
-                        <li class="maybe">Ruby on rails</li>
-                        <li class="maybe">JavaScript</li>
-                    </ul>
-                </div>
-                <button alt="#" class="project-view viewdesk">
-                    <a href="https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3" alt="#">  See this project
-                    <img src="assets/work/Union.png" class="arrow arrowdesk" alt="#">
-                    </a>
-                </button>
-            </div>
-        </div>
-        
+    <main id="hallelujah">
+        <section id="works">
+        </section>
 
-        <div class="work two">
-            <div class="option left"></div>
-            <div class="option middle"></div>
-            <div class="option right">
-                <div class="man">
-                    <h6>Project name goes...</h6>
-                       <ul class="hellso">
-                           <li class="maybe">HTML/CSS</li>
-                            <li class="maybe">Ruby on rails</li>
-                            <li class="maybe">+1</li>
-                       </ul>
-                    <div claas="being"> 
-                        <button alt="#" class="project-view viewdesk">
-                            <a href="https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3" alt="#">  See this project
-                                <img src="assets/work/Union.png" class="arrow arrowdesk" alt="#">
-                            </a>
-                        </button>
+        <section id="about">
+            <ul class="dsa">
+                <li>
+                    <div class="lang">
+                        <h4>Languages</h4>
+                        <ul class="disc">
+                            <li>JavaScript(ES5/ES6)</li>
+                            <li>Ruby</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
                     </div>
+                </li>
+                <li>
+                    <div class="frameworks">
+                        <h4>Frameworks</h4>
+                        <ul class="disc">
+                            <li>Bootstrap</li>
+                            <li>Ruby on rails</li>
+                            <li>RSpec</li>
+                            <li>Capibara</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="skills">
+                        <h4>Skills</h4>
+
+                        <ul class="disc">
+                            <li>Codeit</li>
+                            <li>Codepen</li>
+                            <li>GitHub</li>
+                            <li>Terminal</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="yeah"></div>
+                </li>
+            </ul>
+
+            <div class="portion">
+                <div class="aboutword">
+                    <h3>About</h3>
+                </div>
+                <div class="abouttext">
+                    <p>Lorem ipsum
+                        dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud
+                        exercitation ullamco
+                        laboris nisi ut aliquip ea eiusmod</p>
                 </div>
 
+                <button class="getflex"
+                    onclick='window.location.href = "https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3";'>
+                    Get my CV
+                    <img src="assets/ic_download.svg" class="arrow-down" alt="#"></button>
             </div>
-            <div class="option rightdown"></div>
-            <div class="option leftdown"></div>
-            <div class="option cornerback"></div>
-            <div class="option lk"></div>
-            <div class="option blowman"></div>
-           
-            <div class="project photo">
-                <img src="assets/work/work_two.png" class="work-one" alt="#">
+
+
+        </section>
+    </main>
+
+    <footer id="gaga">
+        <div class="footspace"></div>
+        <div class="box namet">
+            <h3>Get Started</h3>
+        </div>
+        <div class="box introt">
+            <p>Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna.</p>
+        </div>
+        <form action="https://formspree.io/f/xknyorrb" method="post">
+            <div class="fooc namei">
+                <label for="fullname">Your name</label>
+                <input type="text" name="username" maxlength="30" id="fullname" placeholder="Last name First name"
+                    required>
             </div>
-            <div class="project summary">
-                <div class="namep">
-                    <h3>Project name goes here</h3>
-                </div>
-                <div class="technology">
-                    <ul class="hello">
-                        <li class="maybe">HTML/CSS</li>
-                        <li class="maybe">Ruby on rails</li>
-                        <li class="maybe">JavaScript</li>
-                    </ul>
-                </div>
-                <button class="project-view">
-                   <a href="https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3" alt="#">See this project
-                        <img src="assets/work/Union.png" class="arrow" alt="#">
+            <div class="fooc email">
+                <label for="email">Your email</label>
+                <input type="email" id="email" name="email" placeholder="someone@domain.com" required>
+            </div>
+            <div class="fooc textmessage">
+                <label for="comment">Message</label>
+                <textarea name="comment" id="comment" maxlength="500" placeholder="Enter your message here"
+                    required></textarea>
+            </div>
+            <button value="submit" class="collabo">
+                Start collaboration</button>
+            <div class="try-again"></div>
+        </form>
+        <hr>
+        <div class="footer-items">
+            <div class="resume">
+                <p>Get my Resume</p>
+                <div><img src="assets/ic_link_teal.png" alt="#"></div>
+            </div>
+            <ul class="social-media">
+                <li>
+                    <a href="#">
+                        <img src="assets/ic_stackoverflow.png" alt="stackoverflow account">
                     </a>
-                </button>
-            </div>
+                </li>
+                <li>
+                    <a href="https://github.com/AckonSamuel">
+                        <img src="assets/ic_github.png" alt="github account">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/samuel-ackon-882717190/">
+                        <img src="assets/ic_linkedin.png" alt="linkedin account">
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/ic_medium.png" alt="medium account"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/ic_angellist.png" alt="angellist account"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/AckonSamuel2"><img src="assets/ic_twitter.png"
+                            alt="twitter account"></a>
+                </li>
+            </ul>
         </div>
+    </footer>
 
-        <div class="work three">
-                <div class="project photo"><img src="assets/work/work_three.png" class="work-one" alt="#"></div>
-                 <div class="project summary">
-                    <div class="namep"><h3>Project name goes here</h3></div>
-                    <div class="technology">
-                    <ul class="hello">
-                        <li class="maybe">HTML/CSS</li>
-                        <li class="maybe">Ruby on rails</li>
-                       <li class="maybe">JavaScript</li>
-                    </ul> </div>
-                    <button class="project-view">
-                        <a href="https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3" alt="#">See this project
-                        <img src="assets/work/Union.png" class="arrow" alt="#"></a>
-                    </button>
-
-                 </div>
-                 </div>
-                 <div class="work four">
-                     <div class="project photo"><img src="assets/work/work_four.png" class="work-one" alt="#"></div>
-            <div class="project summary">
-                <div class="namep"><h3>Project name goes here</h3></div>
-                <div class="technology">
-                <ul class="hello">
-                    <li class="maybe">HTML/CSS</li>
-                    <li class="maybe">Ruby on rails</li>
-                   <li class="maybe">JavaScript</li>
-                </ul></div>
-                <button class="project-view">
-                   <a href="https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3" alt="#">See this project
-                    <img src="assets/work/Union.png" class="arrow" alt="#"></a>
-                </button>
-
-                     </div> 
-                     </div>
-                     
-                     
-                     <div class="work five">
-                         <div class="project photo"><img src="assets/work/work_five.png" class="work-one" alt="#"></div>
-                         <div class="project summary">
-                            <div class="namep"><h3>Project name goes here</h3></div>
-                            <div class="technology">
-                            <ul class="hello">
-                                <li class="maybe">HTML/CSS</li>
-                                <li class="maybe">Ruby on rails</li>
-                               <li class="maybe">JavaScript</li>
-                            </ul> </div>
-                            <button class="project-view">
-                             <a href="https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3" alt="#">   See this project
-                                <img src="assets/work/Union.png" class="arrow" alt="#"></a>
-                            </button>
-
-                         </div>
-                     </div>
-                        
-
-                         <div class="work six">
-                             <div class="project photo"><img src="assets/work/work_six.png" class="work-one" alt="#"></div>
-                             <div class="project summary">
-                                <div class="namep"><h3>Project name goes here</h3></div>
-                                <div class="technology">
-                                <ul class="hello">
-                                    <li class="maybe">HTML/CSS</li>
-                                    <li class="maybe">Ruby on rails</li>
-                                  <li class="maybe">JavaScript</li>
-                                </ul> </div>
-                                <button class="project-view">
-                                    <a href="https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3" alt="#">See this project
-                                    <img src="assets/work/Union.png" class="arrow" alt="#"></a>
-                                </button>
-
-                             </div>
-                             </div>        
-    </section>
-
-    <section class="about">
-        
-        <ul class="dsa">
-                <li><div class="lang"><h4>Languages</h4>
-                <ul class="disc">
-                    <li>JavaScript(ES5/ES6)</li>
-                    <li>Ruby</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
-            </div></li>
-           <li><div class="frameworks">
-                <h4>Frameworks</h4>
-                <ul class="disc">
-                        <li>Bootstrap</li>
-                        <li>Ruby on rails</li>
-                        <li>RSpec</li>
-                        <li>Capibara</li>
-                    </ul>
-            </div></li> 
-           
-           <li><div class="skills">
-                <h4>Skills</h4>
-                
-                <ul class="disc">
-                    <li>Codeit</li>
-                    <li>Codepen</li>
-                    <li>GitHub</li>
-                    <li>Terminal</li>
-                </ul>
-            </div></li>
-            <li><div class="yeah"></div></li>
-        </ul>
-
-        <div class="portion">
-            <div class="aboutword"><h1>About</h1></div>
-            <div class="abouttext"><p>Lorem ipsum 
-                dolor sit amet, consectetur 
-                adipiscing elit, sed do eiusmod 
-                tempor incididunt ut labore et 
-                dolore magna aliqua. Ut enim ad 
-                minim veniam, quis nostrud 
-                exercitation ullamco
-                 laboris nisi ut aliquip ea eiusmod</p>
-                </div>
-            
-                <button class="getflex">
-                    <a href="https://github.com/AckonSamuel/Hello-Portfolio/tree/Desktop_version_3" alt="#">Get my CV</a>
-            <img src="assets/ic_download.svg" class="arrow-down" alt="#"></button>
-        </div>
-            
-       
-    </section>
-</main>
-
-<footer id="gaga">
-        <div class="footspace"></div> 
-        <div class="box namet"><h3>Get Started</h3></div>
-        <div class="box introt"><p>Lorem ipsum dolor sit amet,
-             consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna.</p></div>
-<form  action="https://formspree.io/f/xknyorrb" method="post">
-   <div class="fooc namei">
-        <fieldset>
-            <div class="field">
-            <legend>Your name</legend>
-            <input type="text" name="username" maxlength="30" placeholder="Last name First name" required>
-        </div>
-        </fieldset>
-    </div>
-    <div class="fooc email">
-        <fieldset>
-            <div class="field">
-            <legend>Your email</legend>
-            <input type="email" name="email" placeholder="someone@domain.com" required>
-        </div>
-        </fieldset>
-    </div>
-    <div class="fooc textmessage">
-        <fieldset>
-            <div class="field">
-                <legend>Message</legend>
-                <textarea name="comment" maxlength="500" placeholder="Enter your message here..." required></textarea>
-            </div>
-        </fieldset>
-    </div>
-        <button value="submit" class="collabo">
-            Start collaboration</button> 
-</form>
-<hr>
-<div class="footer-items">
-    <div class="resume">
-        <p>Get my Resume</p>
-        <div><img src="assets/ic_link_teal.png"></div>
-    </div>
-    <ul class="social-media">
-      <li>
-        <a href="#">
-            <img src="assets/ic_stackoverflow.png" alt="#">
-        </a>
-      </li>
-      <li>
-        <a href="#">
-            <img src="assets/ic_github.png" alt="#">
-        </a>
-      </li>
-      <li>
-        <a href="#">
-            <img src="assets/ic_linkedin.png" alt="#">
-        </a>
-      </li>
-      <li>
-        <a href="#">
-            <img src="assets/ic_medium.png" alt="#">
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <img src="assets/ic_angellist.png" alt="#">
-        </a>
-      </li>
-      <li>
-        <a href="#">
-            <img src="assets/ic_twitter.png" alt="#">
-      </li>
-    </ul>
-  </div>
-</footer>
+    <script src="./index.js"></script>
+    <script src="dynamically.js"></script>
+    <script src="validate.js"></script>
+    <script src="local-storage.js"></script>
 </body>
+
 </html>

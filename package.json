@@ -1,14 +1,7 @@
 {
-  "devDependencies": {
-    "hint": "^6.1.9",
-    "stylelint": "^14.2.0",
-    "stylelint-config-standard": "^24.0.0",
-    "stylelint-csstree-validator": "^2.0.0",
-    "stylelint-scss": "^4.1.0"
-  },
-  "name": "hello-portfolio",
-  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "name": "hello-portfolio-1",
   "version": "1.0.0",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,5 +16,16 @@
   "bugs": {
     "url": "https://github.com/AckonSamuel/Hello-Portfolio/issues"
   },
-  "homepage": "https://github.com/AckonSamuel/Hello-Portfolio#readme"
+  "homepage": "https://github.com/AckonSamuel/Hello-Portfolio#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.4",
+    "hint": "^6.1.9",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
 }
