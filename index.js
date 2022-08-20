@@ -10,7 +10,7 @@ const linkTags = document.getElementsByTagName('a');
 function openMenu() {
   getSpace.style.background = "url('./assets/menu/Group_98.png') 100% 100% no-repeat";
   getContainer.style.marginTop = '75vh';
-  getImages.style.background = '#fff';
+  getImages.style.background = 'radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)';
   getMenubar.style.position = 'absolute';
   getMenubar.style.display = 'flex';
   getMenubar.style.width = '100%';
@@ -19,7 +19,7 @@ function openMenu() {
 }
 
 function closeMenu() {
-  getImages.style.background = '#fff';
+  getImages.style.background = 'radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)';
   getSpace.style = document.querySelector('.footspace').sytle;
   getSpace.style.backgroundPosition = 'center center';
   getMenubar.style.display = 'none';
