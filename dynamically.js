@@ -3,12 +3,12 @@
 /* eslint-disable max-len */
 const projects = [
   {
-    title: 'Project name goes here',
+    title: 'Watch-hub',
     src: 'assets/work/work_one.png',
-    description: ['Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cupiditate eveniet velitcorrupti saepe, in eos est corporis nihil excepturi magnam unde nisi eligendi error utvoluptatum odit rem? Fugiat nisi sed sapiente ullam asperiores omnis.', 'Eos facilisdignissimos hic saepe? Mollitia excepturi fugiat unde praesentium blanditiis! Illum ipsafacere nesciunt accusamus fugit officia perspiciatis et, eligendi in. Nobis aut non laborumminus est, cupiditate commodi ipsam debitis eius quis praesentium quam corrupti deserunttenetur accusamus magni saepe ipsum quo.'],
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    seeLiveLink: '#',
-    seeSourceLink: '#',
+    description: ['This is a web app that displays a collection of anime from a RESTful API. You enter a search text that filters the collection to show your desired result. You can get full details of an anime when you click on a card'],
+    technologies: ['HTML/CSS', 'React', 'Redux'],
+    seeLiveLink: 'https://deploy-preview-7--vocal-praline-119922.netlify.app/',
+    seeSourceLink: 'https://www.github.com/AckonSamuel/watch-hub',
   },
   {
     title: 'Project name goes here',
