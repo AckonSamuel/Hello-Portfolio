@@ -3,12 +3,13 @@
 /* eslint-disable max-len */
 const projects = [
   {
-    title: 'Watch-hub',
+    title: 'Space Flight News',
     src: 'assets/work/work_one.png',
-    description: ['This is a web app that displays a collection of anime from a RESTful API. You enter a search text that filters the collection to show your desired result. You can get full details of an anime when you click on a card'],
-    technologies: ['HTML/CSS', 'React', 'Redux'],
-    seeLiveLink: 'https://deploy-preview-7--vocal-praline-119922.netlify.app/',
-    seeSourceLink: 'https://www.github.com/AckonSamuel/watch-hub',
+    description: ['This is a web app that displays a collection of cards about space related news from SpaceX API'],
+    technologies: ['HTML5', 'CSS3', 'JavaScript', 'Webpack', 'Jest'],
+    images: ['assets/work/work_one.png', 'assets/work/work_one.png', 'assets/work/work_one.png'],
+    seeLiveLink: 'https://ackonsamuel.github.io/space-flight-news/',
+    seeSourceLink: 'https://github.com/AckonSamuel/space-flight-news',
   },
   {
     title: 'Project name goes here',
@@ -121,6 +122,8 @@ vreds4.style.display = 'flex';
 vreds5.style.display = 'inherit';
 vreds.style.display = 'inherit';
 
+const technologies = (i) => projects[i].technologies.map((tech) => `<li class="maybe">${tech}</li>`).join('');
+
 vreds.innerHTML = `
                 <div class="project photo"><img src=${projects[3].src} class="work-one"
                         alt="project image three"></div>
@@ -130,9 +133,7 @@ vreds.innerHTML = `
                     </div>
                     <div class="technology">
                         <ul class="hello">
-                            <li class="maybe">HTML/CSS</li>
-                            <li class="maybe">Ruby on rails</li>
-                            <li class="maybe">JavaScript</li>
+                        ${technologies(3)}
                         </ul>
                     </div>
                     <button class="project-view">
@@ -151,9 +152,7 @@ alt="project image four"></div>
 </div>
 <div class="technology">
 <ul class="hello">
-    <li class="maybe">HTML/CSS</li>
-    <li class="maybe">Ruby on rails</li>
-    <li class="maybe">JavaScript</li>
+${technologies(4)}
 </ul>
 </div>
 <button class="project-view" id="card-4">
@@ -172,9 +171,7 @@ vreds2.innerHTML = `
                     </div>
                     <div class="technology">
                         <ul class="hello">
-                            <li class="maybe">HTML/CSS</li>
-                            <li class="maybe">Ruby on rails</li>
-                            <li class="maybe">JavaScript</li>
+                        ${technologies(5)}
                         </ul>
                     </div>
                     <button class="project-view" id="card-4">
@@ -194,9 +191,7 @@ vreds4.innerHTML = `
 </div>
 <div class="technology techdesk">
     <ul class="hello hellodesk">
-        <li class="maybe">HTML/CSS</li>
-        <li class="maybe">Ruby on rails</li>
-        <li class="maybe">JavaScript</li>
+    ${technologies(0)}
     </ul>
 </div>
 <button id="card-1" class="project-view viewdesk">
@@ -212,8 +207,7 @@ vreds5.innerHTML = `
                     <div class="man">
                         <h3>Project name goes...</h3>
                         <ul class="hellso">
-                            <li class="maybe">HTML/CSS</li>
-                            <li class="maybe">Ruby on rails</li>
+                        ${technologies(1)}
                             <li class="maybe">+1</li>
                         </ul>
                         <div class="being">
@@ -241,9 +235,7 @@ vreds5.innerHTML = `
                     </div>
                     <div class="technology">
                         <ul class="hello">
-                            <li class="maybe">HTML/CSS</li>
-                            <li class="maybe">Ruby on rails</li>
-                            <li class="maybe">JavaScript</li>
+                        ${technologies(1)}
                         </ul>
                     </div>
                     <button class="project-view">
@@ -263,9 +255,7 @@ vreds6.innerHTML = `
                     </div>
                     <div class="technology">
                         <ul class="hello">
-                            <li class="maybe">HTML/CSS</li>
-                            <li class="maybe">Ruby on rails</li>
-                            <li class="maybe">JavaScript</li>
+                        ${technologies(6)}
                         </ul>
                     </div>
                     <button class="project-view" id="card-4">
@@ -285,9 +275,7 @@ function popUpMobile(cardNumber) {
       
         <div class="modal-body">
         <ul class="model-tech">
-        <li>${projects[cardNumber].technologies[0]}</li>
-        <li>${projects[cardNumber].technologies[1]}</li>
-        <li>${projects[cardNumber].technologies[2]}</li>
+        ${technologies(cardNumber)}
     </ul>
     <button class="directPhoto linkupi desktt"><img src="assets/modal/vectorLeft.png" alt="previous"></button>
           <button class="directPhoto linkdowni desktt"><img src="assets/modal/vectorRight.png" alt="next"></button>
@@ -301,17 +289,20 @@ function popUpMobile(cardNumber) {
         </div>
         <div class="modal-description">
           <p>${projects[cardNumber].description[0]}</p>
-          <p>${projects[cardNumber].description[1]}</p>
         </div>
         <div class="modalbtns">
-        <button class="modal-btn">
+        <form action="${projects[cardNumber].seeLiveLink}" class="modal-btn">
+        <button type="submit" class="modal-btn">
         See live
         <img src="assets/modal/Union.png" alt="see live">
     </button>
-    <button class="modal-btn">
+    </form>
+    <form action=${projects[cardNumber].seeSourceLink} class="modal-btn">
+    <button type="submit" class="modal-btn">
     See source
     <img src="assets/modal/Vector.png" alt="see source">
-  </button>
+</button>
+  </form>
         </div>
         <div class="squad">
         
