@@ -270,7 +270,7 @@ function popUpMobile(cardNumber) {
   popUp.innerHTML = `
       <div class="modal" id="modal">
       <div class="modal-header">
-    <div id="closebox" ><img src="assets/menu/Union.png" id="closeup" alt="close"></div> 
+    <button id="closeup"> back</button> 
           <h3 class="title">${projects[cardNumber].title}</h3>
       
         <div class="modal-body">

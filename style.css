@@ -1310,8 +1310,18 @@ body {
     margin: 10px;
   }
 
-  #closebox {
+  #closeup {
+    width: 10%;
+    border: none;
+    background-color: crimson;
     align-self: flex-end;
+    outline: 1px solid red;
+  }
+
+  #closeup:hover {
+    width: 15%;
+    background-color: crimson;
+    cursor: pointer;
   }
 
   .title {
@@ -1339,8 +1349,10 @@ body {
   }
 
   .model-tech li {
-    border: 0.4px solid #1a2236;
-    padding: 6px 10px 6px 10px;
+    border: 0.1x solid #1a2236;
+    padding: 16px 20px 16px 20px;
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 40%;
   }
 
   .uilo {
@@ -3639,8 +3651,12 @@ body {
     margin: 10px;
   }
 
-  #closebox {
+  #closeup {
+    width: 10%;
+    border: none;
+    background-color: crimson;
     align-self: flex-end;
+    outline: 1px solid red;
   }
 
   .title {
@@ -3668,8 +3684,10 @@ body {
   }
 
   .model-tech li {
-    border: 0.4px solid #1a2236;
-    padding: 6px 10px 6px 10px;
+    border: 0.1x solid #1a2236;
+    padding: 16px 20px 16px 20px;
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 40%;
   }
 
   .uilo {
